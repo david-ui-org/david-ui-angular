@@ -1,0 +1,115 @@
+<div
+  class="code-section scroll-mt-64 rounded-xl border border-blue-gray-50 bg-[#1e293b] mt-1"
+>
+  <div
+    class="flex items-center justify-between border-b border-blue-gray-50 p-1 border-opacity-10"
+  >
+    <!-- <a href="">Code</a> -->
+
+    <div class="block w-max overflow-visible">
+      <nav>
+        <ul
+          role="tablist"
+          class="flex relative bg-opacity-60 rounded-lg p-1 flex-row bg-transparent"
+        >
+          <li
+            role="tab"
+            class="flex items-center justify-center text-center w-full h-full relative bg-transparent py-1 px-2 text-blue-gray-900 antialiased font-sans text-base font-normal leading-relaxed select-none cursor-pointer pt-[6px] pb-[5px]"
+            data-value="code"
+          >
+            <div class="z-20 text-inherit">
+              <p
+                class="antialiased font-sans text-sm leading-normal flex w-[86px] items-center justify-center gap-2 text-center font-medium transition-colors text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  class="-mt-px h-4 w-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+                  ></path>
+                </svg>
+                Code
+              </p>
+            </div>
+            <div
+              class="absolute inset-0 z-10 h-full shadow-none rounded-lg bg-white/10"
+              data-projection-id="17"
+              style="transform: none; transform-origin: 50% 50% 0px"
+            ></div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="flex items-center gap-2 px-1">
+      <button
+        type="button"
+        class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs hover:bg-white/10 active:bg-white/30 text-white/80 hover:text-white"
+      >
+        <span
+          class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+        >
+          <a [cdkCopyToClipboard]="Code">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M7 9C7 8.46957 7.21071 7.96086 7.58579 7.58579C7.96086 7.21071 8.46957 7 9 7H15C15.5304 7 16.0391 7.21071 16.4142 7.58579C16.7893 7.96086 17 8.46957 17 9V15C17 15.5304 16.7893 16.0391 16.4142 16.4142C16.0391 16.7893 15.5304 17 15 17H9C8.46957 17 7.96086 16.7893 7.58579 16.4142C7.21071 16.0391 7 15.5304 7 15V9Z"
+                fill="#607D8B"
+              />
+              <path
+                d="M5 3C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V11C3 11.5304 3.21071 12.0391 3.58579 12.4142C3.96086 12.7893 4.46957 13 5 13V7C5 5.89543 5.89543 5 7 5H13C13 4.46957 12.7893 3.96086 12.4142 3.58579C12.0391 3.21071 11.5304 3 11 3H5Z"
+                fill="#607D8B"
+              />
+            </svg>
+          </a>
+        </span>
+      </button>
+    </div>
+  </div>
+  <pre><code  class="h-[240px] overflow-x-scroll w-full lg:overflow-visible bg-[#1e293b] no-scrollbar" [highlight]="Code" [lineNumbers]="true" [languages]="['typescript','html','bash']" ></code></pre>
+
+  <div
+    class="flex items-center justify-between border-t border-blue-gray-50 p-1 border-opacity-10"
+  >
+    <div class="grid w-full place-items-center p-1">
+      <button
+        aria-expanded="false"
+        aria-haspopup="menu"
+        id=""
+        class="align-middle select-none font-sans font-bold text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 rounded-lg hover:bg-white/10 active:bg-white/30 flex items-center gap-2 px-3 text-white/30 hover:text-white"
+        type="button"
+        style="position: relative; overflow: hidden"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="4"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="h-2.5 w-2.5 transform transition-transform rotate-0"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          ></path>
+        </svg>
+        Expand Code
+      </button>
+    </div>
+  </div>
+</div>

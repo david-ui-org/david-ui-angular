@@ -1,0 +1,40 @@
+<ng-container [ngSwitch]="variant">
+  <ng-container *ngSwitchCase="'h1'">
+    <h1 class="{{ compiledClass }}">
+      <ng-container [ngTemplateOutlet]="content"></ng-container>
+    </h1>
+  </ng-container>
+  <ng-container *ngSwitchCase="'h2'">
+    <h2 class="{{ compiledClass }}">
+      <ng-container [ngTemplateOutlet]="content"></ng-container>
+    </h2>
+  </ng-container>
+  <ng-container *ngSwitchCase="'h3'">
+    <h3 class="{{ compiledClass }}">
+      <ng-container [ngTemplateOutlet]="content"></ng-container>
+    </h3>
+  </ng-container>
+  <ng-container *ngSwitchCase="'h4'">
+    <h4 class="{{ compiledClass }}">
+      <ng-container [ngTemplateOutlet]="content"></ng-container>
+    </h4>
+  </ng-container>
+  <ng-container *ngSwitchCase="'h5'">
+    <h5 class="{{ compiledClass }}">
+      <ng-container [ngTemplateOutlet]="content"></ng-container>
+    </h5>
+  </ng-container>
+  <ng-container *ngSwitchCase="'h6'">
+    <h6 class="{{ compiledClass }}">
+      <ng-container [ngTemplateOutlet]="content"></ng-container>
+    </h6>
+  </ng-container>
+  <ng-template [ngSwitchDefault]>
+    <p class="{{ compiledClass }}">
+      <ng-container [ngTemplateOutlet]="content"></ng-container>
+    </p>
+  </ng-template>
+</ng-container>
+<ng-template #content>
+  <ng-content></ng-content>
+</ng-template>

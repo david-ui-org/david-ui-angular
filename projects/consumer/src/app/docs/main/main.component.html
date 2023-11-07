@@ -1,0 +1,87 @@
+<main class="main-wrap px-6">
+  <div class="container mx-auto flex">
+    <app-sidebar></app-sidebar>
+
+    <div class="mt-6 w-full lg:w-[60%] lg:px-6">
+      <router-outlet></router-outlet>
+    </div>
+
+    <aside
+      class="right-nav sticky top-24 ml-auto hidden h-screen w-64 pb-4 lg:block"
+    >
+      <app-right-sidebar></app-right-sidebar>
+      <div class="top-24 sticky">
+        <div>
+          <h5
+            class="block antialiased font-sans text-sm leading-normal font-bold capitalize text-black"
+          >
+            Contribute
+          </h5>
+          <ul class="py-2">
+            <li>
+              <a href="https://github.com/david-ui-org/david-ui-angular/blob/main/README.md#contribution" target="_blank">
+                <p
+                  class="antialiased font-sans text-sm leading-normal relative list-item w-full py-1 capitalize transition-colors hover:text-primary font-normal text-gray-600"
+                >
+                  Contributor guides
+                </p>
+              </a>
+            </li>
+            <li>
+              <!-- link to github file -->
+              <a href="https://github.com/david-ui-org/david-ui-angular/fork" target="_blank">
+                <p
+                  class="antialiased font-sans text-sm leading-normal relative list-item w-full py-1 capitalize transition-colors hover:text-primary font-normal text-gray-600"
+                >
+                  Edit this page
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="block antialiased font-sans text-sm leading-normal font-bold capitalize text-black"
+          >
+            Community
+          </h5>
+          <ul class="py-2">
+            <li>
+              <a href="https:github.com/david-ui-org/david-ui-angular/discussions" target="_blank">
+                <p
+                  class="antialiased font-sans text-sm leading-normal relative list-item w-full py-1 capitalize transition-colors hover:text-primary font-normal text-gray-600"
+                >
+                  Discussions
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.creative-tim.com/blog" target="_blank">
+                <p
+                  class="antialiased font-sans text-sm leading-normal relative list-item w-full py-1 capitalize transition-colors hover:text-primary font-normal text-gray-600"
+                >
+                  Read blog posts
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <a
+          class="align-middle select-none font-sans text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none py-2 px-4 rounded-lg hover:opacity-75 focus:ring active:opacity-[0.85] relative inline-flex items-center gap-3 border-[1.5px] border-blue-gray-50 bg-white text-sm font-medium capitalize text-black focus:ring-transparent"
+          href="https:github.com/david-ui-org/david-ui-angular"
+          target="_blank"
+          >
+          Give us Star
+        </a>
+        <a
+          class="align-middle select-none font-sans text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none py-2 px-4 rounded-lg hover:opacity-75 focus:ring active:opacity-[0.85] relative inline-flex items-center gap-3 border-[1.5px] border-blue-gray-50 bg-white text-sm font-medium capitalize text-black focus:ring-transparent"
+          href="https://github.com/david-ui-org/david-ui-angular/discussions/categories/feedback-suggestions"
+          target="_blank"
+          >
+          Feedback
+        </a>
+      </div>
+    </aside>
+  </div>
+</main>

@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../../david-ui-angular/src/lib/styles/styles.scss";
+@import "@angular/cdk/overlay-prebuilt.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  height: 100%;
+}
+// .container {
+//   width: 1320px !important;
+// }
+.header-bg {
+  background: url(../../consumer/src/assets/images/header-bg.jpg) no-repeat;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+pre {
+  code {
+    background: #1e293b !important;
+  }
+}

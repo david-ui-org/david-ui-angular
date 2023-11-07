@@ -1,0 +1,267 @@
+<!-- <header
+  class="fixed top-0 z-[999] bg-white backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border-white/80 w-full max-w-full rounded-none border-b-[1.5px] !border-blue-gray-50"
+>
+  <div class="container mx-auto">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button
+          type="button"
+          class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+
+          <svg
+            class="block h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+
+          <svg
+            class="hidden h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+      >
+        <div class="flex flex-shrink-0 items-center">
+          <div class="logo">David UI Angular</div>
+
+          <div
+            class="relative grid items-center font-sans font-bold uppercase whitespace-nowrap select-none py-1.5 px-3 text-xs ml-2 rounded-full border-[1.5px] border-blue-gray-50 pb-1 pt-1.5"
+            style="opacity: 1"
+          >
+            <span class="">v1.0.0</span>
+          </div>
+          <hr class="mx-2 h-8 border-r border-primary/10" />
+          <p class="block font-sans text-sm font-medium leading-tight">
+            Documentation
+          </p>
+        </div>
+      </div>
+
+      <div class="hidden sm:ml-6 sm:block">
+        <div class="flex space-x-4">
+          <div class="github-rating">
+            <span class="mr-2"> Github</span>
+            <div class="badge">
+              <i class="bi bi-star-fill"></i>
+              12K
+            </div>
+          </div>
+          <div class="search-bar">
+            <span class="icon">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <a
+        href="#"
+        class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+        aria-current="page"
+        >Dashboard</a
+      >
+      <a
+        href="#"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        >Team</a
+      >
+      <a
+        href="#"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        >Projects</a
+      >
+      <a
+        href="#"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+        >Calendar</a
+      >
+    </div>
+  </div>
+</header> -->
+
+<div class="sticky top-0 z-[999] flex w-full items-center">
+  <nav
+    class="block px-8 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border border-white/80 text-white w-full max-w-full rounded-none border-b-[1.5px] !border-blue-gray-50 bg-white py-1.5 !pl-2 !pr-3 lg:!px-4 lg:!py-0.5"
+  >
+    <div class="container mx-auto">
+      <div class="flex h-16 w-full items-center !justify-between">
+        <a
+          class="py-2.375 mr-4 flex flex-shrink-0 items-center gap-2 text-inherit lg:ml-0"
+          [routerLink]="['/']"
+        >
+          <p
+            class="antialiased font-sans text-sm font-bold leading-tight text-black"
+          >
+            David UI Angular
+          </p>
+          <div
+            class="relative grid items-center font-sans uppercase whitespace-nowrap select-none py-1.5 px-3 text-xs ml-2 rounded-full border-[1.5px] border-blue-gray-50 pb-1 pt-1.5 text-black"
+            style="opacity: 1"
+          >
+            <span class="">v1.0.0</span>
+          </div>
+          <hr class="mx-2 h-8 border-r border-primary/10" />
+          <p
+            class="block antialiased font-sans text-sm font-medium leading-tight text-black"
+          >
+            Documentation
+          </p></a
+        >
+        <div
+          class="lg:base-auto hidden flex-grow basis-full items-center lg:flex lg-max:max-h-0"
+        >
+          <div class="flex w-full flex-col justify-end lg:!ml-auto lg:flex-row">
+            <div class="ml-2 flex items-center gap-2">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                class="flex items-center gap-2 p-1.5 text-primary"
+                href=""
+              >
+                <p
+                  class="block antialiased font-sans text-sm font-medium leading-tight text-black"
+                >
+                  Github
+                </p>
+
+                <div
+                  class="relative grid items-center font-sans font-bold uppercase whitespace-nowrap select-none text-white px-3 rounded-lg flex-items-center gap-2 bg-black py-[3px] !pr-2 text-xs"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="absolute top-2/4 -translate-y-2/4 w-5 h-5 left-1.5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="!ml-0 mt-[2.5px] h-3.5 w-3.5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="ml-[18px]"
+                    ><span class="-ml-1.5">1.6K</span></span
+                  >
+                </div>
+                <i
+                  class="bi bu-github text-xl leading-none"
+                  aria-hidden="true"
+                ></i
+              ></a>
+
+              <div class="group relative">
+                <div class="relative w-full min-w-[200px] h-10 min-w-[100px]">
+                  <input
+                    type="email"
+                    placeholder="Search"
+                    class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-gray-900 !w-full !border-[1.5px] !border-blue-gray-50 bg-white text-blue-gray-800 ring-4 ring-transparent placeholder:text-blue-gray-600 focus:!border-primary focus:!border-t-primary group-hover:!border-primary"
+                  /><label
+                    class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900 hidden"
+                  >
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block w-full basis-full overflow-hidden" style="height: 0px">
+        <div class="overflow-hidden pb-1 lg:overflow-visible">
+          <div class="flex w-full flex-col justify-end lg:!ml-auto lg:flex-row">
+            <div class="ml-2 flex items-center gap-2">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                class="flex items-center gap-2 p-1.5 text-black"
+                href=""
+              >
+                <p
+                  class="block antialiased font-sans text-sm font-medium leading-tight text-black"
+                >
+                  Github
+                </p>
+                <div
+                  class="relative grid items-center font-sans font-bold uppercase whitespace-nowrap select-none text-white px-3 rounded-lg flex-items-center gap-2 bg-primary py-[3px] !pr-2 text-xs"
+                  style="opacity: 1"
+                >
+                  <div
+                    class="absolute top-2/4 -translate-y-2/4 w-5 h-5 left-1.5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="!ml-0 mt-[2.5px] h-3.5 w-3.5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span class="ml-[18px]"
+                    ><span class="-ml-1.5">1.6K</span></span
+                  >
+                </div>
+                <i
+                  class="bi bi-github text-xl leading-none"
+                  aria-hidden="true"
+                ></i
+              ></a>
+
+              <div class="group relative">
+                <div class="relative w-full min-w-[200px] h-10 min-w-[100px]">
+                  <input
+                    type="email"
+                    placeholder="Search"
+                    class="peer w-full h-full bg-transparent text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] border-blue-gray-200 focus:border-gray-900 !w-full !border-[1.5px] !border-blue-gray-50 bg-white text-blue-gray-800 ring-4 ring-transparent placeholder:text-blue-gray-600 focus:!border-primary focus:!border-t-primary group-hover:!border-primary"
+                  /><label
+                    class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-gray-900 after:border-blue-gray-200 peer-focus:after:!border-gray-900 hidden"
+                  >
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

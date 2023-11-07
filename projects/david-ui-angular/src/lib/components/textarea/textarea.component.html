@@ -1,0 +1,15 @@
+<div [class]="containerClass">
+  <textarea
+    [class]="textareaClass"
+    [cols]="cols"
+    [rows]="rows"
+    placeholder="{{ placeholder }}"
+    [disabled]="disabled"
+    [readonly]="readonly"
+    [required]="required"
+    [ngModel]="value"
+    (ngModelChange)="OnModelChange($event)"
+  >
+  </textarea>
+  <label *ngIf="label != ''" [class]="labelClass">{{ label }}</label>
+</div>

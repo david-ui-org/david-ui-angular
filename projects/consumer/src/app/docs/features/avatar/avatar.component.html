@@ -1,0 +1,99 @@
+<div class="mb-12">
+  <div id="avatar-main" class="group flex items-center">
+    <a
+      href="#avatar-main"
+      class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+        ></path>
+      </svg>
+    </a>
+    <h1
+    class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+  >
+    Tailwind CSS Avatar with Angular
+  </h1>
+  </div>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+  Use our Tailwind CSS Avatar built with Angular to represent users or entities on your website. It can be useful for showing user images, icons, or any other visual cues.
+  </p>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+  The avatar is a UI component used by web developers as a visual representation of a user. They are widely used across many platforms, like social media sites, forums, and gaming platforms. They are also used for content authors when creating website blogs. Avatar components often work in combination with other elements. 
+  </p>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">
+    Below we present you our Angular Avatar example crafted with Tailwind CSS that will help you build enterprise-level applications with ease. Check it out!
+  </p>
+
+  <p class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">
+    You first need to import the DUIAvatar Module into your application module
+</p>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-avatar src="../assets/avatar.jpeg"></dui-avatar>
+    </feature-preview>
+    <code-previewer [Code]="avatarCode"> </code-previewer>
+  </div>
+  <div class="mt-6">
+    <div id="avatar-size" class="group flex items-center">
+      <a
+        href="#avatar-size"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Avatar Size
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use different sizes of the avatar component by manipulating the
+      size attribute of the component
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-avatar src="../assets/avatar.jpeg" size="xs"></dui-avatar>
+      <dui-avatar src="../assets/avatar.jpeg" size="sm"></dui-avatar>
+      <dui-avatar src="../assets/avatar.jpeg" size="md"></dui-avatar>
+      <dui-avatar src="../assets/avatar.jpeg" size="lg"></dui-avatar>
+      <dui-avatar src="../assets/avatar.jpeg" size="xl"></dui-avatar>
+      <dui-avatar src="../assets/avatar.jpeg" size="xxl"></dui-avatar>
+    </feature-preview>
+    <code-previewer [Code]="avatarSizes"> </code-previewer>
+  </div>
+</div>

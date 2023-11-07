@@ -1,0 +1,1485 @@
+
+<div class="">
+  <div class="mb-10">
+  <h1 class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black">
+    Tailwind CSS Customizing Colors with Angular
+  </h1>
+  <p class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">Customize the default color palette for David UI Angular and add your own custom colors that matches your brand.</p>
+  <br>
+  <br>
+  <div id="default-color-palette" class="group relative -ml-4 flex scroll-mt-40 items-center pl-4">
+    <a href="#default-color-palette" class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true" class="pointer-events-none h-3.5 w-3.5 rounded-lg">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"></path>
+      </svg>
+    </a>
+    <h2 class="block antialiased tracking-normal font-sans text-2xl font-semibold leading-snug !mb-2">Default Color Palette</h2>
+  </div>
+  <p class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">David UI Angular provides a default color palette that you can use. </p>
+  <div id="default-color-palette" class="mt-12 grid scroll-mt-56 grid-cols-1 gap-8">
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">blue gray</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#eceff1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#eceff1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#cfd8dc"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#cfd8dc</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#b0bec5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#b0bec5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#90a4ae"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#90a4ae</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#78909c"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#78909c</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#607d8b"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#607d8b</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#546e7a"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#546e7a</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#455a64"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#455a64</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#37474f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#37474f</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#263238"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#263238</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">gray</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fafafa"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fafafa</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f5f5f5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f5f5f5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#eeeeee"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#eeeeee</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e0e0e0"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e0e0e0</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#bdbdbd"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#bdbdbd</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#9e9e9e"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#9e9e9e</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#757575"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#757575</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#616161"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#616161</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#424242"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#424242</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#212121"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#212121</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">brown</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#efebe9"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#efebe9</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#d7ccc8"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#d7ccc8</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#bcaaa4"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#bcaaa4</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#a1887f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#a1887f</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#8d6e63"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#8d6e63</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#795548"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#795548</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#6d4c41"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#6d4c41</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#5d4037"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#5d4037</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#4e342e"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#4e342e</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#3e2723"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#3e2723</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">deep orange</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fbe9e7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fbe9e7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffccbc"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffccbc</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffab91"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffab91</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ff8a65"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ff8a65</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ff7043"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ff7043</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ff5722"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ff5722</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f4511e"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f4511e</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e64a19"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e64a19</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#d84315"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#d84315</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#bf360c"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#bf360c</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">orange</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fff3e0"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fff3e0</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffe0b2"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffe0b2</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffcc80"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffcc80</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffb74d"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffb74d</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffa726"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffa726</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ff9800"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ff9800</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fb8c00"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fb8c00</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f57c00"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f57c00</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ef6c00"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ef6c00</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e65100"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e65100</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">amber</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fff8e1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fff8e1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffecb3"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffecb3</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffe082"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffe082</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffd54f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffd54f</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffca28"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffca28</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffc107"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffc107</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffb300"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffb300</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffa000"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffa000</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ff8f00"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ff8f00</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ff6f00"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ff6f00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">yellow</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fffde7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fffde7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fff9c4"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fff9c4</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fff59d"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fff59d</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fff176"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fff176</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffee58"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffee58</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffeb3b"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffeb3b</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fdd835"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fdd835</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fbc02d"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fbc02d</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f9a825"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f9a825</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f57f17"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f57f17</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">lime</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f9fbe7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f9fbe7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f0f4c3"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f0f4c3</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e6ee9c"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e6ee9c</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#dce775"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#dce775</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#d4e157"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#d4e157</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#cddc39"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#cddc39</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#c0ca33"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#c0ca33</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#afb42b"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#afb42b</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#9e9d24"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#9e9d24</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#827717"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#827717</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">light-green</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f1f8e9"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f1f8e9</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#dcedc8"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#dcedc8</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#c5e1a5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#c5e1a5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#aed581"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#aed581</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#9ccc65"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#9ccc65</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#8bc34a"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#8bc34a</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#7cb342"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#7cb342</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#689f38"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#689f38</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#558b2f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#558b2f</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#33691e"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#33691e</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">green</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e8f5e9"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e8f5e9</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#c8e6c9"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#c8e6c9</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#a5d6a7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#a5d6a7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#81c784"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#81c784</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#66bb6a"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#66bb6a</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#4caf50"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#4caf50</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#43a047"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#43a047</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#388e3c"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#388e3c</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#2e7d32"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#2e7d32</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#1b5e20"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#1b5e20</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">teal</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e0f2f1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e0f2f1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#b2dfdb"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#b2dfdb</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#80cbc4"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#80cbc4</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#4db6ac"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#4db6ac</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#26a69a"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#26a69a</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#009688"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#009688</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#00897b"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#00897b</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#00796b"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#00796b</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#00695c"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#00695c</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#004d40"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#004d40</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">cyan</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e0f7fa"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e0f7fa</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#b2ebf2"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#b2ebf2</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#80deea"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#80deea</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#4dd0e1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#4dd0e1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#26c6da"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#26c6da</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#00bcd4"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#00bcd4</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#00acc1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#00acc1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#0097a7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#0097a7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#00838f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#00838f</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#006064"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#006064</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">light-blue</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e1f5fe"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e1f5fe</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#b3e5fc"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#b3e5fc</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#81d4fa"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#81d4fa</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#4fc3f7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#4fc3f7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#29b6f6"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#29b6f6</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#03a9f4"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#03a9f4</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#039be5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#039be5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#0288d1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#0288d1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#0277bd"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#0277bd</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#01579b"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#01579b</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">blue</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e3f2fd"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e3f2fd</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#bbdefb"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#bbdefb</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#90caf9"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#90caf9</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#64b5f6"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#64b5f6</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#42a5f5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#42a5f5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#2196f3"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#2196f3</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#1e88e5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#1e88e5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#1976d2"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#1976d2</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#1565c0"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#1565c0</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#0d47a1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#0d47a1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">indigo</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e8eaf6"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e8eaf6</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#c5cae9"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#c5cae9</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#9fa8da"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#9fa8da</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#7986cb"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#7986cb</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#5c6bc0"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#5c6bc0</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#3f51b5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#3f51b5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#3949ab"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#3949ab</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#303f9f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#303f9f</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#283593"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#283593</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#1a237e"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#1a237e</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">deep-purple</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ede7f6"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ede7f6</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#d1c4e9"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#d1c4e9</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#b39ddb"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#b39ddb</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#9575cd"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#9575cd</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#7e57c2"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#7e57c2</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#673ab7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#673ab7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#5e35b1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#5e35b1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#512da8"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#512da8</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#4527a0"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#4527a0</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#311b92"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#311b92</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">purple</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f3e5f5"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f3e5f5</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e1bee7"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e1bee7</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ce93d8"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ce93d8</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ba68c8"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ba68c8</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ab47bc"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ab47bc</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#9c27b0"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#9c27b0</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#8e24aa"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#8e24aa</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#7b1fa2"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#7b1fa2</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#6a1b9a"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#6a1b9a</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#4a148c"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#4a148c</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">pink</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#fce4ec"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#fce4ec</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f8bbd0"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f8bbd0</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f48fb1"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f48fb1</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f06292"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f06292</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ec407a"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ec407a</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e91e63"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e91e63</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#d81b60"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#d81b60</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#c2185b"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#c2185b</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ad1457"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ad1457</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#880e4f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#880e4f</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col space-y-1.5 text-xs">
+      <div class="flex h-10 flex-col justify-center">
+        <div class="text-base font-bold capitalize text-blue-gray-900">red</div>
+      </div>
+      <div class="grid min-w-0 flex-1 grid-cols-5 gap-x-4 gap-y-3 2xl:grid-cols-10 2xl:gap-x-2">
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffebee"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">50</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffebee</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ffcdd2"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">100</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ffcdd2</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ef9a9a"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">200</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ef9a9a</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e57373"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">300</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e57373</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#ef5350"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">400</div>
+            <div class="font-mono lowercase text-blue-gray-500">#ef5350</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#f44336"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">500</div>
+            <div class="font-mono lowercase text-blue-gray-500">#f44336</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#e53935"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">600</div>
+            <div class="font-mono lowercase text-blue-gray-500">#e53935</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#d32f2f"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">700</div>
+            <div class="font-mono lowercase text-blue-gray-500">#d32f2f</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#c62828"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">800</div>
+            <div class="font-mono lowercase text-blue-gray-500">#c62828</div>
+          </div>
+        </div>
+        <div class="space-y-1.5">
+          <div class="h-10 w-full rounded" style="background-color:#b71c1c"></div>
+          <div class="px-0.5 md:flex md:justify-between md:space-x-2 2xl:block 2xl:space-x-0">
+            <div class="w-6 font-medium text-blue-gray-900 2xl:w-full">900</div>
+            <div class="font-mono lowercase text-blue-gray-500">#b71c1c</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,210 @@
+<div class="sticky top-0 z-[999] flex w-full items-center">
+  <nav
+    class="block px-8 backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border border-white/80 text-white w-full max-w-full rounded-none border-b-[1.5px] !border-blue-gray-50 bg-white py-1.5 !pl-2 !pr-3 lg:!px-4 lg:!py-0.5"
+  >
+    <div class="container mx-auto">
+      <div class="flex w-full items-center !justify-between">
+        <a
+          class="py-2.375 mr-4 flex flex-shrink-0 items-center gap-2 text-inherit lg:ml-0"
+          href="/"
+        >
+          <p
+            class="block antialiased font-sans text-sm font-bold leading-tight text-primary"
+          >
+            <img src="../../assets/images/logo.png" width="120" alt="" />
+          </p>
+          <hr class="mx-2 h-8 border-r border-primary/10" />
+          <div
+            class="relative grid items-center font-sans uppercase whitespace-nowrap select-none py-1.5 px-3 text-xs ml-2 rounded-full border-[1.5px] border-blue-gray-50 pb-1 pt-1.5 text-black"
+            style="opacity: 1"
+          >
+            <span class="">BETA</span>
+          </div> </a
+        ><button
+          (click)="openNav = !openNav"
+          class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none max-w-[40px] max-h-[40px] rounded-lg text-xs ml-auto h-6 w-6 text-primary hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          type="button"
+        >
+          <span
+            class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 stroke-black text-black"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <div
+          class="lg:base-auto hidden flex-grow basis-full items-center lg:flex lg-max:max-h-0"
+        >
+          <div class="flex w-full flex-col justify-end lg:!ml-auto lg:flex-row">
+            <nav
+              class="flex flex-col gap-1 p-2 font-sans text-base font-normal text-blue-gray-700 min-w-max px-0 lg:!flex-row"
+            >
+              <a href="/docs">
+                <div
+                  role="docs"
+                  tabindex="0"
+                  class="flex items-center w-full p-3 rounded-lg text-start transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none px-4 py-2.5 text-sm text-gray-800 hover:text-gray-900"
+                >
+                  Docs
+                </div>
+              </a>
+            </nav>
+            <div class="ml-2 flex items-center gap-2">
+              <div
+                class="pt-1 pb-0 flex items-center w-full rounded-lg text-start transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none text-sm text-gray-800 hover:text-gray-900"
+              >
+                <a
+                  class="github-button"
+                  href="https://github.com/david-ui-org/david-ui-angular"
+                  data-color-scheme="no-preference: light; light: light; dark: dark;"
+                  data-icon="octicon-star"
+                  data-show-count="true"
+                  aria-label="Star david-ui-org/david-ui-angular on GitHub"
+                  style="margin-bottom: 0"
+                >
+                  Stars
+                </a>
+              </div>
+              <a
+                target="_blank"
+                class="flex items-center gap-2 p-1.5 text-black"
+                href="https://github.com/david-ui-org/david-ui-angular"
+              >
+                <i
+                  class="bi bi-github text-xl leading-none"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                class="p-1.5 leading-none text-black"
+                href="https://github.com/david-ui-org/david-ui-angular/discussions"
+              >
+              <i
+              class="bi bi-chat-fill text-xl leading-none"
+              aria-hidden="true"
+            ></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                class="p-1.5 leading-none text-black"
+                href="https://twitter.com/daviduiorg"
+              >
+                <i
+                  class="bi bi-twitter text-lg leading-none"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="block w-full basis-full lg:hidden overflow-hidden"
+        [ngStyle]="{ height: openNav ? 'auto' : '0px' }"
+      >
+        <div class="overflow-hidden pb-1 lg:overflow-visible">
+          <div class="flex w-full flex-col justify-end lg:!ml-auto lg:flex-row">
+            <nav
+              class="flex flex-col gap-1 p-2 font-sans text-base font-normal text-blue-gray-700 min-w-max px-0 lg:!flex-row"
+            >
+              <a href="/docs">
+                <div
+                  role="docs"
+                  tabindex="0"
+                  class="flex items-center w-full p-3 rounded-lg text-start transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none px-4 py-2.5 text-sm text-gray-800 hover:text-gray-900"
+                >
+                  Docs
+                </div>
+              </a>
+            </nav>
+            <div class="ml-2 flex items-center gap-2">
+              <div
+                class="pt-1 pb-0 flex items-center w-full rounded-lg text-start transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-blue-gray-50 focus:bg-opacity-80 active:bg-blue-gray-50 active:bg-opacity-80 focus:text-blue-gray-900 active:text-blue-gray-900 outline-none text-sm text-gray-800 hover:text-gray-900"
+              >
+                <a
+                  class="github-button"
+                  href="https://github.com/david-ui-org/david-ui-angular"
+                  data-color-scheme="no-preference: light; light: light; dark: dark;"
+                  data-icon="octicon-star"
+                  data-show-count="true"
+                  aria-label="Star david-ui-org/david-ui-angular on GitHub"
+                  style="margin-bottom: 0"
+                >
+                  Stars
+                </a>
+              </div>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                class="flex items-center gap-2 p-1.5 text-black"
+                href=""
+              >
+                <i
+                  class="bi bi-github text-xl leading-none"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                class="p-1.5 leading-none text-black"
+                href=""
+              >
+                <i
+                  class="bi bi-discord text-lg leading-none"
+                  aria-hidden="true"
+                ></i>
+              </a>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                class="p-1.5 leading-none text-black"
+                href="https://twitter.com/daviduiorg"
+              >
+                <i
+                  class="bi bi-twitter text-lg leading-none"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="router.url !== '/'"
+      class="mt-2 flex items-center border-t border-blue-gray-50 pb-2 pt-4 lg:hidden"
+    >
+      <button
+        (click)="sharedService.showSideBar = !sharedService.showSideBar"
+        type="button"
+        class="text-blue-gray-900"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h7"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+</div>

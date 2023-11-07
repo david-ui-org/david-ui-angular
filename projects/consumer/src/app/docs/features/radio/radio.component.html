@@ -1,0 +1,205 @@
+<div class="mb-12">
+  <div id="radio-main" class="group flex items-center">
+    <a
+      href="#radio-main"
+      class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+        ></path>
+      </svg>
+    </a>
+    <h1
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Radio Button with Angular
+    </h1>
+  </div>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+  Use our Tailwind CSS Radio Button built with Angular to ensure single-option selections on your website or applications.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Radio buttons are essential for choices where only one option can be selected from a list. They guide users in making clear-cut decisions and prevent multiple selections. It's very important that radio buttons give a clear indication of the selected and non-selected state for ease of use.
+  </p>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Below, explore our Angular Radio Button example designed with Tailwind CSS. 
+  </p>
+
+  <p
+  class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    You first need to import the DUIRadio Module into your application module
+</p>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-radio name="foo" value="1" color="gray"></dui-radio>
+    </feature-preview>
+    <code-previewer [Code]="radioCode"> </code-previewer>
+  </div>
+
+  <div class="mt-6">
+    <div id="radio-disabled" class="group flex items-center">
+      <a
+        href="#radio-disabled"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Radio Button Disabled
+      </h2>
+    </div>
+
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can disable the radio button by adding the <b>disabled</b> attribute to the
+      component
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-radio name="radio-frame" label="Angular" value="1" color="gray" [disabled]="true"></dui-radio>
+    </feature-preview>
+    <code-previewer [Code]="radioDisabled"> </code-previewer>
+  </div>
+
+  <div class="mt-6">
+    <div id="radio-label" class="group flex items-center">
+      <a
+        href="#radio-label"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Radio Button Label
+      </h2>
+    </div>
+
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can add a label to the radio button by adding the <b>label</b> attribute to
+      the component
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-radio name="radio-name" label="Angular" value="1" color="gray"></dui-radio>
+      <dui-radio name="radio-name" label="React" value="2" color="gray"></dui-radio>
+      <dui-radio name="radio-name" label="Vuejs" value="3" color="gray"></dui-radio>
+    </feature-preview>
+    <code-previewer [Code]="radioLabel"> </code-previewer>
+  </div>
+
+  <div class="mt-6">
+    <div id="radio-colors" class="group flex items-center">
+      <a
+        href="#radio-colors"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Radio Button Colors
+      </h2>
+    </div>
+
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use different colors of the radio component by manipulating the
+      <b>color</b> attribute of the component
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-radio
+        name="radio-color-frame"
+        label="Angular"
+        value="1"
+        color="red"
+      ></dui-radio>
+      <dui-radio
+        name="radio-color-frame"
+        label="React"
+        value="2"
+        color="blue"
+      ></dui-radio>
+      <dui-radio
+        name="radio-color-frame"
+        label="VueJS"
+        value="3"
+        color="green"
+      ></dui-radio>
+    </feature-preview>
+    <code-previewer [Code]="radioColor"> </code-previewer>
+  </div>
+</div>

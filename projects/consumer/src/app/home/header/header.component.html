@@ -1,0 +1,64 @@
+<section
+  class="header-bg pt-40 relative grid h-full min-h-[84vh] place-items-center bg-cover bg-center"
+>
+  <div class="container mx-auto px-4 text-center lg:w-8/12 xl:w-7/12">
+    <div
+        class="inline-flex items-center rounded-lg border-[1.5px] border-blue-gray-50 bg-white py-1 pl-1 pr-8 font-medium text-black"
+      >
+        <div
+          class="relative grid items-center font-sans uppercase whitespace-nowrap select-none text-white py-1.5 text-xs mr-3 rounded-md bg-black px-3.5 !pb-2 pt-2.5 font-medium leading-none"
+          style="opacity: 1"
+        >
+          <span class="">New</span>
+        </div>
+        David UI Angular Beta is here!
+      </div>
+    <h1
+      class="block antialiased font-sans relative mx-auto mt-10 mb-6 text-center text-5xl font-black !leading-tight tracking-normal text-bold md:text-5xl lg:max-w-4xl"
+    >
+      Welcome to David UI <br>Tailwind CSS and Angular Power 
+    </h1>
+    <p
+      class="block antialiased font-sans text-inherit md:text-md relative mx-auto mb-10 text-center text-lg font-normal leading-normal !text-gray-600 lg:max-w-4xl"
+    >
+      The components library for enterprise-level projects based on Tailwind CSS
+      and Angular. Access powerful UI components, thoughtfully organized for
+      maximum modularity and reusability.
+    </p>
+
+    <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+      <div class="w-full sm:w-auto">
+        <button [cdkCopyToClipboard]="code"
+          class="align-middle select-none transition-all disabled:shadow-none disabled:pointer-events-none rounded-lg hover:opacity-75 focus:ring active:opacity-[0.85] relative inline-flex w-full items-center justify-center gap-3 border-[1.5px] border-blue-gray-50 bg-white px-5 py-[12.5px] text-center font-mono text-base font-medium lowercase text-black focus:ring-transparent disabled:opacity-100 sm:w-auto"
+          type="button"
+        >
+          <span class="opacity-100 me-3">npm i david-ui-angular</span>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="w-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <a class="w-full sm:w-auto" href="/docs/installation"
+        ><button
+          class="align-middle select-none font-sans text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none py-3.5 px-7 rounded-lg text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none w-full bg-black text-base font-medium capitalize sm:w-auto"
+          type="button"
+        >
+          Get Started
+        </button></a
+      >
+    </div>
+  </div>
+</section>

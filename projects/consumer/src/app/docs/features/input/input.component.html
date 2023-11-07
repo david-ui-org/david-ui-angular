@@ -1,0 +1,194 @@
+<div class="mb-12">
+  <div id="input-main" class="group flex items-center">
+    <a
+      href="#input-main"
+      class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+        ></path>
+      </svg>
+    </a>
+    <h1
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Input with Angular
+    </h1>
+  </div>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+  Use our Tailwind CSS Input built with Angular to collect and process user data on your website or applications.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Inputs are pivotal UI components in web design, allowing users to interact by providing information, such as text, numbers, or dates, to a website or application. For smooth user interaction, inputs should provide clear visual feedback, including placeholder text, a focus state, or even error messages when data is incorrect.
+  </p>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+  Below we present you our Angular Input example crafted with Tailwind CSS that ensures seamless user experience and facilitates the creation of enterprise-level applications with proficiency. Check it out!
+  </p>
+
+  <p
+  class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    You first need to import the DUIInput Module into your application module
+</p>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-input label="Username"></dui-input>
+    </feature-preview>
+    <code-previewer [Code]="inputCode"> </code-previewer>
+  </div>
+
+  <!-- Input Variant HTML Code -->
+  <div class="mt-6">
+    <div id="input-variants" class="group flex items-center">
+      <a
+        href="#input-variants"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Input Variant
+      </h2>
+    </div>
+
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use different variants of the input component by manipulating the
+      <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">variant</code> attribute of the component
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-input label="Outlined"></dui-input>
+      <dui-input variant="standard" label="Standard"></dui-input>
+      <dui-input variant="static" label="Static"></dui-input>
+    </feature-preview>
+    <code-previewer [Code]="inputVariantCode"> </code-previewer>
+  </div>
+
+  <!-- Input Sizes HTML Code -->
+  <div class="mt-6">
+    <div id="input-sizes" class="group flex items-center">
+      <a
+        href="#input-sizes"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Input Sizes
+      </h2>
+    </div>
+
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+    The Input component comes with 2 different sizes that you can change it using the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">size</code> prop.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-input size="md" label="Outlined Medium"></dui-input>
+      <dui-input size="lg" label="Outlined Large"></dui-input>
+
+    </feature-preview>
+    <code-previewer [Code]="inputSizeCode"> </code-previewer>
+  </div>
+
+
+  <!-- Input Color HTML Code -->
+
+  <div class="mt-6">
+    <div id="input-colors" class="group flex items-center">
+      <a
+        href="#input-colors"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Input Colors
+      </h2>
+    </div>
+
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use different colors of the input component by manipulating the
+      <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">color</code> attribute of the component
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-input color="purple" label="Username"></dui-input>
+      <dui-input color="yellow" label="Username"></dui-input>
+      <dui-input color="green" label="Username"></dui-input>
+    </feature-preview>
+    <code-previewer [Code]="inputColorCode"> </code-previewer>
+  </div>
+</div>

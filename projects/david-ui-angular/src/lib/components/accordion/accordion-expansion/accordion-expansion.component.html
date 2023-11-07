@@ -1,0 +1,8 @@
+<div [@.disabled]="isDisable" class="flex flex-col my-1 px-2 py-0  w-full" [ngClass]="{'bg-gray-200': isDisable}" >
+    <div [class]="!isDisable ? 'cursor-pointer' : 'cursor-not-allowed'" (click)="!isDisable ? toggleBody() : ''">
+        <ng-content select="dui-accordion-header" ></ng-content>
+    </div>
+    <div [@accordionCollapse]="!showBody? 'closed' : 'open'">
+        <ng-content select="dui-accordion-body" ></ng-content>
+    </div>
+</div>

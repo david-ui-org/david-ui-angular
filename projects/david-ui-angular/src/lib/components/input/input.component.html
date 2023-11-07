@@ -1,0 +1,16 @@
+<div [class]="containerClass">
+  <!-- {icon && <div className={iconClasses}>{icon}</div>} -->
+  <input
+    #input
+    [class]="inputClass"
+    placeholder="{{ placeholder }}"
+    [disabled]="disabled"
+    [readonly]="readonly"
+    [required]="required"
+    [ngModel]="value"
+    (ngModelChange)="OnModelChange($event)"
+  />
+  <label  *ngIf="label != ''"  [class]="labelClass">
+    {{ label }} <span *ngIf="input.required" [class]="asteriskClasses">*</span>
+  </label>
+</div>

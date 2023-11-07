@@ -1,0 +1,66 @@
+{
+  "name": "david-ui-angular",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "build-library": "ng build david-ui-angular && npm run themes ",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "postbuild": "npm run themes",
+    "themes": "bundle-scss --config",
+    "build-lib-style": "cpx \"./projects/david-ui-angular/src/lib/styles/**/*\" \"./dist/david-ui-angular/styles\" ",
+    "sitemap": "node ./projects/consumer/sitemap-creator.js"
+  },
+  "bundleStyle": {
+    "dest": "dist/david-ui-angular/styles/_styles.scss",
+    "mask": [
+      "./projects/david-ui-angular/src/lib/styles/styles.scss",
+      "./projects/david-ui-angular/src/lib/components/**/*.component.scss"
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^16.2.0",
+    "@angular/cdk": "^16.2.8",
+    "@angular/common": "^16.2.0",
+    "@angular/compiler": "^16.2.0",
+    "@angular/core": "^16.2.0",
+    "@angular/forms": "^16.2.0",
+    "@angular/platform-browser": "^16.2.0",
+    "@angular/platform-browser-dynamic": "^16.2.0",
+    "@angular/router": "^16.2.0",
+    "@fortawesome/angular-fontawesome": "^0.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "bundle-scss": "^1.5.4",
+    "cpx": "^1.5.0",
+    "moment": "^2.29.4",
+    "ngx-highlightjs": "^10.0.0",
+    "rxjs": "~7.8.0",
+    "tailwind-merge": "^1.14.0",
+    "tslib": "^2.3.0",
+    "xmlbuilder": "^15.1.1",
+    "zone.js": "~0.13.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^16.2.2",
+    "@angular/cli": "~16.2.2",
+    "@angular/compiler-cli": "^16.2.0",
+    "@types/jasmine": "~4.3.0",
+    "autoprefixer": "^10.4.15",
+    "jasmine-core": "~4.6.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^16.2.3",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "typescript": "~5.1.3"
+  }
+}

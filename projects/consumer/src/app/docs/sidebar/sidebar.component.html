@@ -1,0 +1,81 @@
+<aside
+  class="left-nav top-24 h-[80vh] no-scrollbar fixed z-[999] w-80 overflow-y-scroll pb-4 pr-4 transition-all duration-300 lg:sticky lg:top-24 lg:left-0 lg:z-10 lg:w-56 -left-96"
+>
+  <div *ngFor="let item of sidebarItems">
+    <h5
+      class="block antialiased font-sans text-sm leading-normal font-bold capitalize text-black"
+    >
+      {{ item.name }}
+    </h5>
+
+    <ul class="py-2">
+      <li *ngFor="let child of item.children">
+        <a>
+          <p
+            routerLink="{{ child.route }}"
+            [routerLinkActive]="['!text-black']"
+            class="antialiased font-sans text-sm leading-normal cursor-pointer relative list-item w-full py-1 capitalize transition-colors hover:text-bray-700 font-normal text-gray-600"
+          >
+            {{ child.name }}
+          </p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
+<aside
+  [ngStyle]="{ visibility: sharedService.showSideBar ? 'visible' : 'hidden' }"
+  class="fixed top-0 z-[999] h-screen w-80 overflow-y-scroll pb-4 pr-4 transition-all duration-300 lg:sticky lg:top-16 lg:left-0 lg:z-10 lg:w-56 left-0"
+>
+  <div
+    class="fixed top-0 left-0 h-screen w-screen bg-gray-900/20 backdrop-blur-sm transition-opacity duration-300 lg:hidden pointer-events-auto opacity-100"
+  ></div>
+  <div
+    class="fixed h-screen top-0 z-[9999] w-80  overflow-y-scroll !bg-white pb-6 pl-6 lg:relative lg:w-56 lg:bg-transparent lg:pt-0 lg:pl-0"
+  >
+    <button
+      (click)="sharedService.showSideBar = !sharedService.showSideBar"
+      type="button"
+      class="text-black fixed top-4 right-20"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6 stroke-black text-black"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        ></path>
+      </svg>
+    </button>
+    <div class="mt-4">
+      <div *ngFor="let item of sidebarItems">
+        <p
+          class="block antialiased font-sans text-sm leading-normal font-bold capitalize text-black"
+        >
+          {{ item.name }}
+        </p>
+        <ul class="py-2">
+          <li
+            (click)="sharedService.showSideBar = !sharedService.showSideBar"
+            *ngFor="let child of item.children"
+            class=""
+          >
+            <a>
+              <p
+                routerLink="{{ child.route }}"
+                [routerLinkActive]="['!text-blue-500']"
+                class="antialiased font-sans text-sm leading-normal relative list-item w-full py-1 capitalize transition-colors hover:text-primary font-normal text-gray-600"
+              >
+                {{ child.name }}
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</aside>

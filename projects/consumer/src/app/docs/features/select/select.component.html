@@ -1,0 +1,67 @@
+<div class="mb-12">
+    <div id="select-main" class="group flex items-center">
+      <a
+        href="#select-main"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h1
+        class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+      >
+        Tailwind CSS Select with Angular
+      </h1>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      Use our Tailwind CSS Select built with Angular to provide a dropdown menu of options for your users on your website or applications.
+    </p>
+  
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      Select menus are essential for giving users a list of choices without overwhelming the display space. They streamline form filling by providing multiple options in a compact dropdown. For a great user experience, selects should offer clear options and reflect the current choice effectively.
+    </p>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      Below we present you our Angular Select component crafted with Tailwind CSS, to integrate into applications that demand quality and efficiency. Check it out!
+    </p>
+  
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You first need to import the DUISelect Module into your application module. 
+      <br> *Also make sure you have <b>angular-cdk</b> installed with it's styles imported in your css file.
+    </p>
+    <code-previewer [Code]="importCode"> </code-previewer>
+    <div class="code-snippet-area mt-10">
+      <feature-preview>
+        <div class="w-80">
+
+            <dui-select  [optionsList]="options">
+                <dui-options *ngFor="let option of options" [value]="option">{{
+                  option
+                }}</dui-options>
+              </dui-select>
+        </div>
+      </feature-preview>
+      <code-previewer [Code]="selectCode"> </code-previewer>
+    </div>
+
+  </div>
+  

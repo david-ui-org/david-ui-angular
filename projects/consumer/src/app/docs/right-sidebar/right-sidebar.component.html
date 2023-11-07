@@ -1,0 +1,18 @@
+<div *ngIf="loading && scrollSpyElements?.length">
+  <h5
+    class="block antialiased font-sans text-sm leading-normal font-bold capitalize text-black"
+  >
+    On This Page
+  </h5>
+  <ul class="py-2">
+    <li *ngFor="let item of scrollSpyElements">
+      <a (click)="handleLinkClick(item.id, $event)" href="">
+        <p
+          class="antialiased font-sans text-sm leading-normal relative list-item w-full py-1 capitalize transition-colors hover:text-primary font-normal text-gray-600"
+        >
+          {{ item.label }}
+        </p>
+      </a>
+    </li>
+  </ul>
+</div>

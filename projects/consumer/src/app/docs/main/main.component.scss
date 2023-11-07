@@ -1,0 +1,17 @@
+.right-nav {
+  ul {
+    li {
+      a {
+        // font-size: 14px;
+        // color: #78909c;
+
+        // &:hover {
+        //   color: #000;
+        // }
+      }
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
