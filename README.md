@@ -4,6 +4,9 @@
 
 David UI Angular is a comprehensive Angular framework that leverages the power of Tailwind CSS to provide a rich set of UI components, making it easy to build stylish web applications.
 
+<img width="1621" alt="david-ui-angular-thumb" src="https://github.com/david-ui-org/david-ui-angular/assets/146350044/6a06dd12-0e4d-41fd-805a-459cc6459867">
+
+
 <details>
   <summary>Table of Contents</summary>
   
