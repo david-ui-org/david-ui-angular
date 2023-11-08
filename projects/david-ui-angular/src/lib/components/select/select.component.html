@@ -7,10 +7,10 @@
       readonly
       [value]="selectedValue"
       autocomplete="off"
-      (click)="OnShowDropDown()"
-      (blur)="OnShowDropDown()"
+      (click)="ToggleDropDown()"
+      (blur)="onTouched()"
     />
-    <span [class]="arrowClass">
+    <span [class]="arrowClass" (click)="onDropMenuIconClick($event)">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
@@ -29,7 +29,7 @@
   </div>
 
   <dui-dropdown [reference]="dropreference" #dropdownComp>
-      <div class="{{optionsClass}}">
+      <div class="{{optionContainer}}">
          <ng-content select="dui-options"></ng-content>
       </div>
       </dui-dropdown>

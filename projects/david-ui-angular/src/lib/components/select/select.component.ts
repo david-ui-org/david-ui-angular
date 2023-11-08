@@ -1,10 +1,13 @@
 import {
   AfterViewChecked,
-  AfterViewInit,
   Component,
+  ContentChildren,
+  ElementRef,
   Input,
   OnInit,
+  QueryList,
   ViewChild,
+  forwardRef,
 } from '@angular/core';
 import {
   DefaultSelectProps,
@@ -26,17 +29,26 @@ import { CdkDropdownComponent } from '../../shared/components/cdk-dropdown/cdk-d
 import { IPropsMapper } from '../../types/generic';
 import selectOutlinedColors from '../../theme/components/select/select-outline-theme/select-outline-colors';
 import selectOutlinedLabelColors from '../../theme/components/select/select-outline-theme/select-outline-label-colors';
+import { OptionsComponent } from './options/options.component';
+import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { DuiSelectService } from '../../services/select/dui-select.service';
 
 @Component({
   selector: 'dui-select',
   templateUrl: './select.component.html',
   styleUrls: ['./select.component.scss'],
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => SelectComponent),
+      multi: true,
+    },
+  ],
 })
 export class SelectComponent
   extends DUITheme
-  implements OnInit, AfterViewChecked
+  implements OnInit, AfterViewChecked, ControlValueAccessor
 {
-  selectedValue: string = '';
   @Input() variant!: variant;
   @Input() size!: size;
   @Input() color!: color;
@@ -51,18 +63,40 @@ export class SelectComponent
   @Input() required!: boolean;
   @Input() name!: string;
 
+  //#region Class Fields
   containerClass: string = '';
   selectClass: string = '';
+  optionContainer: string = '';
   optionsClass: string = '';
   arrowClass: string = '';
   labelClass: string = '';
   asteriskClasses: string = '';
+  //#endregion
+
   value: string = '';
+  selectedValue: string = '';
 
   isOpen: boolean = false;
 
-  constructor() {
+  @Input({ required: true }) optionsList!: string[];
+
+  @ViewChild('input')
+  public input!: ElementRef;
+  @ContentChildren(OptionsComponent)
+  public options!: QueryList<OptionsComponent>;
+
+  public selectedOption!: OptionsComponent;
+
+  @ViewChild(CdkDropdownComponent)
+  public dropdown!: CdkDropdownComponent;
+
+  public onChangeFn = (_: any) => {};
+
+  public onTouchedFn = () => {};
+
+  constructor(private dropdownService: DuiSelectService) {
     super();
+    this.dropdownService.registerSelectInstance(this);
     this.variant = this.variant ?? DefaultSelectProps.variant;
     this.color = this.color ?? DefaultSelectProps.color;
     this.size = this.size ?? DefaultSelectProps.size;
@@ -71,15 +105,30 @@ export class SelectComponent
     this.success = this.success ?? DefaultSelectProps.success;
     this.placeholder = this.placeholder ?? '';
   }
+  writeValue(obj: any): void {
+    this.selectedValue = obj;
+  }
+  registerOnChange(fn: any): void {
+    this.onChangeFn = fn;
+  }
+  registerOnTouched(fn: any): void {
+    this.onTouchedFn = fn;
+  }
+  setDisabledState?(isDisabled: boolean): void {
+    this.disabled = isDisabled;
+  }
 
-  @Input({ required: true }) optionsList!: string[];
+  public onTouched() {
+    this.onTouchedFn();
+  }
 
-  @ViewChild(CdkDropdownComponent)
-  public dropdown!: CdkDropdownComponent;
+  public onChange() {
+    this.onChangeFn(this.selectedValue);
+  }
 
   override getCompiledClassName(): string {
     var classes = '';
-    let state = this.isOpen ? 'open' : 'close';
+    let state = this.getSelectState();
 
     // Select style
     classes += ConvertToClassName(ObjectToStr(SelectTheme['select']));
@@ -104,7 +153,7 @@ export class SelectComponent
 
   getlabelCompiledClassName(): string {
     var classes = '';
-    let state = this.isOpen ? 'open' : 'close';
+    let state = this.getSelectState();
 
     // get label class
     classes += ConvertToClassName(ObjectToStr(SelectTheme['label']));
@@ -130,15 +179,39 @@ export class SelectComponent
     return ConvertToClassName(classes);
   }
 
+  /**
+   * Method To determine the current state of
+   * Select Component
+   * @returns state {open,withValue,close}
+   */
+  getSelectState(): string {
+    let currentState = 'close';
+    if (this.isOpen) {
+      currentState = 'open';
+    } else if (!this.isOpen && this.selectedValue) {
+      currentState = 'withValue';
+    }
+    return currentState;
+  }
+
   ngOnInit(): void {
     this.containerClass = ConvertToClassName(
       ObjectToStr(SelectTheme['container'])
+    );
+    this.optionContainer = ConvertToClassName(
+      ObjectToStr(SelectTheme['option-container'])
     );
     var optionBase = SelectTheme['option'] as IPropsMapper<any>;
     this.optionsClass = ConvertToClassName(ObjectToStr(optionBase['initial']));
     this.arrowClass = this.getBaseArrowClass();
     this.selectClass = this.getCompiledClassName();
     this.labelClass = this.getlabelCompiledClassName();
+    this.dropdownService.afterClosed.subscribe((value) => {
+      if (value != undefined) {
+        this.isOpen =value;
+        this.setClasses();
+      }
+    });
   }
 
   getActiveArrowClass(): string {
@@ -155,21 +228,50 @@ export class SelectComponent
   OnModelChange(val: string) {
     console.log('Select value is :', val);
   }
+  public hideDropdown() {
+    this.dropdown.hide();
+  }
+  public onDropMenuIconClick(event: UIEvent) {
+    event.stopPropagation();
+    setTimeout(() => {
+      this.input.nativeElement.focus();
+      this.input.nativeElement.click();
+    }, 10);
+  }
 
-  OnShowDropDown() {
-    this.isOpen = !this.isOpen;
+  setClasses() {
     if (this.isOpen) {
-      this.dropdown.show();
       this.arrowClass += this.getActiveArrowClass();
     } else {
-      this.dropdown.hide();
-      this.arrowClass = this.getBaseArrowClass()
+      this.arrowClass = this.getBaseArrowClass();
     }
     this.selectClass = this.getCompiledClassName();
     this.labelClass = this.getlabelCompiledClassName();
   }
 
+  ToggleDropDown() {
+    this.isOpen = !this.isOpen;
+    if (this.isOpen) {
+      this.dropdown.show();
+    } else {
+      this.dropdown.hide();
+    }
+    this.setClasses();
+  }
+  public selectOption(option: OptionsComponent) {
+    //this.selected = option.key;
+    this.selectedOption = option;
+    this.selectedValue = option.value;
+    console.log('Selected', this.selectedValue);
+    this.ToggleDropDown();
+    this.input.nativeElement.focus();
+    this.onChange();
+  }
+
   ngAfterViewChecked() {
     this.isOpen = this.dropdown.showing;
+  }
+  ngOnDestroy() {
+    this.dropdownService.afterClosed.unsubscribe();
   }
 }

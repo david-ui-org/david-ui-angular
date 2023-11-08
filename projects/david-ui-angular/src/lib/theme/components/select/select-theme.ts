@@ -50,7 +50,7 @@ export const SelectTheme: IPropsMapper<object> = {
     fontWeight: 'font-normal',
     transition: 'transition-all',
   },
-  menu: {
+  "option-container": {
     width: 'w-full',
     maxHeight: 'max-h-96',
     bg: 'bg-white',
@@ -74,15 +74,12 @@ export const SelectTheme: IPropsMapper<object> = {
       borderRadius: 'rounded-md',
       lightHeight: 'leading-tight',
       cursor: 'cursor-pointer',
-      userSelect: 'select-none',
-      background: 'bg-gray-50',
-      outline: 'outline outline-0',
-      transition: 'transition-all',
-    },
-    value: {
       background: 'hover:bg-blue-gray-50 focus:bg-blue-gray-50',
       opacity: 'hover:bg-opacity-80 focus:bg-opacity-80',
       color: 'hover:text-blue-gray-900 focus:text-blue-gray-900',
+      userSelect: 'select-none',
+      outline: 'outline outline-0',
+      transition: 'transition-all',
     },
     active: {
       bg: 'bg-blue-gray-50 bg-opacity-80',
