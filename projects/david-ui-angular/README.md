@@ -1,4 +1,4 @@
-# David UI Angular
+# David UI Angular - Beta Version
 
 ### _The right choice for fast and easy UI development using tailwind css_
 
