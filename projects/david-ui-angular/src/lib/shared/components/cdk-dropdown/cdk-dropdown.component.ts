@@ -2,6 +2,7 @@ import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
 import { CdkPortal, TemplatePortal } from '@angular/cdk/portal';
 import { Component, ContentChild, HostListener, Input, ViewChild } from '@angular/core';
 import { OptionsComponent } from '../../../components/select/options/options.component';
+import { DuiSelectService } from '../../../services/select/dui-select.service';
 
 @Component({
   selector: 'dui-dropdown',
@@ -25,15 +26,14 @@ export class CdkDropdownComponent {
 
   public showing = false;
 
-  constructor(protected overlay: Overlay) {
+  constructor(protected overlay: Overlay,private dropdownService: DuiSelectService) {
   }
 
   public show() : boolean{
    this.overlayRef = this.overlay.create(this.getOverlayConfig());
     this.overlayRef.attach(this.contentTemplate);
-    console.log(this.contentTemplate);
     this.syncWidth();
-    //this.overlayRef.backdropClick().subscribe(() => this.hide());
+    this.overlayRef.backdropClick().subscribe(() => this.hide());
     this.showing = true;
 
     return this.showing;
@@ -42,6 +42,7 @@ export class CdkDropdownComponent {
   public hide() {
     this.overlayRef.detach();
     this.showing = false;
+    this.dropdownService.shouldClosed(this.showing);
   }
 
   @HostListener('window:resize')
@@ -50,7 +51,6 @@ export class CdkDropdownComponent {
   }
 
   protected getOverlayConfig(): OverlayConfig {
-    console.log("reference",this.reference)
     const positionStrategy = this.overlay.position()
       .flexibleConnectedTo(this.reference)
       .withPush(false)

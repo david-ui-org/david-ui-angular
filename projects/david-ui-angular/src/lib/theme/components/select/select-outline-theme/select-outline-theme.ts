@@ -193,22 +193,22 @@ export const SelectOutlinedTheme: IPropsMapper<object> = {
       },
     },
   },
-//   withValue: {
-//     select: {
-//       borderWidth: 'border',
-//       borderColor: 'border-t-transparent',
-//     },
-//     label: {
-//       fontSize: 'text-[11px]',
-//       disabled: 'peer-disabled:text-transparent',
-//       before: {
-//         bt: 'before:border-t',
-//         bl: 'before:border-l',
-//       },
-//       after: {
-//         bt: 'after:border-t',
-//         br: 'after:border-r',
-//       },
-//     },
-//   },
+  withValue: {
+    select: {
+      borderWidth: 'border',
+      borderColor: 'border-t-transparent',
+    },
+    label: {
+      fontSize: 'text-[11px]',
+      disabled: 'peer-disabled:text-transparent',
+      before: {
+        bt: 'before:border-t',
+        bl: 'before:border-l',
+      },
+      after: {
+        bt: 'after:border-t',
+        br: 'after:border-r',
+      },
+    },
+  },
 };
