@@ -26,6 +26,7 @@ import { TypographyComponent } from './features/typography/typography.component'
 import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
+import { ChipComponent } from './features/chip/chip.component';
 
 
 
@@ -51,6 +52,7 @@ import { FontsComponent } from './pages/fonts/fonts.component';
     SelectComponent,
     TextareaComponent,
     TypographyComponent,
+    ChipComponent,
     ThemingComponent,
     ColorsComponent,
     FontsComponent
@@ -74,7 +76,8 @@ import { FontsComponent } from './pages/fonts/fonts.component';
     RadioComponent,
     SelectComponent,
     TextareaComponent,
-    TypographyComponent
+    TypographyComponent,
+    ChipComponent
   ]
 })
 export class DocsModule { }

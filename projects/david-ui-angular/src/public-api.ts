@@ -22,6 +22,7 @@ export * from './lib/components/textarea/textarea.component';
 export * from './lib/components/input/input.component';
 export * from './lib/components/select/select.component';
 export * from './lib/components/select/options/options.component';
+export * from './lib/components/chip/chip.component';
 
 //#endregion
 
@@ -44,5 +45,6 @@ export * from './lib/components/textarea/textarea.module';
 export * from './lib/components/input/input.module';
 export * from './lib/components/select/select.module';
 export * from './lib/components/alert/alert.module';
+export * from './lib/components/chip/chip.module';
 //#endregion
 
