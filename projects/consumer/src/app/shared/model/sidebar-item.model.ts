@@ -90,6 +90,7 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/accordion',
         scrollSpyElements: [
           { id: 'accordion-main', label: 'Accordion Declaration' },
+          { id: 'accordion-icon', label: 'Accordion With Icon' },
         ],
         isActive: false
       },
