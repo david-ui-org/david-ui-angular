@@ -10,6 +10,7 @@ import {
   Component,
   ContentChild,
   Input,
+  OnInit,
 } from '@angular/core';
 import { AccordionHeaderComponent } from '../accordion-header/accordion-header.component';
 
@@ -38,8 +39,9 @@ import { AccordionHeaderComponent } from '../accordion-header/accordion-header.c
     ]),
   ],
 })
-export class AccordionExpansionComponent implements AfterContentInit {
+export class AccordionExpansionComponent implements OnInit, AfterContentInit {
   @Input() isDisable: boolean = false;
+  @Input() alwaysOpen: boolean = false;
   showBody!: boolean;
 
   @ContentChild(AccordionHeaderComponent)
@@ -47,15 +49,20 @@ export class AccordionExpansionComponent implements AfterContentInit {
 
   toggleBody() {
     this.showBody = !this.showBody;
-    if (this.showBody) {
-      this.accordionHeader.IconClass =
-        'rotate-180 h-5 w-5 transition-transform';
-    } else {
-      this.accordionHeader.IconClass = 'h-5 w-5 transition-transform';
-    }
+    this.setIconClass();
+  }
+
+  ngOnInit(): void {
+    this.showBody = this.alwaysOpen;
   }
 
   ngAfterContentInit(): void {
-    this.accordionHeader.IconClass = 'h-5 w-5 transition-transform';
+    this.setIconClass();
+  }
+
+  setIconClass(): void {
+    this.accordionHeader.IconClass = this.showBody
+      ? 'rotate-180 h-5 w-5 transition-transform'
+      : 'h-5 w-5 transition-transform';
   }
 }

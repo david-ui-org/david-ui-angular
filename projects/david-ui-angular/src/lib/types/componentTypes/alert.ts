@@ -21,6 +21,6 @@ export const DefaultAlert: Alert = {
     variant: 'filled',
     color: 'blue',
     className: '',
-    open: false,
+    open: true,
     isDismissible: false
 };

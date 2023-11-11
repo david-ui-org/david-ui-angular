@@ -1,39 +1,46 @@
 <div
   *ngIf="open"
-  class="font-regular relative block w-full rounded-lg bg-blue-500 p-4 text-base leading-5 text-white opacity-100"
+  [ngClass]="alertClass"
 >
   <div class="flex justify-between items-center">
-    <ng-content> </ng-content>
-    <div *ngIf="IsDismissible" (click)="closeAlert()" class="!relative rounded-lg cursor-pointer hover:scale-105 hover:bg-white/10 text-center font-medium font-sans content-center align-middle">
-      <span >
+    <div class="flex shrink-0">
+      <ng-content select="dui-icon"></ng-content>
+      <div class="mr-10" [ngClass]="{'ml-2': hasCustomIcon}" >
+        <ng-content></ng-content>
 
-        <svg
-          width="30px"
-          height="22px"
-          viewBox="0 0 1000 900"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#000000"
-          stroke="#000000"
-        >
-        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke="#CCCCCC"
-            stroke-width="6.144"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              fill="#ffffff"
-              d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
-            ></path>
-          </g>
-        </svg>
-      </span>
-
+      </div>
     </div>
-
- 
+    <div *ngIf="IsDismissible; then icon"></div>
   </div>
 </div>
+
+<ng-template #icon>
+  <dui-icon
+    class="!relative rounded-lg cursor-pointer py-1 hover:scale-105 hover:bg-white/10 text-center font-medium font-sans content-center align-middle"
+    (click)="closeAlert()"
+  >
+    <svg
+      width="30px"
+      height="22px"
+      viewBox="0 0 1000 900"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="#000000"
+      stroke="#000000"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke="#CCCCCC"
+        stroke-width="6.144"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          fill="#ffffff"
+          d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+        ></path>
+      </g>
+    </svg>
+  </dui-icon>
+</ng-template>
