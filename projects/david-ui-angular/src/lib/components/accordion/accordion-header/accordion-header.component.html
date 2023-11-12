@@ -1,8 +1,39 @@
-
 <div class="">
-    <div class="flex flex-row justify-between my-1">
-        <h2 class="px-2 py-1 font-bold text-xl text-blue-gray-700 select-none hover:text-blue-gray-900">{{title}}</h2>
-        
-    </div>
-    <hr class="my-2 mx-1 border-t-1 border-gray-300">
+  <div class="flex flex-row items-center justify-between my-1">
+    <h2
+      class="px-2 py-1 font-bold text-xl text-blue-gray-700 select-none hover:text-blue-gray-900"
+    >
+      {{ title }}
+    </h2>
+    <ng-container  *ngIf="(showIcon && !hasCustomIcon); then Icon else customIcon">
+
+    </ng-container>
+    <ng-content select="dui-icon"></ng-content>
+ 
+  </div>
+  <hr class="my-2 mx-1 border-t-1 border-gray-300" />
 </div>
+
+
+<ng-template #Icon>
+    <dui-icon class="my-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="{2}"
+          stroke="currentColor"
+          class="{{IconClass}}"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+      </dui-icon>
+</ng-template>
+
+<ng-template #customIcon>
+
+</ng-template>

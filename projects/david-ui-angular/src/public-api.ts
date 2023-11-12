@@ -25,6 +25,15 @@ export * from './lib/components/select/options/options.component';
 
 //#endregion
 
+//#region Shared Components
+export * from './lib/shared/components/dui-icon/dui-icon.component';
+
+//#endregion
+
+
+//# Directives
+
+//#endregion
 
 //# Services
 export * from './lib/services/david-ui-angular.service';

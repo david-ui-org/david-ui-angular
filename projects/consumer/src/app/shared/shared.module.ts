@@ -4,7 +4,7 @@ import { HighlightModule,HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 
 import { CodePreviewerComponent } from './components/code-previewer/code-previewer.component';
 import { ClipboardModule } from '@angular/cdk/clipboard';
-import { DUIAccordion, DUIAlert, DUIAvatar, DUIButton, DUICheckbox, DUIDialog, DUIInput, DUIRadio, DUISelect, DUITextarea, DUITypography, } from 'projects/david-ui-angular/src/public-api';
+import { DUIAccordion, DUIAlert, DUIAvatar, DUIButton, DUICheckbox, DUIDialog, DUIIcon, DUIInput, DUIRadio, DUISelect, DUITextarea, DUITypography, } from 'projects/david-ui-angular/src/public-api';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from '../docs/footer/footer.component';
 import { FeaturePreviewComponent } from './components/feature-preview/feature-preview.component';
@@ -38,6 +38,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUITextarea,
     DUIInput,
     DUISelect,
+    DUIIcon
   ],
   exports:[
     CodePreviewerComponent,
@@ -61,6 +62,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUITextarea,
     DUIInput,
     DUISelect,
+    DUIIcon,
     FeaturePreviewComponent,
   ],
 

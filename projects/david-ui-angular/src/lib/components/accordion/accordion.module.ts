@@ -4,6 +4,7 @@ import { AccordionComponent } from './accordion.component';
 import { AccordionBodyComponent } from './accordion-body/accordion-body.component';
 import { AccordionHeaderComponent } from './accordion-header/accordion-header.component';
 import { AccordionExpansionComponent } from './accordion-expansion/accordion-expansion.component';
+import { DUIIcon } from '../../shared/components/dui-icon/dui-icon.component';
 
 
 
@@ -12,17 +13,17 @@ import { AccordionExpansionComponent } from './accordion-expansion/accordion-exp
     AccordionComponent,
     AccordionHeaderComponent,
     AccordionBodyComponent,
-    AccordionExpansionComponent
+    AccordionExpansionComponent,
   ],
   imports: [
-    CommonModule
-    
+    CommonModule,
+    DUIIcon
   ],
   exports: [
     AccordionComponent,
     AccordionHeaderComponent,
     AccordionBodyComponent,
-    AccordionExpansionComponent
+    AccordionExpansionComponent,
   ]
 })
 export class DUIAccordion { }
