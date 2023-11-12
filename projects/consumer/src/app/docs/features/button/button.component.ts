@@ -21,6 +21,13 @@ export class ButtonComponent {
   <dui-button size="md" color="gray"> Button </dui-button>
   `;
 
+  buttonBlockCode = 
+  ` <!-- Use DUI Button in html file -->
+  <dui-button size="md" class="w-full" [fullWidth]="true" color="gray">
+  Button
+  </dui-button>
+  `;
+
   outlinedButton = 
   `<!-- Use DUI Button in html file -->
   <dui-button size="md" variant="filled" color="gray">Filled</dui-button>

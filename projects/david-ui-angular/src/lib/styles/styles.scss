@@ -3,3 +3,22 @@
 @tailwind utilities;
 // Your custom styles here
 
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    transform: scale(0);
+    animation: ripple-animation 1s linear;
+    pointer-events: none;
+  }
+  
+  @keyframes ripple-animation {
+    from {
+        transform: scale(0);
+        opacity : 1;
+    }
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }

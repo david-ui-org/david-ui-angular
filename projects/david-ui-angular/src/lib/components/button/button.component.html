@@ -1,5 +1,17 @@
-<button
-  class="{{buttonClass}}"
->
-<ng-content></ng-content>
-</button>
+<ng-container *ngIf="ripple; then ripple; else withoutRipple"> </ng-container>
+
+<ng-template #ripple>
+  <button dui-ripple [ripple-theme]="this.variant == 'outlined' || this.variant == 'text' || this.color == 'white' ? 'dark': 'light'" class="{{ buttonClass }}">
+    <ng-container [ngTemplateOutlet]="content"></ng-container>
+  </button>
+</ng-template>
+
+<ng-template #withoutRipple>
+  <button class="{{ buttonClass }}">
+    <ng-container [ngTemplateOutlet]="content"></ng-container>
+  </button>
+</ng-template>
+
+<ng-template #content>
+  <ng-content></ng-content>
+</ng-template>

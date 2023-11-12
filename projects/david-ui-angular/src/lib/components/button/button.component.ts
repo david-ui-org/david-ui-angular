@@ -27,6 +27,7 @@ export class ButtonComponent extends DUITheme implements OnInit {
   @Input() fullWidth!: fullWidth;
   @Input() className!: className;
   @Input() rounded!: boolean;
+  @Input() ripple!: boolean;
 
   public buttonClass!: string;
 
@@ -35,6 +36,7 @@ export class ButtonComponent extends DUITheme implements OnInit {
     this.variant = this.variant ?? DefaultButton.variant;
     this.size = this.size ?? DefaultButton.size;
     this.color = this.color ?? DefaultButton.color;
+    this.ripple = this.ripple ?? DefaultButton.ripple
   }
 
   ngOnInit(): void {
