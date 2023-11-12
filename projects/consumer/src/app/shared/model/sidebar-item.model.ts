@@ -124,6 +124,7 @@ export const SidebarData: SidebarItem[] = [
           { id: 'button-variant', label: 'Button Variant' },
           { id: 'button-size', label: 'Button Sizes' },
           { id: 'button-colors', label: 'Button Colors' },
+          { id: 'button-block', label: 'Block Level Button' },
         ],
         isActive: true
       },
