@@ -124,7 +124,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'button-variant', label: 'Button Variant' },
           { id: 'button-size', label: 'Button Sizes' },
           { id: 'button-colors', label: 'Button Colors' },
+          { id: 'button-icon', label: 'Button with Icons' },
           { id: 'button-block', label: 'Block Level Button' },
+          { id: 'button-rounded', label: 'Rounded Button' },
+          { id: 'button-ripple', label: 'Buttons Ripple Effect' },
         ],
         isActive: true
       },

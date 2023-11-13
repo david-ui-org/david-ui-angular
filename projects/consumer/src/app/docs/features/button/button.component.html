@@ -62,6 +62,8 @@
     </feature-preview>
     <code-previewer [Code]="buttonCode"> </code-previewer>
   </div>
+  <!-- Button Variants -->
+
   <div class="mt-6">
     <div id="button-variant" class="group flex items-center">
       <a
@@ -110,6 +112,7 @@
     <code-previewer [Code]="outlinedButton"> </code-previewer>
   </div>
 
+  <!-- Button Sizes -->
   <div class="mt-6">
     <div id="button-size" class="group flex items-center">
       <a
@@ -199,6 +202,121 @@
     <code-previewer [Code]="butoonColorCode"> </code-previewer>
   </div>
 
+  <!-- Button with Icon -->
+  <div class="mt-6">
+    <div id="button-icon" class="group flex items-center">
+      <a
+        href="#button-icon"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Button with Icons
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can also use any Icons inside the  <code
+      class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+      >Button</code> component.
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex items-center gap-4">
+        <dui-button size="md" className="flex items-center gap-3" color="gray">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth=2
+          stroke="currentColor"
+          class="h-5 w-5"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+          />
+        </svg>
+        Add to Bookmark
+        </dui-button>
+        <dui-button size="md" className="flex items-center gap-3" color="gray" variant="gradient">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth=2
+            stroke="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z"
+            />
+          </svg>
+          Upload Files
+        </dui-button>
+        <dui-button size="md" className="flex items-center gap-3" color="gray" variant="outlined">
+          Refresh
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth=2
+            stroke="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"
+            />
+          </svg>
+        </dui-button>
+  
+        <dui-button size="md" className="flex items-center gap-2" color="gray" variant="text">
+          Read More
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth=2
+            stroke="currentColor"
+            class="h-5 w-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </dui-button>
+      </div>
+    
+    </feature-preview>
+    <code-previewer [Code]="iconButtons"> </code-previewer>
+  </div>
+
   <!-- Block Level button -->
   <div class="mt-6">
     <div id="button-block" class="group flex items-center">
@@ -256,4 +374,88 @@
     </feature-preview>
     <code-previewer [Code]="buttonBlockCode"> </code-previewer>
   </div>
+
+  <!-- Button Rounded -->
+  <div class="mt-6">
+    <div id="button-rounded" class="group flex items-center">
+      <a
+        href="#button-rounded"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Rounded Buttons
+      </h2>
+    </div>
+    <p class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">You can use <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">rounded</code> attribute of <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Button</code> component to create rounded buttons.</p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-button size="md" variant="filled" color="gray" [rounded]="true" >Filled</dui-button>
+      <dui-button size="md" variant="outlined" color="gray" [rounded]="true"
+        >Outlined</dui-button
+      >
+      <dui-button size="md" variant="text" color="gray" [rounded]="true">Text</dui-button>
+      <dui-button size="md" variant="gradient" color="gray" [rounded]="true"
+        >Gradient</dui-button
+      >
+    </feature-preview>
+    <code-previewer [Code]="roundedButtons"> </code-previewer>
+  </div>
+
+  <!-- Buttons Ripple Effect -->
+  <div class="mt-6">
+    <div id="button-ripple" class="group flex items-center">
+      <a
+        href="#button-ripple"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+      Buttons Ripple Effect 
+      </h2>
+    </div>
+    <p class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">You can turn on/off the ripple effect for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Button</code> Component using <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">ripple</code> attribute.</p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-button  color="gray" [ripple]="true" >RIPPLE EFFECT ON</dui-button>
+      <dui-button  color="gray"  [ripple]="false"  >RIPPLE EFFECT OFF</dui-button>
+     
+    </feature-preview>
+    <code-previewer [Code]="rippleEffectButton"> </code-previewer>
+  </div>
+
 </div>
