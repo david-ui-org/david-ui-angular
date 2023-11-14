@@ -26,6 +26,7 @@ import { TypographyComponent } from './features/typography/typography.component'
 import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
+import { CollapseComponent } from './features/collapse/collapse.component';
 
 
 
@@ -53,7 +54,8 @@ import { FontsComponent } from './pages/fonts/fonts.component';
     TypographyComponent,
     ThemingComponent,
     ColorsComponent,
-    FontsComponent
+    FontsComponent,
+    CollapseComponent
   ],
   imports: [
     CommonModule,
@@ -74,7 +76,8 @@ import { FontsComponent } from './pages/fonts/fonts.component';
     RadioComponent,
     SelectComponent,
     TextareaComponent,
-    TypographyComponent
+    TypographyComponent,
+    CollapseComponent
   ]
 })
 export class DocsModule { }
