@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./collapse.component.scss']
 })
 export class CollapseComponent {
-
+  open : boolean = false;
+  toggleCollapse(){
+    this.open = !this.open;
+  }
 }

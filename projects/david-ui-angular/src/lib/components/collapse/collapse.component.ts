@@ -20,15 +20,12 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         'closed',
         style({
           height: '0',
-          overflow: 'hidden',
-          opacity: '0',
-          visibility: 'hidden',
         })
       ),
       state(
         'open',
         style({
-          overflow: 'hidden',
+          height: 'auto'
         })
       ),
       transition('open <=> closed', animate('200ms')),

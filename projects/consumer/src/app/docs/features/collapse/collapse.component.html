@@ -1,3 +1,5 @@
-<dui-collapse [open]="true">
-<dui-typography> Hi there collapse component</dui-typography>
+<dui-button (click)="toggleCollapse()">Open Collapse</dui-button>
+
+<dui-collapse [open]="open">
+  <div class="shadow-md w-auto mt-4">Hi there collapse component</div>
 </dui-collapse>
