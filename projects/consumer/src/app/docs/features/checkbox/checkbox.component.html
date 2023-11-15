@@ -138,6 +138,105 @@
     <code-previewer [Code]="checkboxLabel"> </code-previewer>
   </div>
 
+  <!-- Ripple Effect Checkbox -->
+  <div class="mt-6">
+    <div id="checkbox-ripple" class="group flex items-center">
+      <a
+        href="#checkbox-ripple"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+      Checkbox Ripple Effect
+      </h2>
+    </div>
+    <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      >
+      You can turn on/off the ripple effect for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Checkbox</code> Component using <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">ripple</code> attribute.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview >
+      <dui-checkbox color="gray" label="Ripple Effect On" [isChecked]="true" [ripple]="true"></dui-checkbox>
+      <dui-checkbox color="gray" label="Ripple Effect Off" [isChecked]="true" [ripple]="false"></dui-checkbox>
+    </feature-preview>
+    <code-previewer [Code]="rippleCheckbox"> </code-previewer>
+  </div>
+
+  <!-- Checkbox Custom Icon -->
+  <div class="mt-6">
+    <div id="checkbox-icon" class="group flex items-center">
+      <a
+        href="#checkbox-icon"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+      Checkbox Custom Icon
+      </h2>
+    </div>
+    <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      >
+      You can add custom icon for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Checkbox</code> Component when it's checked by using the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">dui-icon</code> element inside  <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">dui-checkbox</code> .
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview >
+      <dui-checkbox color="gray" label="Favourite" [isChecked]="true" [useCustomIcon]="true"
+      >
+      <dui-icon>
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-3 w-3"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+          clipRule="evenodd"
+        />
+      </svg>
+      </dui-icon>
+
+    </dui-checkbox>
+    </feature-preview>
+    <code-previewer [Code]="customIconCheckbox"> </code-previewer>
+  </div>
   <div class="mt-6">
     <div id="checkbox-disabled" class="group flex items-center">
       <a

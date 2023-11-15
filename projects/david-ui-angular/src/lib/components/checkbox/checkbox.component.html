@@ -1,20 +1,36 @@
-<div class="inline-flex items-center ">
-  <label class="{{ containerClass }}">
-    <input
-      type="checkbox"
-      disabled="{{ disabled }}"
-      [(ngModel)]="isChecked"
-      (ngModelChange)="OnModelChange($event)"
-      class="{{ checkboxClass }}"
-    />
-    <span class="{{ iconClass }}">
-      <div *ngIf="icon != undefined; else iconTemplate">
-        {{ icon }}
-      </div>
-    </span>
+<div class="inline-flex items-center">
+  <ng-container *ngIf="ripple; then withRipple; else withoutRipple">
+  </ng-container>
+</div>
+
+<ng-template #withRipple>
+  <label class="{{ containerClass }}" dui-ripple>
+    <ng-container [ngTemplateOutlet]="checkboxContent"></ng-container>
   </label>
   <label *ngIf="label !== ''" class="{{ labelClass }}">{{ label }}</label>
-</div>
+</ng-template>
+
+<ng-template #withoutRipple>
+  <label class="{{ containerClass }}">
+    <ng-container [ngTemplateOutlet]="checkboxContent"></ng-container>
+  </label>
+  <label *ngIf="label !== ''" class="{{ labelClass }}">{{ label }}</label>
+</ng-template>
+
+<ng-template #checkboxContent>
+  <input
+    type="checkbox"
+    disabled="{{ disabled }}"
+    [(ngModel)]="isChecked"
+    (ngModelChange)="OnModelChange($event)"
+    class="{{ checkboxClass }}"
+  />
+  <span class="{{ iconClass }}">
+    <div *ngIf="useCustomIcon; else iconTemplate">
+      <ng-content select="dui-icon"></ng-content>
+    </div>
+  </span>
+</ng-template>
 
 <ng-template #iconTemplate>
   <svg

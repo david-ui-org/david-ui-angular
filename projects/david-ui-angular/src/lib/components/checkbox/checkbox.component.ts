@@ -6,7 +6,6 @@ import {
   DefaultCheckBox,
   className,
   color,
-  icon,
   label,
 } from '../../types/componentTypes/checkbox';
 import { DUITheme } from '../../theme/theme-base';
@@ -37,7 +36,7 @@ export class CheckboxComponent
   @Input() className!: className;
   @Input() disabled!: boolean;
   @Input() ripple!: boolean;
-  @Input() icon!: icon;
+  @Input() useCustomIcon!: boolean;
   @Input() label?: label;
   @Input() isChecked: boolean = false;
 
@@ -56,7 +55,7 @@ export class CheckboxComponent
     this.disabled = this.disabled ?? DefaultCheckBox.disabled;
     this.label = this.label ?? DefaultCheckBox.label;
     this.ripple = this.ripple ?? DefaultCheckBox.ripple;
-    this.icon = this.icon ?? DefaultCheckBox.icon;
+    this.useCustomIcon = this.useCustomIcon ?? DefaultCheckBox.useCustomIcon;
   }
   writeValue(obj: any): void {
     this.isChecked = obj;

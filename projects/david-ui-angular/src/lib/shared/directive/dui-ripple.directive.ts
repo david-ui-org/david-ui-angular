@@ -6,7 +6,7 @@ import { Directive, ElementRef, HostListener, Input, Renderer2 } from '@angular/
 })
 export class DuiRipple {
 
-  @Input({alias: 'ripple-theme'}) theme! : 'dark' | 'light';
+  @Input({alias: 'ripple-theme'}) theme : 'dark' | 'light' = 'dark';
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 

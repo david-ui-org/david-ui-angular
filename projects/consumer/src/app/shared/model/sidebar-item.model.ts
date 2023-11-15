@@ -138,6 +138,8 @@ export const SidebarData: SidebarItem[] = [
           { id: 'checkbox-main', label: 'Checkbox' },
           { id: 'checkbox-colors', label: 'Checkbox Colors' },
           { id: 'checkbox-label', label: 'Checkbox Label' },
+          { id: 'checkbox-ripple', label: 'Checkbox Ripple Effect' },
+          { id: 'checkbox-icon', label: 'Checkbox Custom Icon' },
           { id: 'checkbox-disabled', label: 'Checkbox Disabled' },
         ],
         isActive: false
