@@ -143,6 +143,15 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Chip',
+        route: '/docs/chip',
+        scrollSpyElements: [
+          { id: 'chip-main', label: 'Chip' },
+          { id: 'chip-colors', label: 'Chip Colors' },
+        ],
+        isActive: false
+      },
+      {
         name: 'Dialog',
         route: '/docs/dialog',
         scrollSpyElements: [

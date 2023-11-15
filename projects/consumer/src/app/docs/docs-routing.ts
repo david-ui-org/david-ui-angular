@@ -18,6 +18,7 @@ import { AboutAngularComponent } from './pages/about-angular/about-angular.compo
 import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
+import { ChipComponent } from './features/chip/chip.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -340,6 +341,23 @@ export const routes: Routes = [
             {
               name: "description",
               content: 'Use our Tailwind CSS Typography example built for Angular to maintain consistency in the display and styling of text. Customize the component or add it directly to your project.'
+            },
+            {
+              name: "title",
+              content: 'Tailwind CSS Typography with Angular - David UI'
+            }
+          ]
+        }
+      },
+      {
+        path: 'chip',
+        component: ChipComponent,
+        data: {
+          title: 'Tailwind CSS Chip with Angular - David UI',
+          meta: [
+            {
+              name: "description",
+              content: 'Material Tailwind is a components library that features multiple Angular components, all written with Tailwind CSS classes and Material Design guidelines.'
             },
             {
               name: "title",
