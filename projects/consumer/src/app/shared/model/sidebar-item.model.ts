@@ -90,6 +90,7 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/accordion',
         scrollSpyElements: [
           { id: 'accordion-main', label: 'Accordion Declaration' },
+          { id: 'accordion-icon', label: 'Accordion With Icon' },
         ],
         isActive: false
       },
@@ -99,7 +100,10 @@ export const SidebarData: SidebarItem[] = [
         scrollSpyElements: [
           { id: 'alert-main', label: 'Alert' },
           { id: 'alert-primary', label: 'Alert Primary' },
+          { id: 'alert-variants', label: 'Alert Variants' },
+          { id: 'alert-color', label: 'Alert Colors' },
           { id: 'alert-dismissible', label: 'Alert Dismissible' },
+          { id: 'alert-icon', label: 'Alert Custom Icon' },
         ],
         isActive: false
       },
@@ -120,6 +124,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'button-variant', label: 'Button Variant' },
           { id: 'button-size', label: 'Button Sizes' },
           { id: 'button-colors', label: 'Button Colors' },
+          { id: 'button-icon', label: 'Button with Icons' },
+          { id: 'button-block', label: 'Block Level Button' },
+          { id: 'button-rounded', label: 'Rounded Button' },
+          { id: 'button-ripple', label: 'Buttons Ripple Effect' },
         ],
         isActive: true
       },

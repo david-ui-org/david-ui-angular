@@ -29,7 +29,7 @@ export const DefaultButton: Button = {
   size: 'md',
   color: 'blue',
   fullWidth: false,
-  ripple: false,
+  ripple: true,
   className: '',
 };
 

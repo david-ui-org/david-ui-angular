@@ -19,7 +19,6 @@ export class DuiSelectService {
   }
 
   public shouldClosed(show: boolean) {
-    debugger;
     this.afterClosed.next(show)
   }
 }
