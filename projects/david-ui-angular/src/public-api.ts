@@ -23,6 +23,7 @@ export * from './lib/components/input/input.component';
 export * from './lib/components/select/select.component';
 export * from './lib/components/select/options/options.component';
 export * from './lib/components/chip/chip.component';
+export * from './lib/components/switch/switch.component';
 
 //#endregion
 
@@ -55,5 +56,6 @@ export * from './lib/components/input/input.module';
 export * from './lib/components/select/select.module';
 export * from './lib/components/alert/alert.module';
 export * from './lib/components/chip/chip.module';
+export * from './lib/components/switch/switch.module';
 //#endregion
 

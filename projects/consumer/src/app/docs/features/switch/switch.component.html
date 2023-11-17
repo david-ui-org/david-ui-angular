@@ -1,0 +1,226 @@
+<div class="mb-12">
+    <div id="switch-main" class="group flex items-center">
+      <a
+        href="#switch-main"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h1
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Switch with Angular
+    </h1>
+    </div>
+      <p
+        class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      >
+        Use our Tailwind CSS Switch built with Angular to allow multi-option selections on your website or applications.
+      </p>
+    
+      <p
+        class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      >
+        Switches play an important role in enabling users to select multiple options from a list. They should provide immediate feedback upon selection and be spaced adequately for ease of interaction.
+      </p>
+      <p
+        class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      >
+        Check out our Angular Switch example designed with Tailwind CSS. It's ideal for any application that requires multi-select capabilities.
+      </p>
+    
+      <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      >
+        You first need to import the DUISwitch Module into your application module
+      </p>
+      <code-previewer [Code]="importCode"> </code-previewer>
+      <div class="code-snippet-area mt-10">
+        <feature-preview>
+          <dui-switch color="gray"  ></dui-switch>
+        </feature-preview>
+        <code-previewer [Code]="switchCode"> </code-previewer>
+      </div>
+  
+  
+    <div class="mt-6">
+      <div id="switch-colors" class="group flex items-center">
+        <a
+          href="#switch-colors"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <h2
+          class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+        >
+        Switch Colors
+        </h2>
+      </div>
+      <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+        >
+        You can use different colors of the Switch component by manipulating the color attribute of the component    
+      </p>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <feature-preview >
+        <dui-switch color="gray" [isChecked]="true"></dui-switch>
+        <dui-switch color="red"  [isChecked]="true"></dui-switch>
+        <dui-switch color="purple" [isChecked]="true"></dui-switch>
+      </feature-preview>
+      <code-previewer [Code]="switchColorCode"> </code-previewer>
+    </div>
+  
+    <div class="mt-6">
+      <div id="switch-label" class="group flex items-center">
+        <a
+          href="#switch-label"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <h2
+          class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+        >
+        Checkbox Label
+        </h2>
+      </div>
+      <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+        >
+        You can add a label for the Checkbox component by passing the label prop to the Checkbox component.
+      </p>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <feature-preview >
+        <dui-switch color="gray" label="Auto Recharge" [isChecked]="true"></dui-switch>
+      </feature-preview>
+      <code-previewer [Code]="switchLabel"> </code-previewer>
+    </div>
+  
+    <!-- Ripple Effect Checkbox -->
+    <!-- <div class="mt-6">
+      <div id="checkbox-ripple" class="group flex items-center">
+        <a
+          href="#checkbox-ripple"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <h2
+          class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+        >
+        Checkbox Ripple Effect
+        </h2>
+      </div>
+      <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+        >
+        You can turn on/off the ripple effect for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Checkbox</code> Component using <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">ripple</code> attribute.
+      </p>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <feature-preview >
+        <dui-checkbox color="gray" label="Ripple Effect On" [isChecked]="true" [ripple]="true"></dui-checkbox>
+        <dui-checkbox color="gray" label="Ripple Effect Off" [isChecked]="true" [ripple]="false"></dui-checkbox>
+      </feature-preview>
+      <code-previewer [Code]="rippleCheckbox"> </code-previewer>
+    </div> -->
+  
+
+
+    <!-- <div class="mt-6">
+      <div id="checkbox-disabled" class="group flex items-center">
+        <a
+          href="#checkbox-disabled"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <h2
+          class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+        >
+        Disabled Checkbox
+        </h2>
+      </div>
+      <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+        >
+        You can disable the Checkbox component by passing the disabled prop to the Checkbox component.
+      </p>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <feature-preview >
+        <dui-checkbox color="gray" label="Remember Me" [isChecked]="true" [disabled]="true"></dui-checkbox>
+        <dui-checkbox color="gray" label="Remember Me" [disabled]="true"></dui-checkbox>
+      </feature-preview>
+      <code-previewer [Code]="disabledCheckbox"> </code-previewer>
+    </div> -->
+  </div>
+    

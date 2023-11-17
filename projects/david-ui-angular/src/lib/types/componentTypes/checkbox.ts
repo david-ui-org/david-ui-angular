@@ -10,6 +10,13 @@ export type ripple = boolean;
 export type className = string;
 export type disabled = boolean;
 
+export interface BaseProps{
+    className : className
+}
+
+export type containerProps =  BaseProps;
+export type circleProps =  BaseProps;
+
 
 export interface ICheckBox{
     color: string;

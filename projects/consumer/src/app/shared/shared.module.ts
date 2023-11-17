@@ -18,6 +18,7 @@ import {
   DUISelect,
   DUITextarea,
   DUITypography,
+  DUISwitch,
 } from 'projects/david-ui-angular/src/public-api';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from '../docs/footer/footer.component';
@@ -51,7 +52,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUIInput,
     DUISelect,
     DUIChip,
-    DUIIcon
+    DUIIcon,
+    DUISwitch
   ],
   exports: [
     CodePreviewerComponent,
@@ -78,6 +80,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUIIcon,
     FeaturePreviewComponent,
     DUIChip,
+    DUISwitch
   ],
 })
 export class SharedModule {}

@@ -19,6 +19,7 @@ import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
 import { ChipComponent } from './features/chip/chip.component';
+import { SwitchComponent } from './features/switch/switch.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -277,6 +278,23 @@ export const routes: Routes = [
             {
               name: "title",
               content: 'Tailwind CSS Select with Angular - David UI'
+            }
+          ]
+        }
+      },
+      {
+        path: 'switch',
+        component: SwitchComponent,
+        data: {
+          title: 'Tailwind CSS Switch with Angular - David UI',
+          meta: [
+            {
+              name: "description",
+              content: 'Use our Tailwind CSS Switch example built for Angular to provide a toggle.'
+            },
+            {
+              name: "title",
+              content: 'Tailwind CSS Switch with Angular - David UI'
             }
           ]
         }
