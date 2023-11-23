@@ -19,6 +19,7 @@ import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
 import { ChipComponent } from './features/chip/chip.component';
+import { SliderComponent } from './features/slider/slider.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -277,6 +278,23 @@ export const routes: Routes = [
             {
               name: "title",
               content: 'Tailwind CSS Select with Angular - David UI'
+            }
+          ]
+        }
+      },
+      {
+        path: 'slider',
+        component: SliderComponent,
+        data: {
+          title: 'Tailwind CSS Slider with Angular - David UI',
+          meta: [
+            {
+              name: "description",
+              content: 'Use our Tailwind CSS Slider example built for Angular'
+            },
+            {
+              name: "title",
+              content: 'Tailwind CSS Slider with Angular - David UI'
             }
           ]
         }

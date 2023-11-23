@@ -193,6 +193,14 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Slider',
+        route: '/docs/slider',
+        scrollSpyElements: [
+          { id: 'slider-main', label: 'Slider' },
+        ],
+        isActive: false
+      },
+      {
         name: 'Text area',
         route: '/docs/textarea',
         scrollSpyElements: [

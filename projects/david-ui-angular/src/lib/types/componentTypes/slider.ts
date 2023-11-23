@@ -40,6 +40,6 @@ export const DefaultSlider : ISlider ={
     trackClassName: "",
     thumbClassName: "",
     barClassName: "",
-    defaultValue: "",
+    defaultValue: "50",
     value: ""
 }

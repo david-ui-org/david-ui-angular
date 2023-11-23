@@ -27,6 +27,7 @@ import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
 import { ChipComponent } from './features/chip/chip.component';
+import { SliderComponent } from './features/slider/slider.component';
 
 
 
@@ -55,7 +56,8 @@ import { ChipComponent } from './features/chip/chip.component';
     ChipComponent,
     ThemingComponent,
     ColorsComponent,
-    FontsComponent
+    FontsComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
@@ -77,7 +79,8 @@ import { ChipComponent } from './features/chip/chip.component';
     SelectComponent,
     TextareaComponent,
     TypographyComponent,
-    ChipComponent
+    ChipComponent,
+    SliderComponent
   ]
 })
 export class DocsModule { }
