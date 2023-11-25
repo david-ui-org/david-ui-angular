@@ -197,6 +197,8 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/slider',
         scrollSpyElements: [
           { id: 'slider-main', label: 'Slider' },
+          { id: 'slider-size', label: 'Slider Size' },
+          { id: 'slider-color', label: 'Slider Colors' },
         ],
         isActive: false
       },

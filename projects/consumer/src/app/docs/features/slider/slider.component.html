@@ -1,7 +1,68 @@
 <div class="mb-12">
-    <div id="slider-main" class="group flex items-center">
+  <div id="slider-main" class="group flex items-center">
+    <a
+      href="#slider-main"
+      class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+        ></path>
+      </svg>
+    </a>
+    <h1
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Slider with Angular
+    </h1>
+  </div>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Use our Tailwind CSS Slider component in your web projects. The Slider can
+    be used for adjusting settings such as volume, brightness, or applying image
+    filters.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    See below our beautiful Slider example that you can use in your Tailwind CSS
+    and React project. The example also comes in different styles and colors so
+    you can adapt it easily to your needs.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    You first need to import the <code
+    class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+    >DUISlider</code> Module into your application module.
+  </p>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="w-96">
+        <dui-slider defaultValue="50"></dui-slider>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="sliderCode"> </code-previewer>
+  </div>
+
+  <!-- slider size HTML Code -->
+  <div class="mt-6">
+    <div id="slider-size" class="group flex items-center">
       <a
-        href="#slider-main"
+        href="#slider-size"
         class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,45 +80,95 @@
           ></path>
         </svg>
       </a>
-      <h1
-        class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
       >
-        Tailwind CSS Slider with Angular
-      </h1>
-    </div>
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Use our Tailwind CSS Select built with Angular to provide a dropdown menu of options for your users on your website or applications.
-    </p>
-  
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Select menus are essential for giving users a list of choices without overwhelming the display space. They streamline form filling by providing multiple options in a compact dropdown. For a great user experience, selects should offer clear options and reflect the current choice effectively.
-    </p>
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Below we present you our Angular Select component crafted with Tailwind CSS, to integrate into applications that demand quality and efficiency. Check it out!
-    </p>
-  
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      You first need to import the DUISelect Module into your application module. 
-      <br> *Also make sure you have <b>angular-cdk</b> installed with it's styles imported in your css file.
-    </p>
-    <code-previewer [Code]="importCode"> </code-previewer>
-    <div class="code-snippet-area mt-10">
-      <feature-preview>
-<div class="w-96">
-    <dui-slider defaultValue="50"></dui-slider>
-
-</div>
-      </feature-preview>
-      <code-previewer [Code]="sliderCode"> </code-previewer>
+        Slider Size
+      </h2>
     </div>
 
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      The
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Slider</code
+      >
+      Slider component comes with 3 different sizes, that you can change it
+      using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >size</code>
+      prop.
+    </p>
   </div>
-  
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex w-96 flex-col gap-8">
+        <dui-slider size="sm" defaultValue="50"></dui-slider>
+        <dui-slider size="md" defaultValue="50"></dui-slider>
+        <dui-slider size="lg" defaultValue="50"></dui-slider>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="sliderSizeCode"> </code-previewer>
+  </div>
+
+
+   <!-- slider color HTML Code -->
+   <div class="mt-6">
+    <div id="slider-color" class="group flex items-center">
+      <a
+        href="#slider-color"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Slider Colors
+      </h2>
+    </div>
+
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      The
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Slider</code
+      >
+      Slider component comes with 19 different colors, that you can change it
+      using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >color</code>
+      prop.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex w-96 flex-col gap-8">
+        <dui-slider color="blue" defaultValue="50"></dui-slider>
+        <dui-slider color="red" defaultValue="50"></dui-slider>
+        <dui-slider color="green" defaultValue="50"></dui-slider>
+        <dui-slider color="yellow" defaultValue="50"></dui-slider>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="sliderColorCode"> </code-previewer>
+  </div>
+</div>
