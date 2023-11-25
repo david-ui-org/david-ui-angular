@@ -195,6 +195,18 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Switch',
+        route: '/docs/switch',
+        scrollSpyElements: [
+          { id: 'switch-main', label: 'Switch' },
+          { id: 'switch-colors', label: 'Switch Colors' },
+          { id: 'switch-label', label: 'Switch Label' },
+          { id: 'switch-ripple', label: 'Switch Ripple Effect' },
+          { id: 'switch-disabled', label: 'Switch Disabled' },
+        ],
+        isActive: false
+      },
+      {
         name: 'Slider',
         route: '/docs/slider',
         scrollSpyElements: [
