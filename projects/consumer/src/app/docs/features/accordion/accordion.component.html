@@ -185,4 +185,185 @@
 
     <code-previewer [Code]="accordionWithIconCode"> </code-previewer>
   </div>
+
+  <!-- Always Opened -->
+
+  <div class="mt-6">
+    <div id="accordion-open" class="group flex items-center">
+      <a
+        href="#accordion-open"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Accordion Always Open
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can make an
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Accordion</code
+      >
+      component to be always open and doesn't close when it's next or previous
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Accordion</code
+      >
+      component opened using a separate state.
+    </p>
+  </div>
+  <div id="accordionWithIcon" class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-accordion>
+        <dui-accordion-expansion [alwaysOpen]="true">
+          <dui-accordion-header
+            [showIcon]="true"
+            title="What is David UI Angular?"
+          >
+          </dui-accordion-header>
+          <dui-accordion-body>
+            We're not always in the position that we want to be at. We're
+            constantly growing. We're constantly making mistakes. We're
+            constantly trying to express ourselves and actualize our dreams.
+          </dui-accordion-body>
+        </dui-accordion-expansion>
+        <dui-accordion-expansion>
+          <dui-accordion-header
+            [showIcon]="true"
+            title="How to use David UI Angular?"
+          ></dui-accordion-header>
+          <dui-accordion-body>
+            We&apos;re not always in the position that we want to be at.
+            We&apos;re constantly growing. We&apos;re constantly making
+            mistakes. We&apos;re constantly trying to express ourselves and
+            actualize our dreams.
+          </dui-accordion-body>
+        </dui-accordion-expansion>
+        <dui-accordion-expansion>
+          <dui-accordion-header
+            [showIcon]="true"
+            title="What can I do with David UI Angular?"
+          ></dui-accordion-header>
+          <dui-accordion-body>
+            We&apos;re not always in the position that we want to be at.
+            We&apos;re constantly growing. We&apos;re constantly making
+            mistakes. We&apos;re constantly trying to express ourselves and
+            actualize our dreams.
+          </dui-accordion-body>
+        </dui-accordion-expansion>
+      </dui-accordion>
+    </feature-preview>
+
+    <code-previewer [Code]="accordionAlwaysOpenCode"> </code-previewer>
+  </div>
+
+  <!-- Accordion Disabled -->
+
+  <div class="mt-6">
+    <div id="accordion-disable" class="group flex items-center">
+      <a
+        href="#accordion-disable"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Accordion Disabled
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      An
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Accordion</code
+      >
+      could be disabled as well, it will help you to prevent user interactions
+      like click over the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Accordion</code
+      >
+      component.
+    </p>
+  </div>
+  <div id="accordionWithIcon" class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-accordion>
+        <dui-accordion-expansion [isDisable]="true">
+          <dui-accordion-header
+            [showIcon]="true"
+            title="What is David UI Angular?"
+          >
+          </dui-accordion-header>
+          <dui-accordion-body>
+            We're not always in the position that we want to be at. We're
+            constantly growing. We're constantly making mistakes. We're
+            constantly trying to express ourselves and actualize our dreams.
+          </dui-accordion-body>
+        </dui-accordion-expansion>
+        <dui-accordion-expansion>
+          <dui-accordion-header
+            [showIcon]="true"
+            title="How to use David UI Angular?"
+          ></dui-accordion-header>
+          <dui-accordion-body>
+            We&apos;re not always in the position that we want to be at.
+            We&apos;re constantly growing. We&apos;re constantly making
+            mistakes. We&apos;re constantly trying to express ourselves and
+            actualize our dreams.
+          </dui-accordion-body>
+        </dui-accordion-expansion>
+        <dui-accordion-expansion>
+          <dui-accordion-header
+            [showIcon]="true"
+            title="What can I do with David UI Angular?"
+          ></dui-accordion-header>
+          <dui-accordion-body>
+            We&apos;re not always in the position that we want to be at.
+            We&apos;re constantly growing. We&apos;re constantly making
+            mistakes. We&apos;re constantly trying to express ourselves and
+            actualize our dreams.
+          </dui-accordion-body>
+        </dui-accordion-expansion>
+      </dui-accordion>
+    </feature-preview>
+
+    <code-previewer [Code]="accordionDisabledCode"> </code-previewer>
+  </div>
 </div>
