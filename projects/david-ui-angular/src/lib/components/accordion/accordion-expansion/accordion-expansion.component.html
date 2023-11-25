@@ -1,4 +1,4 @@
-<div [@.disabled]="isDisable" class="flex flex-col my-1 px-2 py-0  w-full" [ngClass]="{'opacity-50': isDisable}" >
+<div [@.disabled]="isDisable" class="{{expanssionClass}}" [ngClass]="{'opacity-50': isDisable}" >
     <div [class]="!isDisable ? 'cursor-pointer' : 'cursor-not-allowed'" (click)="!isDisable ? toggleBody() : ''">
         <ng-content select="dui-accordion-header" ></ng-content>
     </div>

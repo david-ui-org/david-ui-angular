@@ -13,6 +13,8 @@ import {
   OnInit,
 } from '@angular/core';
 import { AccordionHeaderComponent } from '../accordion-header/accordion-header.component';
+import { ConvertToClassName } from '../../../utilities/helpers/string-helper';
+import { twMerge } from 'tailwind-merge';
 
 @Component({
   selector: 'dui-accordion-expansion',
@@ -42,10 +44,13 @@ import { AccordionHeaderComponent } from '../accordion-header/accordion-header.c
 export class AccordionExpansionComponent implements OnInit, AfterContentInit {
   @Input() isDisable: boolean = false;
   @Input() alwaysOpen: boolean = false;
+  @Input() className!: string;
   showBody!: boolean;
 
   @ContentChild(AccordionHeaderComponent)
   accordionHeader!: AccordionHeaderComponent;
+
+  expanssionClass : string = 'flex flex-col my-1 px-2 py-0  w-full';
 
   toggleBody() {
     this.showBody = !this.showBody;
@@ -54,6 +59,9 @@ export class AccordionExpansionComponent implements OnInit, AfterContentInit {
 
   ngOnInit(): void {
     this.showBody = this.alwaysOpen;
+
+    this.expanssionClass =  twMerge(this.expanssionClass,this.className)
+
   }
 
   ngAfterContentInit(): void {
