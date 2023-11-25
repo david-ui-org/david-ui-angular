@@ -23,8 +23,11 @@ export class ChipComponent {
 
   chipVariantCode : string =
   `
-  <dui-chip>Chip</dui-chip>
-  `;
+  <dui-chip variant="filled" >Chip Filled</dui-chip>
+    <dui-chip variant="outlined" >Chip Outlined</dui-chip>
+    <dui-chip variant="gradient" >Chip Gradient</dui-chip>
+    <dui-chip variant="ghost" >Chip Ghost</dui-chip>
+`;
 
   chipColorCode : string =
   `
@@ -32,5 +35,7 @@ export class ChipComponent {
   <dui-chip color="yellow">Chip</dui-chip>
   <dui-chip color="green">Chip</dui-chip>
   `;
+
+
 
 }

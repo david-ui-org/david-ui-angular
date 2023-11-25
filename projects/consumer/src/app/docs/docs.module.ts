@@ -28,6 +28,7 @@ import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
 import { ChipComponent } from './features/chip/chip.component';
 import { SwitchComponent } from './features/switch/switch.component';
+import { SliderComponent } from './features/slider/slider.component';
 
 
 
@@ -57,7 +58,8 @@ import { SwitchComponent } from './features/switch/switch.component';
     ThemingComponent,
     ColorsComponent,
     FontsComponent,
-    SwitchComponent
+    SwitchComponent,
+    SliderComponent
   ],
   imports: [
     CommonModule,
@@ -80,7 +82,8 @@ import { SwitchComponent } from './features/switch/switch.component';
     TextareaComponent,
     TypographyComponent,
     ChipComponent,
-    SwitchComponent
+    SwitchComponent,
+    SliderComponent
   ]
 })
 export class DocsModule { }

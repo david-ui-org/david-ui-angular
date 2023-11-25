@@ -91,6 +91,8 @@ export const SidebarData: SidebarItem[] = [
         scrollSpyElements: [
           { id: 'accordion-main', label: 'Accordion Declaration' },
           { id: 'accordion-icon', label: 'Accordion With Icon' },
+          { id: 'accordion-open', label: 'Accordion Always Opened' },
+          { id: 'accordion-disable', label: 'Accordion Disabled' },
         ],
         isActive: false
       },
@@ -201,6 +203,16 @@ export const SidebarData: SidebarItem[] = [
           { id: 'switch-label', label: 'Switch Label' },
           { id: 'switch-ripple', label: 'Switch Ripple Effect' },
           { id: 'switch-disabled', label: 'Switch Disabled' },
+        ],
+        isActive: false
+      },
+      {
+        name: 'Slider',
+        route: '/docs/slider',
+        scrollSpyElements: [
+          { id: 'slider-main', label: 'Slider' },
+          { id: 'slider-size', label: 'Slider Size' },
+          { id: 'slider-color', label: 'Slider Colors' },
         ],
         isActive: false
       },

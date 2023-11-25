@@ -1,0 +1,14 @@
+<div class="{{containerClass}}">
+  <label [class]="sliderBarClass" [style.width]="value +'%'"></label>
+    <input
+    type="range"
+    [max]="max"
+    [min]="min"
+    [step]="step"
+    class="{{sliderClass}}"
+    [ngModel]="value"
+    (ngModelChange)="OnValueChange($event)"
+    [defaultValue]="defaultValue"
+   
+  />
+</div>
