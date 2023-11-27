@@ -26,4 +26,23 @@ checkboxColor: string=`  <!-- Use DUI Checkbox in html file -->
  disabledCheckbox: string=`  <!-- Use DUI Checkbox in html file -->
   <dui-checkbox color="gray" label="Remember Me" [isChecked]="true" [disabled]="true"></dui-checkbox>
   <dui-checkbox color="gray" label="Remember Me" [disabled]="true"></dui-checkbox>`;
+  rippleCheckbox: string=`  <!-- Use DUI Checkbox in html file -->
+  <dui-checkbox color="gray" label="Ripple Effect On" [isChecked]="true" [ripple]="true"></dui-checkbox>
+  <dui-checkbox color="gray" label="Ripple Effect Off" [isChecked]="true" [ripple]="false"></dui-checkbox>`;
+  customIconCheckbox: string=`  <!-- Use DUI Checkbox in html file -->
+  <dui-checkbox color="gray" label="Favourite" [isChecked]="true" [useCustomIcon]="true">
+  <dui-icon>
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-3 w-3"
+    viewBox="0 0 20 20"
+    fill="currentColor">
+    <path
+      fillRule="evenodd"
+      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+      clipRule="evenodd"
+    />
+  </svg>
+  </dui-icon>
+  </dui-checkbox>`;
 }

@@ -91,6 +91,8 @@ export const SidebarData: SidebarItem[] = [
         scrollSpyElements: [
           { id: 'accordion-main', label: 'Accordion Declaration' },
           { id: 'accordion-icon', label: 'Accordion With Icon' },
+          { id: 'accordion-open', label: 'Accordion Always Opened' },
+          { id: 'accordion-disable', label: 'Accordion Disabled' },
         ],
         isActive: false
       },
@@ -138,6 +140,8 @@ export const SidebarData: SidebarItem[] = [
           { id: 'checkbox-main', label: 'Checkbox' },
           { id: 'checkbox-colors', label: 'Checkbox Colors' },
           { id: 'checkbox-label', label: 'Checkbox Label' },
+          { id: 'checkbox-ripple', label: 'Checkbox Ripple Effect' },
+          { id: 'checkbox-icon', label: 'Checkbox Custom Icon' },
           { id: 'checkbox-disabled', label: 'Checkbox Disabled' },
         ],
         isActive: false
@@ -147,6 +151,15 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/collapse',
         scrollSpyElements: [
           { id: 'checkbox-main', label: 'Checkbox' },
+        ],
+        isActive:false
+        },
+        {
+        name: 'Chip',
+        route: '/docs/chip',
+        scrollSpyElements: [
+          { id: 'chip-main', label: 'Chip' },
+          { id: 'chip-colors', label: 'Chip Colors' },
         ],
         isActive: false
       },
@@ -186,6 +199,28 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/select',
         scrollSpyElements: [
           { id: 'select-main', label: 'Select' },
+        ],
+        isActive: false
+      },
+      {
+        name: 'Switch',
+        route: '/docs/switch',
+        scrollSpyElements: [
+          { id: 'switch-main', label: 'Switch' },
+          { id: 'switch-colors', label: 'Switch Colors' },
+          { id: 'switch-label', label: 'Switch Label' },
+          { id: 'switch-ripple', label: 'Switch Ripple Effect' },
+          { id: 'switch-disabled', label: 'Switch Disabled' },
+        ],
+        isActive: false
+      },
+      {
+        name: 'Slider',
+        route: '/docs/slider',
+        scrollSpyElements: [
+          { id: 'slider-main', label: 'Slider' },
+          { id: 'slider-size', label: 'Slider Size' },
+          { id: 'slider-color', label: 'Slider Colors' },
         ],
         isActive: false
       },

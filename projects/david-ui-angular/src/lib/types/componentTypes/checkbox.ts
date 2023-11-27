@@ -6,16 +6,22 @@ import { colors } from "../generic";
 // typescript types
 export type color = colors;
 export type label = string;
-export type icon = HTMLElement | string;
 export type ripple = boolean;
 export type className = string;
 export type disabled = boolean;
+
+export interface BaseProps{
+    className : className
+}
+
+export type containerProps =  BaseProps;
+export type circleProps =  BaseProps;
 
 
 export interface ICheckBox{
     color: string;
     label: string;
-    icon?: icon;
+    useCustomIcon: boolean;
     ripple: boolean;
     className: string;
     disabled: boolean;
@@ -24,8 +30,8 @@ export interface ICheckBox{
 export const DefaultCheckBox : ICheckBox ={
     color: "blue",
     label: "",
-    icon: undefined,
-    ripple: false,
+    useCustomIcon: false,
+    ripple: true,
     className: "",
     disabled: false
 }
