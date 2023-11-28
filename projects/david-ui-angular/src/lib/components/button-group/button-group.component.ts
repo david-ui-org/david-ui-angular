@@ -1,4 +1,4 @@
-import { AfterContentInit, ChangeDetectorRef, Component, ContentChildren, Input, OnInit, QueryList } from '@angular/core';
+import { AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList } from '@angular/core';
 import {
   DefaultButton,
   className,
@@ -35,7 +35,7 @@ export class ButtonGroupComponent extends DUITheme implements OnInit,AfterConten
 
   public buttonGroupClass!: string;
 
-  constructor(private cd :ChangeDetectorRef) {
+  constructor() {
     super();
     this.variant = this.variant ?? DefaultButton.variant;
     this.size = this.size ?? DefaultButton.size;
@@ -66,15 +66,27 @@ export class ButtonGroupComponent extends DUITheme implements OnInit,AfterConten
     this.buttonGroupClass = this.getCompiledClassName();
   }
   ngAfterContentInit(): void {
-    this.buttons.map((child,index) => {
-      debugger;
+    this.buttons.map((child,index) => {   
+       if (!(child instanceof ButtonComponent)) {
+          throw Error(`Only a DUI Button can be placed inside Button Group: element at index${index} is not od type dui-button`);
+       }      
+      child.color = this.color;
+      child.fullWidth = this.fullWidth;
+      child.rounded = this.rounded;
+      child.size = this.size;
+      child.variant = this.variant;
+      child.ripple = this.ripple;
       if (index == 0) {
-        child.color = "gray"
-        
+        child.className = "rounded-r-none border-r-0";
       }
-      console.log("COlor", child.color);
+      else if (index === this.buttons.length - 1) {
+        child.className = "rounded-l-none";
+      }
+      else{
+        child.className = "rounded-l-none border-r-0 rounded-r-none";
+      }
+      child.DetectChangedConfigurations();
       
     });
-    this.cd.markForCheck();
   }
 }

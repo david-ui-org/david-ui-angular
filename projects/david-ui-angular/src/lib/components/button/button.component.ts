@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { twMerge } from 'tailwind-merge'
 //#region Custom Imports
 import {
@@ -31,7 +31,7 @@ export class ButtonComponent extends DUITheme implements OnInit {
 
   protected buttonClass!: string;
 
-  constructor() {
+  constructor(public cd :ChangeDetectorRef) {
     super();
     this.variant = this.variant ?? DefaultButton.variant;
     this.size = this.size ?? DefaultButton.size;
@@ -40,6 +40,10 @@ export class ButtonComponent extends DUITheme implements OnInit {
   }
 
   ngOnInit(): void {
+    this.buttonClass = this.getCompiledClassName();
+  }
+
+  public DetectChangedConfigurations(){
     this.buttonClass = this.getCompiledClassName();
   }
 
@@ -57,7 +61,7 @@ export class ButtonComponent extends DUITheme implements OnInit {
       className += ConvertToClassName("rounded-full");
     }
     if (this.fullWidth) {
-      className += ConvertToClassName("w-full");
+      className += ConvertToClassName("!w-full");
       
     }
     var addedClasses = twMerge(ConvertToClassName(className).split(" "));

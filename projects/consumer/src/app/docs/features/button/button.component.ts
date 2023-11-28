@@ -32,12 +32,12 @@ export class ButtonComponent {
   <dui-button size="md" variant="gradient" color="gray">Gradient</dui-button>
   `;
 
-  butoonSizeCode = ` <!-- Use DUI Button in html file -->
+  buttonSizeCode = ` <!-- Use DUI Button in html file -->
   <dui-button size="sm" color="gray">Button</dui-button>
   <dui-button size="md" color="gray">Button</dui-button>
   <dui-button size="lg" color="gray">Button</dui-button>
   `;
-  butoonColorCode = ` <!-- Use DUI Button in html file -->
+  buttonColorCode = ` <!-- Use DUI Button in html file -->
   <dui-button size="md" color="gray">Button</dui-button>
   <dui-button size="md" color="blue">Button</dui-button>
   <dui-button size="md" color="red">Button</dui-button>
