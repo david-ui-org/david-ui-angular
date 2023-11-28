@@ -11,6 +11,7 @@ import {
   DUIButton,
   DUICheckbox,
   DUIChip,
+  DUICollapse,
   DUIIcon,
   DUIDialog,
   DUIInput,
@@ -53,6 +54,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUIInput,
     DUISelect,
     DUIChip,
+    DUICollapse,
     DUIIcon,
     DUISwitch,
     DUISlider
@@ -80,6 +82,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUIInput,
     DUISelect,
     DUIIcon,
+    DUICollapse,
     FeaturePreviewComponent,
     DUIChip,
     DUISwitch,

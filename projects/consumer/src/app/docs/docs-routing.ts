@@ -18,6 +18,7 @@ import { AboutAngularComponent } from './pages/about-angular/about-angular.compo
 import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
+import { CollapseComponent } from './features/collapse/collapse.component';
 import { ChipComponent } from './features/chip/chip.component';
 import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
@@ -415,6 +416,23 @@ export const routes: Routes = [
             },
           ],
         },
+      },
+      {
+        path: 'collapse',
+        component: CollapseComponent,
+        data: {
+          title: 'Tailwind CSS Collapse with Angular - David UI',
+          meta: [
+            {
+              name: "description",
+              content: 'Use our Tailwind CSS Collapse example built for Angular to maintain consistency in the project.'
+            },
+            {
+              name: "title",
+              content: 'Tailwind CSS Collapse with Angular - David UI'
+            }
+          ]
+        }
       },
     ],
   },

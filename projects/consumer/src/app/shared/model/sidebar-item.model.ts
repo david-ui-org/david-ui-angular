@@ -147,6 +147,14 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Collapse',
+        route: '/docs/collapse',
+        scrollSpyElements: [
+          { id: 'checkbox-main', label: 'Checkbox' },
+        ],
+        isActive:false
+        },
+        {
         name: 'Chip',
         route: '/docs/chip',
         scrollSpyElements: [

@@ -26,6 +26,7 @@ import { TypographyComponent } from './features/typography/typography.component'
 import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
+import { CollapseComponent } from './features/collapse/collapse.component';
 import { ChipComponent } from './features/chip/chip.component';
 import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
@@ -58,6 +59,7 @@ import { SliderComponent } from './features/slider/slider.component';
     ThemingComponent,
     ColorsComponent,
     FontsComponent,
+    CollapseComponent,
     SwitchComponent,
     SliderComponent
   ],
@@ -81,6 +83,7 @@ import { SliderComponent } from './features/slider/slider.component';
     SelectComponent,
     TextareaComponent,
     TypographyComponent,
+    CollapseComponent,
     ChipComponent,
     SwitchComponent,
     SliderComponent
