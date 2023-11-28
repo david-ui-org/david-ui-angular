@@ -29,7 +29,7 @@ export class ButtonComponent extends DUITheme implements OnInit {
   @Input() rounded!: boolean;
   @Input() ripple!: boolean;
 
-  public buttonClass!: string;
+  protected buttonClass!: string;
 
   constructor() {
     super();

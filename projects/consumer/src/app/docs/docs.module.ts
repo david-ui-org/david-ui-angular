@@ -30,6 +30,7 @@ import { CollapseComponent } from './features/collapse/collapse.component';
 import { ChipComponent } from './features/chip/chip.component';
 import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
+import { ButtonGroupComponent } from './features/button-group/button-group.component';
 
 
 
@@ -61,7 +62,8 @@ import { SliderComponent } from './features/slider/slider.component';
     FontsComponent,
     CollapseComponent,
     SwitchComponent,
-    SliderComponent
+    SliderComponent,
+    ButtonGroupComponent
   ],
   imports: [
     CommonModule,
@@ -86,7 +88,8 @@ import { SliderComponent } from './features/slider/slider.component';
     CollapseComponent,
     ChipComponent,
     SwitchComponent,
-    SliderComponent
+    SliderComponent,
+    ButtonGroupComponent
   ]
 })
 export class DocsModule { }

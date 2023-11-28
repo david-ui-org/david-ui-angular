@@ -16,9 +16,11 @@ export class CollapseComponent {
   })
   export class AppModule {}`;
   collapseCode: string = `  <!-- Use DUI Collapse in html file -->
-<dui-collapse [open]="open">
-<div class="shadow-md w-auto mt-4">Hi there collapse component</div>
-</dui-collapse>`;
+    <dui-collapse [open]="open" className="pt-1">
+      <p class="shadow-md hover:shadow-lg hover:shadow-gray-900 shadow-gray-500 h-auto w-auto mt-4">
+        Hi there collapse component
+      </p>
+    </dui-collapse>`;
 
   open: boolean = false;
   toggleCollapse() {

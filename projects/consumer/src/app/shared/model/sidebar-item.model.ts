@@ -134,6 +134,21 @@ export const SidebarData: SidebarItem[] = [
         isActive: true
       },
       {
+        name: 'Button Group',
+        route: '/docs/button-group',
+        scrollSpyElements: [
+          { id: 'button-main', label: 'Button' },
+          { id: 'button-variant', label: 'Button Variant' },
+          { id: 'button-size', label: 'Button Sizes' },
+          { id: 'button-colors', label: 'Button Colors' },
+          { id: 'button-icon', label: 'Button with Icons' },
+          { id: 'button-block', label: 'Block Level Button' },
+          { id: 'button-rounded', label: 'Rounded Button' },
+          { id: 'button-ripple', label: 'Buttons Ripple Effect' },
+        ],
+        isActive: true
+      },
+      {
         name: 'Checkbox',
         route: '/docs/checkbox',
         scrollSpyElements: [

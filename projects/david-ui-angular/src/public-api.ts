@@ -23,7 +23,7 @@ export * from './lib/components/input/input.component';
 export * from './lib/components/select/select.component';
 export * from './lib/components/select/options/options.component';
 export * from './lib/components/collapse/collapse.component';
-
+export * from './lib/components/button/button.component';
 export * from './lib/components/chip/chip.component';
 export * from './lib/components/switch/switch.component';
 export * from './lib/components/slider/slider.component';
@@ -62,5 +62,6 @@ export * from './lib/components/collapse/collapse.module';
 export * from './lib/components/chip/chip.module';
 export * from './lib/components/switch/switch.module';
 export * from './lib/components/slider/slider.module';
+export * from './lib/components/button-group/button-group.module';
 //#endregion
 

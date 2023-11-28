@@ -22,6 +22,7 @@ import { CollapseComponent } from './features/collapse/collapse.component';
 import { ChipComponent } from './features/chip/chip.component';
 import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
+import { ButtonGroupComponent } from './features/button-group/button-group.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -180,6 +181,24 @@ export const routes: Routes = [
             {
               name: 'title',
               content: 'Tailwind CSS Button with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'button-group',
+        component: ButtonGroupComponent,
+        data: {
+          title: 'Tailwind CSS Button Group with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Button Group example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Button Group with Angular - David UI',
             },
           ],
         },
