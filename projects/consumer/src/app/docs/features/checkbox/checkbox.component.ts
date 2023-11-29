@@ -32,6 +32,14 @@ checkboxColor: string=`  <!-- Use DUI Checkbox in html file -->
           I agree with the <a href="https://www.david-ui-angular.com/docs/checkbox" class="text-blue-500">terms and condition</a>
         </dui-typography>
   </dui-checkbox>`;
+  checkBoxDescription: string=`  <!-- Use DUI Checkbox in html file -->
+  <dui-checkbox color="gray" label="Remember me">
+    <div>
+      <dui-typography color="gray" variant="small" className="font-normal">
+        You&apos;ll be able to login without password for 24 hours.
+      </dui-typography>
+    </div>
+  </dui-checkbox>`;
   rippleCheckbox: string=`  <!-- Use DUI Checkbox in html file -->
   <dui-checkbox color="gray" label="Ripple Effect On" [isChecked]="true" [ripple]="true"></dui-checkbox>
   <dui-checkbox color="gray" label="Ripple Effect Off" [isChecked]="true" [ripple]="false"></dui-checkbox>`;

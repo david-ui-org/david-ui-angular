@@ -34,6 +34,7 @@ export class CheckboxComponent
 {
   @Input() color!: color;
   @Input() className!: className;
+  @Input() containerClassName!: className;
   @Input() disabled!: boolean;
   @Input() ripple!: boolean;
   @Input() useCustomIcon!: boolean;
@@ -95,12 +96,21 @@ export class CheckboxComponent
 
     return twMerge(ConvertToClassName(classes).split(' '));
   }
+  getContainerCompiledClass(): string{
+    var containerClass : string = '';
+    containerClass += ConvertToClassName(
+      ObjectToStr(CheckBoxTheme['container'])
+    );
+    if (this.containerClassName) {
+      containerClass += ConvertToClassName(this.containerClassName);
+    }
+    return twMerge(ConvertToClassName(containerClass).split(' '));
+
+  }
   ngOnInit(): void {
     this.checkboxClass = this.getCompiledClassName();
     this.iconClass = ConvertToClassName(ObjectToStr(CheckBoxTheme['icon']));
-    this.containerClass = ConvertToClassName(
-      ObjectToStr(CheckBoxTheme['container'])
-    );
+    this.containerClass = this.getContainerCompiledClass();    
     this.labelClass = ConvertToClassName(ObjectToStr(CheckBoxTheme['label']));
   }
 }

@@ -33,8 +33,10 @@
 </ng-template>
 
 <ng-template #checkboxlabelContent>
-  {{label}}
-<ng-content></ng-content>
+  <div [class]="labelClass">
+    {{ label }}
+    <ng-content></ng-content>
+  </div>
 </ng-template>
 
 <ng-template #iconTemplate>
