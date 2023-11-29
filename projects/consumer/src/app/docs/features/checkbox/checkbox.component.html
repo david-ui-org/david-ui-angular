@@ -20,41 +20,44 @@
       </svg>
     </a>
     <h1
-    class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
-  >
-    Tailwind CSS Checkbox with Angular
-  </h1>
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Checkbox with Angular
+    </h1>
   </div>
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Use our Tailwind CSS Checkbox built with Angular to allow multi-option selections on your website or applications.
-    </p>
-  
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Checkboxes play an important role in enabling users to select multiple options from a list. They should provide immediate feedback upon selection and be spaced adequately for ease of interaction.
-    </p>
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Check out our Angular Checkbox example designed with Tailwind CSS. It's ideal for any application that requires multi-select capabilities.
-    </p>
-  
-    <p
+  <p
     class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      You first need to import the DUICheckbox Module into your application module
-    </p>
-    <code-previewer [Code]="importCode"> </code-previewer>
-    <div class="code-snippet-area mt-10">
-      <feature-preview>
-        <dui-checkbox color="gray" [isChecked]="true"></dui-checkbox>
-      </feature-preview>
-      <code-previewer [Code]="checkBoxCode"> </code-previewer>
-    </div>
+  >
+    Use our Tailwind CSS Checkbox built with Angular to allow multi-option
+    selections on your website or applications.
+  </p>
 
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Checkboxes play an important role in enabling users to select multiple
+    options from a list. They should provide immediate feedback upon selection
+    and be spaced adequately for ease of interaction.
+  </p>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Check out our Angular Checkbox example designed with Tailwind CSS. It's
+    ideal for any application that requires multi-select capabilities.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    You first need to import the DUICheckbox Module into your application module
+  </p>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-checkbox color="gray" [isChecked]="true"></dui-checkbox>
+    </feature-preview>
+    <code-previewer [Code]="checkBoxCode"> </code-previewer>
+  </div>
 
   <div class="mt-6">
     <div id="checkbox-colors" class="group flex items-center">
@@ -80,19 +83,20 @@
       <h2
         class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
       >
-      Checkbox Colors
+        Checkbox Colors
       </h2>
     </div>
     <p
-    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-      >
-      You can use different colors of the checkbox component by manipulating the color attribute of the component    
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use different colors of the checkbox component by manipulating the
+      color attribute of the component
     </p>
   </div>
   <div class="code-snippet-area mt-10">
-    <feature-preview >
+    <feature-preview>
       <dui-checkbox color="gray" [isChecked]="true"></dui-checkbox>
-      <dui-checkbox color="red"  [isChecked]="true"></dui-checkbox>
+      <dui-checkbox color="red" [isChecked]="true"></dui-checkbox>
       <dui-checkbox color="purple" [isChecked]="true"></dui-checkbox>
     </feature-preview>
     <code-previewer [Code]="checkboxColor"> </code-previewer>
@@ -122,18 +126,23 @@
       <h2
         class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
       >
-      Checkbox Label
+        Checkbox Label
       </h2>
     </div>
     <p
-    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-      >
-      You can add a label for the Checkbox component by passing the label prop to the Checkbox component.
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can add a label for the Checkbox component by passing the label prop
+      to the Checkbox component.
     </p>
   </div>
   <div class="code-snippet-area mt-10">
-    <feature-preview >
-      <dui-checkbox color="gray" label="Remember Me" [isChecked]="true"></dui-checkbox>
+    <feature-preview>
+      <dui-checkbox
+        color="gray"
+        label="Remember Me"
+        [isChecked]="true"
+      ></dui-checkbox>
     </feature-preview>
     <code-previewer [Code]="checkboxLabel"> </code-previewer>
   </div>
@@ -163,19 +172,39 @@
       <h2
         class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
       >
-      Checkbox Ripple Effect
+        Checkbox Ripple Effect
       </h2>
     </div>
     <p
-    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can turn on/off the ripple effect for the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Checkbox</code
       >
-      You can turn on/off the ripple effect for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Checkbox</code> Component using <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">ripple</code> attribute.
+      Component using
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >ripple</code
+      >
+      attribute.
     </p>
   </div>
   <div class="code-snippet-area mt-10">
-    <feature-preview >
-      <dui-checkbox color="gray" label="Ripple Effect On" [isChecked]="true" [ripple]="true"></dui-checkbox>
-      <dui-checkbox color="gray" label="Ripple Effect Off" [isChecked]="true" [ripple]="false"></dui-checkbox>
+    <feature-preview>
+      <dui-checkbox
+        color="gray"
+        label="Ripple Effect On"
+        [isChecked]="true"
+        [ripple]="true"
+      ></dui-checkbox>
+      <dui-checkbox
+        color="gray"
+        label="Ripple Effect Off"
+        [isChecked]="true"
+        [ripple]="false"
+      ></dui-checkbox>
     </feature-preview>
     <code-previewer [Code]="rippleCheckbox"> </code-previewer>
   </div>
@@ -205,35 +234,53 @@
       <h2
         class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
       >
-      Checkbox Custom Icon
+        Checkbox Custom Icon
       </h2>
     </div>
     <p
-    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can add custom icon for the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Checkbox</code
       >
-      You can add custom icon for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Checkbox</code> Component when it's checked by using the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">dui-icon</code> element inside  <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">dui-checkbox</code> .
+      Component when it's checked by using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >dui-icon</code
+      >
+      element inside
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >dui-checkbox</code
+      >
+      .
     </p>
   </div>
   <div class="code-snippet-area mt-10">
-    <feature-preview >
-      <dui-checkbox color="gray" label="Favourite" [isChecked]="true" [useCustomIcon]="true"
+    <feature-preview>
+      <dui-checkbox
+        color="gray"
+        label="Favourite"
+        [isChecked]="true"
+        [useCustomIcon]="true"
       >
-      <dui-icon>
-        <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-3 w-3"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-          clipRule="evenodd"
-        />
-      </svg>
-      </dui-icon>
-
-    </dui-checkbox>
+        <dui-icon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-3 w-3"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </dui-icon>
+      </dui-checkbox>
     </feature-preview>
     <code-previewer [Code]="customIconCheckbox"> </code-previewer>
   </div>
@@ -261,21 +308,80 @@
       <h2
         class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
       >
-      Disabled Checkbox
+        Disabled Checkbox
       </h2>
     </div>
     <p
-    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-      >
-      You can disable the Checkbox component by passing the disabled prop to the Checkbox component.
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can disable the Checkbox component by passing the disabled prop to the
+      Checkbox component.
     </p>
   </div>
   <div class="code-snippet-area mt-10">
-    <feature-preview >
-      <dui-checkbox color="gray" label="Remember Me" [isChecked]="true" [disabled]="true"></dui-checkbox>
-      <dui-checkbox color="gray" label="Remember Me" [disabled]="true"></dui-checkbox>
+    <feature-preview>
+      <dui-checkbox
+        color="gray"
+        label="Remember Me"
+        [isChecked]="true"
+        [disabled]="true"
+      ></dui-checkbox>
+      <dui-checkbox
+        color="gray"
+        label="Remember Me"
+        [disabled]="true"
+      ></dui-checkbox>
     </feature-preview>
     <code-previewer [Code]="disabledCheckbox"> </code-previewer>
   </div>
+
+  <!-- CheckBox With Link -->
+
+  <div class="mt-6">
+    <div id="checkbox-link" class="group flex items-center">
+      <a
+        href="#checkbox-link"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Checkbox with Link
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can add any element inside
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >dui-checkbox</code
+      >. Here we used typography to make it look like a Link
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-checkbox color="gray">
+        <dui-typography color="gray" variant="paragraph">
+          I agree with the <a href="https://www.david-ui-angular.com/docs/checkbox" class="text-blue-500">terms and condition</a>
+        </dui-typography>
+      </dui-checkbox>
+    </feature-preview>
+    <code-previewer [Code]="checkBoxLink"> </code-previewer>
+  </div>
 </div>
-  
