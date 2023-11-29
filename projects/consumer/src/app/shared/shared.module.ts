@@ -21,12 +21,14 @@ import {
   DUITypography,
   DUISwitch,
   DUISlider,
-  DUIButtonGroup
+  DUIButtonGroup,
+  DUIIconButton
 } from 'projects/david-ui-angular/src/public-api';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from '../docs/footer/footer.component';
 import { FeaturePreviewComponent } from './components/feature-preview/feature-preview.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HighlightModule,
     ClipboardModule,
     FormsModule,
+    FontAwesomeModule,
     ClipboardModule,
 
     DUIAccordion,
@@ -59,7 +62,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUIIcon,
     DUISwitch,
     DUISlider,
-    DUIButtonGroup
+    DUIButtonGroup,
+    DUIIconButton
   ],
   exports: [
     CodePreviewerComponent,
@@ -68,6 +72,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ClipboardModule,
     FormsModule,
     ClipboardModule,
+    FontAwesomeModule,
     FooterComponent,
     NavbarComponent,
 
@@ -89,7 +94,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DUIChip,
     DUISwitch,
     DUISlider,
-    DUIButtonGroup
+    DUIButtonGroup,
+    DUIIconButton
 
   ],
 })

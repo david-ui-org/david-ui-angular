@@ -1,0 +1,17 @@
+<ng-container *ngIf="ripple; then withRipple else withoutRipple"> </ng-container>
+
+<ng-template #withRipple>
+  <button dui-ripple [ripple-theme]="this.variant == 'outlined' || this.variant == 'text' || this.color == 'white' ? 'dark': 'light'" class="{{ iconButtonClass }}">
+    <ng-container [ngTemplateOutlet]="content"></ng-container>
+  </button>
+</ng-template>
+
+<ng-template #withoutRipple>
+  <button class="{{ iconButtonClass }}">
+    <ng-container [ngTemplateOutlet]="content"></ng-container>
+  </button>
+</ng-template>
+
+<ng-template #content>
+  <ng-content></ng-content>
+</ng-template>

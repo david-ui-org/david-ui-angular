@@ -23,6 +23,7 @@ import { ChipComponent } from './features/chip/chip.component';
 import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
 import { ButtonGroupComponent } from './features/button-group/button-group.component';
+import { IconbuttonComponent } from './features/iconbutton/iconbutton.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -289,6 +290,24 @@ export const routes: Routes = [
             {
               name: 'title',
               content: 'Tailwind CSS Dialog with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'icon-button',
+        component: IconbuttonComponent,
+        data: {
+          title: 'Tailwind CSS Icon Button with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Icon Button example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Icon Button with Angular - David UI',
             },
           ],
         },

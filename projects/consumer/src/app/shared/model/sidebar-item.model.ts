@@ -188,6 +188,21 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Icon Button',
+        route: '/docs/icon-button',
+        scrollSpyElements: [
+          { id: 'button-main', label: 'Button' },
+          { id: 'button-variant', label: 'Button Variant' },
+          { id: 'button-size', label: 'Button Sizes' },
+          { id: 'button-colors', label: 'Button Colors' },
+          { id: 'button-icon', label: 'Button with Icons' },
+          { id: 'button-block', label: 'Block Level Button' },
+          { id: 'button-rounded', label: 'Rounded Button' },
+          { id: 'button-ripple', label: 'Buttons Ripple Effect' },
+        ],
+        isActive: true
+      },
+      {
         name: 'Input',
         route: '/docs/input',
         scrollSpyElements: [
