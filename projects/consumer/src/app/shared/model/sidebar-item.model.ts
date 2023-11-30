@@ -164,6 +164,19 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Chip',
+        route: '/docs/chip',
+        scrollSpyElements: [
+          { id: 'chip-main', label: 'Chip' },
+          { id: 'chip-variants', label: 'Chip Variant' },
+          { id: 'chip-sizes', label: 'Chip Size' },
+          { id: 'chip-colors', label: 'Chip Colors' },
+          { id: 'chip-icon', label: 'Chip Icon' },
+          { id: 'chip-pills', label: 'Chip Pills' },
+        ],
+        isActive: false
+      },
+      {
         name: 'Collapse',
         route: '/docs/collapse',
         scrollSpyElements: [
@@ -171,15 +184,7 @@ export const SidebarData: SidebarItem[] = [
         ],
         isActive:false
         },
-        {
-        name: 'Chip',
-        route: '/docs/chip',
-        scrollSpyElements: [
-          { id: 'chip-main', label: 'Chip' },
-          { id: 'chip-colors', label: 'Chip Colors' },
-        ],
-        isActive: false
-      },
+        
       {
         name: 'Dialog',
         route: '/docs/dialog',

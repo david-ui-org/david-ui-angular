@@ -26,10 +26,13 @@ export class DUIChipComponent extends DUITheme implements OnInit {
   @Input() size!: size;
   @Input() color!: color;
   @Input() isDismissible!: boolean;
+  @Input() hasIcon!: boolean;
   @Input() className!: className;
   @Input() open!: boolean;
 
   chipClass: string = '';
+  contentClass: string = '';
+  iconClass: string = '';
 
   @Output() OnClose: EventEmitter<void> = new EventEmitter();
 
@@ -41,13 +44,14 @@ export class DUIChipComponent extends DUITheme implements OnInit {
     this.className = this.className ?? DefaultChip.className;
     this.open = this.open ?? DefaultChip.open;
     this.isDismissible = this.isDismissible ?? DefaultChip.isDismissible;
+    this.hasIcon = this.hasIcon ?? DefaultChip.hasIcon;
   }
 
   override getCompiledClassName(): string {
     // base Chip class
     var baseChip = ConvertToClassName(ObjectToStr(ChipTheme['chip']));
 
-    // Chip variant Class
+    // Chip variant & Color Class
     var chipVariant = ConvertToClassName(
       ObjectToStr(ChipVariantMapper[this.variant][this.color])
     );
@@ -60,7 +64,34 @@ export class DUIChipComponent extends DUITheme implements OnInit {
 
     return twMerge([baseChip, chipVariant, chipSize, customClass]);
   }
+
+  getIconClass():string{
+    var classes = '';
+      // base Chip Icon class
+      classes += ConvertToClassName(ObjectToStr(ChipTheme['icon']));
+      var styleClass = ChipTheme[this.size] as IPropsMapper<object>;
+
+      classes += ConvertToClassName(ObjectToStr(styleClass['icon']));
+   
+      return ConvertToClassName(classes)
+  }
+  getContentClass():string{
+    var classes = '';
+    if (this.hasIcon && this.size === "sm") {
+      classes = "ml-4";
+    }
+    else if (this.hasIcon && this.size === "md"){
+      classes =  "ml-[18px]";
+
+    }else if (this.hasIcon && this.size === "lg"){
+      classes =  "ml-5";
+
+    }
+    return classes;
+  }
   ngOnInit(): void {
     this.chipClass = this.getCompiledClassName();
+    this.contentClass = this.getContentClass();
+    this.iconClass = this.getIconClass();
   }
 }

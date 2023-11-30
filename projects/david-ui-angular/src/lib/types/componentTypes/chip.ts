@@ -23,6 +23,7 @@ export interface Chip {
     className: className;
     open: open;
     isDismissible : isDismissible
+    hasIcon : boolean
   }
   
   
@@ -33,7 +34,8 @@ export interface Chip {
       color: 'gray',
       className: '',
       open: false,
-      isDismissible: false
+      isDismissible: false,
+      hasIcon: false
   };
 
   export const ChipVariantMapper : IPropsMapper<IPropsMapper<object>> = {
