@@ -6,7 +6,6 @@ David UI Angular is a comprehensive Angular framework that leverages the power o
 
 <img width="1621" alt="david-ui-angular-thumb" src="https://github.com/david-ui-org/david-ui-angular/assets/146350044/6a06dd12-0e4d-41fd-805a-459cc6459867">
 
-
 <details>
   <summary>Table of Contents</summary>
   
