@@ -34,7 +34,6 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
   @Input() open!: open;
   @Input() className!: className;
   @Input() size!: size;
-  @Input() divider!: boolean;
   @Input() closeOnBackground!: boolean;
   @Input() animate!: animate;
 
@@ -44,7 +43,6 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
   overlayClass: string = '';
   containerClass: string = '';
   headerClass: string = '';
-  bodyClass: string = '';
   footerClass: string = '';
 
   constructor() {
@@ -52,7 +50,6 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
     this.open = this.open ?? DefaultDialogProps.open;
     this.className = this.className ?? DefaultDialogProps.className;
     this.size = this.size ?? DefaultDialogProps.size;
-    this.divider = this.divider ?? DefaultDialogProps.divider;
     this.closeOnBackground = this.closeOnBackground ?? DefaultDialogProps.closeOnBackground;
     this.animate = this.animate ?? DefaultDialogProps.animate;
   }
@@ -91,14 +88,6 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
     this.containerClass = this.getCompiledClassName();
     this.headerClass = ConvertToClassName(
       ObjectToStr(dialogHeaderTheme['container'])
-    );
-    var dividerClass = this.divider
-      ? ConvertToClassName(ObjectToStr(dialogBodyTheme['divider']))
-      : '';
-
-    this.bodyClass = twMerge(
-      ConvertToClassName(ObjectToStr(dialogBodyTheme['container'])) +
-        dividerClass
     );
     this.footerClass = ConvertToClassName(
       ObjectToStr(dialogFooterTheme['container'])

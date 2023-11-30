@@ -190,6 +190,8 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/dialog',
         scrollSpyElements: [
           { id: 'dialog-main', label: 'Dialog' },
+          { id: 'dialog-size', label: 'Dialog Sizes' },
+          { id: 'dialog-long', label: 'Long Dialog' },
 
         ],
         isActive: false
