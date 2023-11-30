@@ -12,7 +12,7 @@ export const dialogTheme : IPropsMapper<object> ={
         backgroundColor: "bg-black",
         backgroundOpacity: "bg-opacity-60",
         backdropFilter: "backdrop-blur-sm",
-        zIndex: "z-[9999]"
+        zIndex: "z-[999]"
       },
       container: {
         position: "relative",
@@ -63,5 +63,6 @@ export const dialogTheme : IPropsMapper<object> ={
         maxHeight: "max-h-[100vh]",
         m: "m-0",
         borderRadius: "rounded-none",
+        zindex:'z-[999]'
       },
 }

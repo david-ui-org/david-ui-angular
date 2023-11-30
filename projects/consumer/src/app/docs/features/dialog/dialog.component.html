@@ -65,12 +65,15 @@
     <code-previewer [Code]="importCode"> </code-previewer>
 
     <div class="code-snippet-area mt-10">
-      <feature-preview>
-        <dui-button color="gray" (click)="OpenDialog()">
-          Open Dialog
-        </dui-button>
+      <feature-preview [centered]="true">
+        <div class="flex items-center justify-items-center">
+          <dui-button color="gray" (click)="OpenDialog()">
+            Open Dialog
+          </dui-button>
 
-        <dui-dialog [open]="openDialog">
+        </div>
+
+        <dui-dialog [open]="openDialog" [closeOnBackground]="true" (onClose)="this.openDialog = !this.openDialog" >
             <dui-dialog-header>
               <dui-typography variant="h2">What is David UI Angular?</dui-typography>
             </dui-dialog-header>
@@ -84,6 +87,186 @@
             </dui-dialog-body>
             <dui-dialog-footer>
               <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialog()">
+                Close
+              </dui-button>
+            </dui-dialog-footer>
+          </dui-dialog>
+      </feature-preview>
+      <code-previewer [Code]="dialogCode"> </code-previewer>
+    </div>
+
+    <div class="mt-6">
+      <div id="dialog-size" class="group flex items-center">
+        <a
+          href="#dialog-size"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <h2
+          class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+        >
+          Dialog Size
+        </h2>
+      </div>
+      <p
+        class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+      >
+      The <code
+      class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+      >Dialog</code> component comes with 6 different sizes that you can change it using the <code
+      class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+      >size</code> prop.
+         
+      </p>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <feature-preview>
+        <div class="grid grid-cols-3  gap-2 justify-items-center">
+          <dui-button color="gray" (click)="OpenDialogSize('xs')">
+            Open Dialog XS
+          </dui-button>
+          <dui-button color="gray" (click)="OpenDialogSize('sm')">
+            Open Dialog SM
+          </dui-button>
+          <dui-button color="gray" (click)="OpenDialogSize('md')">
+            Open Dialog MD
+          </dui-button>
+          <dui-button color="gray" (click)="OpenDialogSize('lg')">
+            Open Dialog LG
+          </dui-button>
+          <dui-button color="gray" (click)="OpenDialogSize('xl')">
+            Open Dialog XL
+          </dui-button>
+          <dui-button color="gray" (click)="OpenDialogSize('xxl')">
+            Open Dialog XXL
+          </dui-button>
+          
+        </div>
+      
+
+        <dui-dialog [open]="openDialogXS" size="xs">
+            <dui-dialog-header>
+              <dui-typography variant="h2">What is David UI Angular?</dui-typography>
+            </dui-dialog-header>
+            <dui-dialog-body>
+              <dui-typography variant="paragraph">
+                David UI Angular is an easy to use components library for Tailwind CSS
+                and Angular. It provides a simple way to customize your
+                components, you can change the colors, fonts, breakpoints and everything
+                you need.
+              </dui-typography>
+            </dui-dialog-body>
+            <dui-dialog-footer>
+              <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('xs')">
+                Close
+              </dui-button>
+            </dui-dialog-footer>
+          </dui-dialog>
+
+          <dui-dialog [open]="openDialogSM" size="sm">
+            <dui-dialog-header>
+              <dui-typography variant="h2">What is David UI Angular?</dui-typography>
+            </dui-dialog-header>
+            <dui-dialog-body>
+              <dui-typography variant="paragraph">
+                David UI Angular is an easy to use components library for Tailwind CSS
+                and Angular. It provides a simple way to customize your
+                components, you can change the colors, fonts, breakpoints and everything
+                you need.
+              </dui-typography>
+            </dui-dialog-body>
+            <dui-dialog-footer>
+              <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('sm')">
+                Close
+              </dui-button>
+            </dui-dialog-footer>
+          </dui-dialog>
+
+          <dui-dialog [open]="openDialogMD" size="md">
+            <dui-dialog-header>
+              <dui-typography variant="h2">What is David UI Angular?</dui-typography>
+            </dui-dialog-header>
+            <dui-dialog-body>
+              <dui-typography variant="paragraph">
+                David UI Angular is an easy to use components library for Tailwind CSS
+                and Angular. It provides a simple way to customize your
+                components, you can change the colors, fonts, breakpoints and everything
+                you need.
+              </dui-typography>
+            </dui-dialog-body>
+            <dui-dialog-footer>
+              <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('md')">
+                Close
+              </dui-button>
+            </dui-dialog-footer>
+          </dui-dialog>
+
+          <dui-dialog [open]="openDialogLG" size="lg" >
+            <dui-dialog-header>
+              <dui-typography variant="h2">What is David UI Angular?</dui-typography>
+            </dui-dialog-header>
+            <dui-dialog-body>
+              <dui-typography variant="paragraph">
+                David UI Angular is an easy to use components library for Tailwind CSS
+                and Angular. It provides a simple way to customize your
+                components, you can change the colors, fonts, breakpoints and everything
+                you need.
+              </dui-typography>
+            </dui-dialog-body>
+            <dui-dialog-footer>
+              <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('lg')">
+                Close
+              </dui-button>
+            </dui-dialog-footer>
+          </dui-dialog>
+
+          <dui-dialog [open]="openDialogXL" size="xl">
+            <dui-dialog-header>
+              <dui-typography variant="h2">What is David UI Angular?</dui-typography>
+            </dui-dialog-header>
+            <dui-dialog-body>
+              <dui-typography variant="paragraph">
+                David UI Angular is an easy to use components library for Tailwind CSS
+                and Angular. It provides a simple way to customize your
+                components, you can change the colors, fonts, breakpoints and everything
+                you need.
+              </dui-typography>
+            </dui-dialog-body>
+            <dui-dialog-footer>
+              <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('xl')">
+                Close
+              </dui-button>
+            </dui-dialog-footer>
+          </dui-dialog>
+
+          <dui-dialog [open]="openDialogXXL" size="xxl">
+            <dui-dialog-header>
+              <dui-typography variant="h2">What is David UI Angular?</dui-typography>
+            </dui-dialog-header>
+            <dui-dialog-body>
+              <dui-typography variant="paragraph">
+                David UI Angular is an easy to use components library for Tailwind CSS
+                and Angular. It provides a simple way to customize your
+                components, you can change the colors, fonts, breakpoints and everything
+                you need.
+              </dui-typography>
+            </dui-dialog-body>
+            <dui-dialog-footer>
+              <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('xxl')">
                 Close
               </dui-button>
             </dui-dialog-footer>

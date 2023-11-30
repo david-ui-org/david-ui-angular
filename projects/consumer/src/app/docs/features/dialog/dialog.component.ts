@@ -35,8 +35,40 @@ export class DialogComponent {
   </dui-dialog-footer>
   </dui-dialog>`;
 
+  private sizes = ['xs','sm','md','lg','xl','xxl']
+
   openDialog: boolean = false;
+  openDialogXS: boolean = false;
+  openDialogSM: boolean = false;
+  openDialogMD: boolean = false;
+  openDialogLG: boolean = false;
+  openDialogXL: boolean = false;
+  openDialogXXL: boolean = false;
+
   OpenDialog() {
     this.openDialog = !this.openDialog;
+  }
+  OpenDialogSize(size : string) {
+    if (this.sizes.includes(size)) {
+      if (size == 'xs') {
+        this.openDialogXS =  !this.openDialogXS
+      }
+      if (size == 'sm') {
+        this.openDialogSM =  !this.openDialogSM
+      }
+      if (size == 'md') {
+        this.openDialogMD =  !this.openDialogMD
+      }
+      if (size == 'lg') {
+        this.openDialogLG =  !this.openDialogLG
+      }
+      if (size == 'xl') {
+        this.openDialogXL =  !this.openDialogXL
+      }
+      if (size == 'xxl') {
+        this.openDialogXXL =  !this.openDialogXXL
+      }
+    }
+    
   }
 }

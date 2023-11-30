@@ -1,9 +1,11 @@
 import {
   AfterViewInit,
   Component,
+  EventEmitter,
   Input,
   OnChanges,
   OnInit,
+  Output,
 } from '@angular/core';
 import { DUITheme } from '../../theme/theme-base';
 import {
@@ -33,7 +35,11 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
   @Input() className!: className;
   @Input() size!: size;
   @Input() divider!: boolean;
+  @Input() closeOnBackground!: boolean;
   @Input() animate!: animate;
+
+
+  @Output() onClose: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   overlayClass: string = '';
   containerClass: string = '';
@@ -47,16 +53,24 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
     this.className = this.className ?? DefaultDialogProps.className;
     this.size = this.size ?? DefaultDialogProps.size;
     this.divider = this.divider ?? DefaultDialogProps.divider;
+    this.closeOnBackground = this.closeOnBackground ?? DefaultDialogProps.closeOnBackground;
     this.animate = this.animate ?? DefaultDialogProps.animate;
   }
 
   ngOnChanges() {
-    if (this.open) {
+    if (this.open && this.size !== 'xxl') {
       // Lock body scroll when the overlay is active
       document.body.style.overflow = 'hidden';
     } else {
       // Restore body scroll when the overlay is removed
       document.body.style.overflow = 'scroll';
+    }
+  }
+
+  closeOnBackgroundClick(){
+    if (this.closeOnBackground) {
+      this.open =!this.open;
+      this.onClose.emit(this.open);
     }
   }
 
