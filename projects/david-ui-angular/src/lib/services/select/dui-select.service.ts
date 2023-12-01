@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { SelectComponent } from '../../components/select/select.component';
 import { BehaviorSubject, Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class DuiSelectService {
   private select!: SelectComponent;
 

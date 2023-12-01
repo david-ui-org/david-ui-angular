@@ -50,6 +50,10 @@ export const SelectTheme: IPropsMapper<object> = {
     fontWeight: 'font-normal',
     transition: 'transition-all',
   },
+  'asterik-class' : {
+    color: 'text-red-500',
+    margin :'mx-1'
+  },
   "option-container": {
     width: 'w-full',
     maxHeight: 'max-h-96',

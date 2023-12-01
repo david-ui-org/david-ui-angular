@@ -6,6 +6,7 @@ import {
   Input,
   OnInit,
   QueryList,
+  Self,
   ViewChild,
   forwardRef,
 } from '@angular/core';
@@ -43,6 +44,8 @@ import { DuiSelectService } from '../../services/select/dui-select.service';
       useExisting: forwardRef(() => SelectComponent),
       multi: true,
     },
+    DuiSelectService,
+    
   ],
 })
 export class SelectComponent
@@ -94,7 +97,7 @@ export class SelectComponent
 
   public onTouchedFn = () => {};
 
-  constructor(private dropdownService: DuiSelectService) {
+  constructor(@Self() private dropdownService: DuiSelectService) {
     super();
     this.dropdownService.registerSelectInstance(this);
     this.variant = this.variant ?? DefaultSelectProps.variant;
@@ -141,7 +144,10 @@ export class SelectComponent
 
     classes += ConvertToClassName(ObjectToStr(sizeSelectStyle));
     // Select color
-    let coloredStyles = selectOutlinedColors[this.color] as IPropsMapper<any>;
+    var variantColorClass = variantStyles[
+      'variantColor'
+    ] as IPropsMapper<object>;
+    let coloredStyles = variantColorClass[this.color] as IPropsMapper<any>;
     classes += ConvertToClassName(ObjectToStr(coloredStyles[state]));
 
     // State Class
@@ -162,7 +168,10 @@ export class SelectComponent
     classes += ConvertToClassName(ObjectToStr(variantStyles['label']));
 
     // label color
-    let coloredStyles = selectOutlinedLabelColors[
+    var labelColorClass = variantStyles[
+      'labelColor'
+    ] as IPropsMapper<object>;
+    let coloredStyles = labelColorClass[
       this.color
     ] as IPropsMapper<any>;
     classes += ConvertToClassName(ObjectToStr(coloredStyles[state]));
@@ -200,6 +209,9 @@ export class SelectComponent
     );
     this.optionContainer = ConvertToClassName(
       ObjectToStr(SelectTheme['option-container'])
+    );
+    this.asteriskClasses = ConvertToClassName(
+      ObjectToStr(SelectTheme['asterik-class'])
     );
     var optionBase = SelectTheme['option'] as IPropsMapper<any>;
     this.optionsClass = ConvertToClassName(ObjectToStr(optionBase['initial']));
