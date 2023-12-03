@@ -238,6 +238,9 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/select',
         scrollSpyElements: [
           { id: 'select-main', label: 'Select' },
+          { id: 'select-variant', label: 'Select Variant' },
+          { id: 'select-size', label: 'Select Size' },
+          { id: 'select-colors', label: 'Select Color' },
         ],
         isActive: false
       },

@@ -25,6 +25,26 @@ export class SelectComponent {
   </div>
   `;
 
+  selectSizeCode: string = `  
+  <div class="flex w-80 flex-col gap-8">
+    <dui-select size="md"
+      [optionsList]="optionsStandard">
+      <dui-options
+        *ngFor="let option of optionsStandard"
+        [value]="option">
+        {{ option }}
+        </dui-options>
+    </dui-select>
+
+    <dui-select size="lg" [optionsList]="optionsStandard">
+      <dui-options
+        *ngFor="let option of optionsStandard"
+        [value]="option"
+        >{{ option }}</dui-options>
+    </dui-select>
+  </div>
+  `;
+
   selectVariantCode: string = `  
   <div class="flex w-80 flex-col gap-8">
     <dui-select
@@ -52,6 +72,33 @@ export class SelectComponent {
         [value]="option"
         >{{ option }}</dui-options
       >
+    </dui-select>
+  </div>
+  `;
+
+  selectColorCode: string = `  
+  <div class="flex w-80 flex-col gap-8">
+  <dui-select
+  color="blue"
+    [optionsList]="optionsStandard"
+  >
+    <dui-options
+      *ngFor="let option of optionsStandard"
+      [value]="option"
+      >{{ option }}</dui-options>
+  </dui-select>
+
+  <dui-select color="purple" [optionsList]="optionsStandard">
+    <dui-options
+      *ngFor="let option of optionsStandard"
+      [value]="option"
+      >{{ option }}</dui-options>
+  </dui-select>
+  <dui-select color="green" [optionsList]="optionsStandard">
+    <dui-options
+      *ngFor="let option of optionsStandard"
+      [value]="option"
+      >{{ option }}</dui-options>
     </dui-select>
   </div>
   `;
