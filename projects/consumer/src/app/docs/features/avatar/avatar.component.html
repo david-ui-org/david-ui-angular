@@ -20,30 +20,41 @@
       </svg>
     </a>
     <h1
-    class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
-  >
-    Tailwind CSS Avatar with Angular
-  </h1>
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Avatar with Angular
+    </h1>
   </div>
 
   <p
     class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
   >
-  Use our Tailwind CSS Avatar built with Angular to represent users or entities on your website. It can be useful for showing user images, icons, or any other visual cues.
+    Use our Tailwind CSS Avatar built with Angular to represent users or
+    entities on your website. It can be useful for showing user images, icons,
+    or any other visual cues.
   </p>
   <p
     class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
   >
-  The avatar is a UI component used by web developers as a visual representation of a user. They are widely used across many platforms, like social media sites, forums, and gaming platforms. They are also used for content authors when creating website blogs. Avatar components often work in combination with other elements. 
+    The avatar is a UI component used by web developers as a visual
+    representation of a user. They are widely used across many platforms, like
+    social media sites, forums, and gaming platforms. They are also used for
+    content authors when creating website blogs. Avatar components often work in
+    combination with other elements.
   </p>
   <p
-    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">
-    Below we present you our Angular Avatar example crafted with Tailwind CSS that will help you build enterprise-level applications with ease. Check it out!
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Below we present you our Angular Avatar example crafted with Tailwind CSS
+    that will help you build enterprise-level applications with ease. Check it
+    out!
   </p>
 
-  <p class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600">
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
     You first need to import the DUIAvatar Module into your application module
-</p>
+  </p>
   <code-previewer [Code]="importCode"> </code-previewer>
   <div class="code-snippet-area mt-10">
     <feature-preview>
@@ -51,6 +62,64 @@
     </feature-preview>
     <code-previewer [Code]="avatarCode"> </code-previewer>
   </div>
+
+  <!-- Avatar Variants -->
+  <div class="mt-6">
+    <div id="avatar-variant" class="group flex items-center">
+      <a
+        href="#avatar-variant"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Avatar Variant
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      The
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Avatar</code
+      >
+      component comes with 3 different variants that you can change it using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >variant</code
+      >
+      prop.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex gap-3">
+        <dui-avatar src="../assets/avatar.jpeg" variant="circle"></dui-avatar>
+        <dui-avatar src="../assets/avatar.jpeg" variant="rounded"></dui-avatar>
+        <dui-avatar src="../assets/avatar.jpeg" variant="square"></dui-avatar>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="avatarVariant"> </code-previewer>
+  </div>
+
+  <!-- Avatar Sizes -->
+
   <div class="mt-6">
     <div id="avatar-size" class="group flex items-center">
       <a
@@ -95,5 +164,83 @@
       <dui-avatar src="../assets/avatar.jpeg" size="xxl"></dui-avatar>
     </feature-preview>
     <code-previewer [Code]="avatarSizes"> </code-previewer>
+  </div>
+
+  <!-- Avatar Border -->
+  <div class="mt-6">
+    <div id="avatar-border" class="group flex items-center">
+      <a
+        href="#avatar-border"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Avatar with Border
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can add border around the avatar using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >addBorder</code
+      >
+      prop. To change the color of the avatar border use the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >color</code
+      >
+      prop, by default it's
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >gray</code
+      >
+      .
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex gap-3">
+        <dui-avatar
+          src="../assets/avatar.jpeg"
+          className="p-0.5"
+          [addBorder]="true"
+          color="green"
+          variant="circle"
+        ></dui-avatar>
+        <dui-avatar
+          src="../assets/avatar.jpeg"
+          className="p-0.5"
+          [addBorder]="true"
+          color="red"
+          variant="rounded"
+        ></dui-avatar>
+        <dui-avatar
+          src="../assets/avatar.jpeg"
+          className="p-0.5"
+          [addBorder]="true"
+          color="purple"
+          variant="square"
+        ></dui-avatar>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="avatarBorder"> </code-previewer>
   </div>
 </div>

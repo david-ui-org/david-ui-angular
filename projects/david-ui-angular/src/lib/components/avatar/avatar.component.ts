@@ -16,7 +16,7 @@ export class AvatarComponent extends DUITheme implements OnInit {
   @Input({required: true}) src! : string;
   @Input() variant!: variant;
   @Input() size!: size;
-  @Input() borderColor!: color;
+  @Input() color!: color;
   @Input() className!: className;
   @Input() addBorder!: boolean;
 
@@ -26,19 +26,20 @@ export class AvatarComponent extends DUITheme implements OnInit {
     super();
     this.variant = this.variant ?? DefaultAvatar.variant;
     this.size = this.size ?? DefaultAvatar.size;
-    this.borderColor = this.borderColor ?? DefaultAvatar.borderColor;
+    this.color = this.color ?? DefaultAvatar.borderColor;
     this.className = this.className ?? DefaultAvatar.className;
     this.addBorder = this.addBorder ?? DefaultAvatar.addBorder;
   }
   override getCompiledClassName(): string {
     var classes:string = '';
+    classes += ConvertToClassName(ObjectToStr(AvatarPropsMapper['initial']))
     // get avatar variant class
     classes += ConvertToClassName(ObjectToStr(AvatarPropsMapper[this.variant]))
     //get avatar size
     classes += ConvertToClassName(ObjectToStr(AvatarPropsMapper[this.size]));
     // add border color if enabled
     if (this.addBorder) {
-      classes += ConvertToClassName(ObjectToStr(avatarBorderColor[this.borderColor]))
+      classes += ConvertToClassName(ObjectToStr(avatarBorderColor[this.color]))
     }
     if (this.className) {
       classes += ConvertToClassName(this.className);

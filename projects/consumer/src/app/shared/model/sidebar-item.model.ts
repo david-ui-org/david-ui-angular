@@ -114,7 +114,9 @@ export const SidebarData: SidebarItem[] = [
         route: '/docs/avatar',
         scrollSpyElements: [
           { id: 'avatar-main', label: 'Avatar' },
+          { id: 'avatar-variant', label: 'Avatar Variant' },
           { id: 'avatar-size', label: 'Avatar Sizes' },
+          { id: 'avatar-border', label: 'Avatar with Border' },
         ],
         isActive: false
       },

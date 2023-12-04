@@ -1,6 +1,6 @@
 import { colors } from '../generic';
 
-export type variant = 'rounded' | 'circle';
+export type variant = 'rounded' | 'circle' | 'square';
 export type color = colors;
 export type size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';
 export type className = string;
