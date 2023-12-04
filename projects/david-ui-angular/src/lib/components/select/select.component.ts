@@ -28,11 +28,10 @@ import {
 import { SelectTheme } from '../../theme/components/select/select-theme';
 import { CdkDropdownComponent } from '../../shared/components/cdk-dropdown/cdk-dropdown.component';
 import { IPropsMapper } from '../../types/generic';
-import selectOutlinedColors from '../../theme/components/select/select-outline-theme/select-outline-colors';
-import selectOutlinedLabelColors from '../../theme/components/select/select-outline-theme/select-outline-label-colors';
 import { OptionsComponent } from './options/options.component';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { DuiSelectService } from '../../services/select/dui-select.service';
+import { twMerge } from 'tailwind-merge';
 
 @Component({
   selector: 'dui-select',
@@ -154,7 +153,7 @@ export class SelectComponent
     let stateClass = variantStyles[state]['select'] as object;
     classes += ConvertToClassName(ObjectToStr(stateClass));
 
-    return ConvertToClassName(classes);
+    return twMerge(ConvertToClassName(classes).split(' '));
   }
 
   getlabelCompiledClassName(): string {
@@ -185,7 +184,7 @@ export class SelectComponent
     ] as object;
 
     classes += ConvertToClassName(ObjectToStr(sizelabelStyle));
-    return ConvertToClassName(classes);
+    return twMerge(ConvertToClassName(classes).split(' '));
   }
 
   /**
@@ -213,8 +212,6 @@ export class SelectComponent
     this.asteriskClasses = ConvertToClassName(
       ObjectToStr(SelectTheme['asterik-class'])
     );
-    var optionBase = SelectTheme['option'] as IPropsMapper<any>;
-    this.optionsClass = ConvertToClassName(ObjectToStr(optionBase['initial']));
     this.arrowClass = this.getBaseArrowClass();
     this.selectClass = this.getCompiledClassName();
     this.labelClass = this.getlabelCompiledClassName();

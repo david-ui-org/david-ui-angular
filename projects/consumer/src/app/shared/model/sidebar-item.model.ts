@@ -241,6 +241,7 @@ export const SidebarData: SidebarItem[] = [
           { id: 'select-variant', label: 'Select Variant' },
           { id: 'select-size', label: 'Select Size' },
           { id: 'select-colors', label: 'Select Color' },
+          { id: 'select-disabled', label: 'Select Disabled' },
         ],
         isActive: false
       },

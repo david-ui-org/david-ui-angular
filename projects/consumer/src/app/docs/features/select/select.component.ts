@@ -130,6 +130,25 @@ export class SelectComponent {
     </dui-select>
   </div>
   `;
+
+  selectDisabledCode: string = `  
+  <div class="flex w-80 flex-col gap-8">
+    <dui-select
+      label="Select a Version"
+      color="blue"
+      [disabled]="true"
+      [optionsList]="optionsStandard"
+    >
+      <dui-options
+        *ngFor="let option of optionsStandard"
+        [value]="option"
+        >{{ option }}</dui-options
+      >
+    </dui-select>
+
+
+  </div>
+  `;
   options: string[] = [
     'Option 1',
     'Option 2',
@@ -138,7 +157,7 @@ export class SelectComponent {
     'Option 5',
   ];
 
-  optionsStandard: string[] = ['HTML', 'REACT', 'ANGULAR', 'VUE','NEXT'];
+  optionsStandard: string[] = ['HTML', 'REACT', 'ANGULAR', 'VUE', 'NEXT'];
 
   // inputColorCode =`
   // <dui-input color="purple" label="Username"></dui-input>
