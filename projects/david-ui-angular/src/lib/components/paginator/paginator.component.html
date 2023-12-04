@@ -1,5 +1,6 @@
 <div class="{{ containerClass }}">
   <button
+    *ngIf="showFirstLastOption"
     class="{{ buttonClass }}"
     [disabled]="page === 1"
     (click)="selectPage(1)"
@@ -57,13 +58,14 @@
       </g>
     </svg>
   </button>
-  <ng-container *ngIf="false; else Simple">
+  <ng-container *ngIf="variant != 'Simple'; else Simple">
     <button
-      *ngFor="let page of visiblePages"
-      [ngClass]="{ selected: page === page }"
-      (click)="selectPage(page)"
+      *ngFor="let currentpage of visiblePages"
+      [class]="pageClass"
+      [ngClass]="{ 'bg-gray-900 text-white': currentpage === page }"
+      (click)="selectPage(currentpage)"
     >
-      {{ page }}
+      {{ currentpage }}
     </button>
   </ng-container>
   <button
@@ -96,6 +98,7 @@
     </svg>
   </button>
   <button
+    *ngIf="showFirstLastOption"
     class="{{ buttonClass }}"
     [disabled]="page === totalPages"
     (click)="selectPage(totalPages)"
@@ -128,7 +131,9 @@
 
 <ng-template #Simple>
   <span>
-    <p>Page {{ page }} of {{ totalPages }}</p>
+    <p class="antialiased font-normal text-gray-800">
+      Page <strong>{{ page }} </strong> of <strong>{{ totalPages }} </strong>
+    </p>
   </span>
 </ng-template>
 

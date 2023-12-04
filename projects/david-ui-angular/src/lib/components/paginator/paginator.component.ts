@@ -37,6 +37,7 @@ export class PaginatorComponent extends DUITheme
   @Input() page!: number;
   @Input() pageSize!: number;
   @Input() length!: length;
+  @Input() showFirstLastOption!: boolean;
   @Input() visibleRangeLength! : visibleRangeLength;
   @Input() pageSizes: number[]= [5,10,15,20,25];
 
@@ -52,6 +53,7 @@ export class PaginatorComponent extends DUITheme
 
   containerClass : string ='';
   buttonClass : string ='';
+  pageClass : string ='';
 
 
   constructor(){
@@ -61,6 +63,7 @@ export class PaginatorComponent extends DUITheme
     this.page = this.page ?? DefaultPaginationProps.page;
     this.pageSize = this.pageSize ?? DefaultPaginationProps.pageSize;
     this.length = this.length ?? DefaultPaginationProps.length;
+    this.showFirstLastOption = this.showFirstLastOption ?? DefaultPaginationProps.showFirstLastOption;
     this.visibleRangeLength = this.visibleRangeLength ?? DefaultPaginationProps.visibleRangeLength;
   }
 
@@ -72,8 +75,17 @@ export class PaginatorComponent extends DUITheme
     return ConvertToClassName(classes)
   }
 
+   getCompiledPageClassName(): string {
+    var classes = "";
+    var variantStyles = PaginatorVariantTheme[this.variant] as IPropsMapper<any>
+    classes += ConvertToClassName(ObjectToStr(variantStyles['page']))
+
+    return ConvertToClassName(classes)
+  }
+
   ngOnInit(): void {
     this.containerClass =  ConvertToClassName(ObjectToStr(PaginatorTheme['container']));
+    this.pageClass = this.getCompiledPageClassName();
     this.buttonClass = this.getCompiledClassName();
     this.updateTotalPages();
     this.updateVisiblePages();
