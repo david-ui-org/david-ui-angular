@@ -27,29 +27,9 @@ export class SelectComponent {
 
   selectSizeCode: string = `  
   <div class="flex w-80 flex-col gap-8">
-    <dui-select size="md"
-      [optionsList]="optionsStandard">
-      <dui-options
-        *ngFor="let option of optionsStandard"
-        [value]="option">
-        {{ option }}
-        </dui-options>
-    </dui-select>
-
-    <dui-select size="lg" [optionsList]="optionsStandard">
-      <dui-options
-        *ngFor="let option of optionsStandard"
-        [value]="option"
-        >{{ option }}</dui-options>
-    </dui-select>
-  </div>
-  `;
-
-  selectVariantCode: string = `  
-  <div class="flex w-80 flex-col gap-8">
     <dui-select
-      variant="standard"
-      [required]="true"
+      label="Select a Version"
+      size="md"
       [optionsList]="optionsStandard"
     >
       <dui-options
@@ -59,14 +39,11 @@ export class SelectComponent {
       >
     </dui-select>
 
-    <dui-select variant="outlined" [optionsList]="optionsStandard">
-      <dui-options
-        *ngFor="let option of optionsStandard"
-        [value]="option"
-        >{{ option }}</dui-options
-      >
-    </dui-select>
-    <dui-select variant="static" [optionsList]="optionsStandard">
+    <dui-select
+      label="Select a Version"
+      size="lg"
+      [optionsList]="optionsStandard"
+    >
       <dui-options
         *ngFor="let option of optionsStandard"
         [value]="option"
@@ -76,29 +53,80 @@ export class SelectComponent {
   </div>
   `;
 
+  selectVariantCode: string = `  
+  <div class="flex w-80 flex-col gap-8">
+        <dui-select
+          label="Select a Version"
+          variant="standard"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+
+        <dui-select
+          variant="outlined"
+          label="Select a Version"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+        <dui-select
+          label="Select a Version"
+          variant="static"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+      </div>
+  `;
+
   selectColorCode: string = `  
   <div class="flex w-80 flex-col gap-8">
-  <dui-select
-  color="blue"
-    [optionsList]="optionsStandard"
-  >
-    <dui-options
-      *ngFor="let option of optionsStandard"
-      [value]="option"
-      >{{ option }}</dui-options>
-  </dui-select>
+    <dui-select
+      label="Select a Version"
+      color="blue"
+      [optionsList]="optionsStandard"
+    >
+      <dui-options
+        *ngFor="let option of optionsStandard"
+        [value]="option"
+        >{{ option }}</dui-options
+      >
+    </dui-select>
 
-  <dui-select color="purple" [optionsList]="optionsStandard">
-    <dui-options
-      *ngFor="let option of optionsStandard"
-      [value]="option"
-      >{{ option }}</dui-options>
-  </dui-select>
-  <dui-select color="green" [optionsList]="optionsStandard">
-    <dui-options
-      *ngFor="let option of optionsStandard"
-      [value]="option"
-      >{{ option }}</dui-options>
+    <dui-select
+      label="Select a Version"
+      color="purple"
+      [optionsList]="optionsStandard"
+    >
+      <dui-options
+        *ngFor="let option of optionsStandard"
+        [value]="option"
+        >{{ option }}</dui-options
+      >
+    </dui-select>
+    <dui-select
+      label="Select a Version"
+      color="green"
+      [optionsList]="optionsStandard"
+    >
+      <dui-options
+        *ngFor="let option of optionsStandard"
+        [value]="option"
+        >{{ option }}</dui-options
+      >
     </dui-select>
   </div>
   `;
@@ -108,17 +136,9 @@ export class SelectComponent {
     'Option 3',
     'Option 4',
     'Option 5',
-    'Option 6',
   ];
 
-  optionsStandard: string[] = [
-    'Option Standard 1',
-    'Option Standard 2',
-    'Option Standard 3',
-    'Option Standard 4',
-    'Option Standard 5',
-    'Option Standard 6',
-  ];
+  optionsStandard: string[] = ['HTML', 'REACT', 'ANGULAR', 'VUE','NEXT'];
 
   // inputColorCode =`
   // <dui-input color="purple" label="Username"></dui-input>

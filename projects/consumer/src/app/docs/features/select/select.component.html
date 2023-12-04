@@ -119,6 +119,7 @@
     <feature-preview>
       <div class="flex w-80 flex-col gap-8">
         <dui-select
+          label="Select a Version"
           variant="standard"
           [optionsList]="optionsStandard"
         >
@@ -129,14 +130,22 @@
           >
         </dui-select>
 
-        <dui-select variant="outlined" [optionsList]="optionsStandard">
+        <dui-select
+          variant="outlined"
+          label="Select a Version"
+          [optionsList]="optionsStandard"
+        >
           <dui-options
             *ngFor="let option of optionsStandard"
             [value]="option"
             >{{ option }}</dui-options
           >
         </dui-select>
-        <dui-select variant="static" [optionsList]="optionsStandard">
+        <dui-select
+          label="Select a Version"
+          variant="static"
+          [optionsList]="optionsStandard"
+        >
           <dui-options
             *ngFor="let option of optionsStandard"
             [value]="option"
@@ -198,29 +207,34 @@
     <feature-preview>
       <div class="flex w-80 flex-col gap-8">
         <dui-select
-        size="md"
+          label="Select a Version"
+          size="md"
           [optionsList]="optionsStandard"
         >
           <dui-options
             *ngFor="let option of optionsStandard"
             [value]="option"
-            >{{ option }}</dui-options>
+            >{{ option }}</dui-options
+          >
         </dui-select>
 
-        <dui-select size="lg" [optionsList]="optionsStandard">
+        <dui-select
+          label="Select a Version"
+          size="lg"
+          [optionsList]="optionsStandard"
+        >
           <dui-options
             *ngFor="let option of optionsStandard"
             [value]="option"
-            >{{ option }}</dui-options>
+            >{{ option }}</dui-options
+          >
         </dui-select>
-
       </div>
     </feature-preview>
     <code-previewer [Code]="selectSizeCode"> </code-previewer>
   </div>
 
   <!-- Select Colors -->
-
 
   <div class="mt-6">
     <div id="select-colors" class="group flex items-center">
@@ -270,26 +284,38 @@
     <feature-preview>
       <div class="flex w-80 flex-col gap-8">
         <dui-select
-        color="blue"
+          label="Select a Version"
+          color="blue"
           [optionsList]="optionsStandard"
         >
           <dui-options
             *ngFor="let option of optionsStandard"
             [value]="option"
-            >{{ option }}</dui-options>
+            >{{ option }}</dui-options
+          >
         </dui-select>
 
-        <dui-select color="purple" [optionsList]="optionsStandard">
+        <dui-select
+          label="Select a Version"
+          color="purple"
+          [optionsList]="optionsStandard"
+        >
           <dui-options
             *ngFor="let option of optionsStandard"
             [value]="option"
-            >{{ option }}</dui-options>
+            >{{ option }}</dui-options
+          >
         </dui-select>
-        <dui-select color="green" [optionsList]="optionsStandard">
+        <dui-select
+          label="Select a Version"
+          color="green"
+          [optionsList]="optionsStandard"
+        >
           <dui-options
             *ngFor="let option of optionsStandard"
             [value]="option"
-            >{{ option }}</dui-options>
+            >{{ option }}</dui-options
+          >
         </dui-select>
       </div>
     </feature-preview>

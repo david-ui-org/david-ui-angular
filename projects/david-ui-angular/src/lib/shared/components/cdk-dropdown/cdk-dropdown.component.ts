@@ -54,7 +54,6 @@ export class CdkDropdownComponent {
     const positionStrategy = this.overlay.position()
       .flexibleConnectedTo(this.reference)
       .withPush(false)
-      .withLockedPosition(true)
       .withPositions([{
         originX: 'start',
         originY: 'bottom',
@@ -82,7 +81,6 @@ export class CdkDropdownComponent {
     if (!this.overlayRef) {
       return;
     }
-
     const refRect = this.reference.getBoundingClientRect();
     this.overlayRef.updateSize({ width: refRect.width });
   }
