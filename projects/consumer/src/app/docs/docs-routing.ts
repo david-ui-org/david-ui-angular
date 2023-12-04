@@ -24,6 +24,7 @@ import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
 import { ButtonGroupComponent } from './features/button-group/button-group.component';
 import { IconbuttonComponent } from './features/iconbutton/iconbutton.component';
+import { PaginationComponent } from './features/pagination/pagination.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -379,6 +380,24 @@ export const routes: Routes = [
             {
               name: 'title',
               content: 'Tailwind CSS Input with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'pagination',
+        component: PaginationComponent,
+        title: 'Tailwind CSS Pagination with Angular - David UI',
+        data: {
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Pagination.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Pagination with Angular - David UI',
             },
           ],
         },

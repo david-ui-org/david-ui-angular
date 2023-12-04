@@ -223,6 +223,15 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Pagination',
+        route: '/docs/pagination',
+        scrollSpyElements: [
+          { id: 'pagination-main', label: 'Pagination' },
+
+        ],
+        isActive: false
+      },
+      {
         name: 'Radio Button',
         route: '/docs/radiobutton',
         scrollSpyElements: [

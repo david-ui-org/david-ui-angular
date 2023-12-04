@@ -22,7 +22,8 @@ import {
   DUISwitch,
   DUISlider,
   DUIButtonGroup,
-  DUIIconButton
+  DUIIconButton,
+  DUIPaginator
 } from 'projects/david-ui-angular/src/public-api';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from '../docs/footer/footer.component';
@@ -63,7 +64,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     DUISwitch,
     DUISlider,
     DUIButtonGroup,
-    DUIIconButton
+    DUIIconButton,
+    DUIPaginator
   ],
   exports: [
     CodePreviewerComponent,
@@ -95,7 +97,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     DUISwitch,
     DUISlider,
     DUIButtonGroup,
-    DUIIconButton
+    DUIIconButton,
+    DUIPaginator
 
   ],
 })

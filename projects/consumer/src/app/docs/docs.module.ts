@@ -32,6 +32,7 @@ import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
 import { ButtonGroupComponent } from './features/button-group/button-group.component';
 import { IconbuttonComponent } from './features/iconbutton/iconbutton.component';
+import { PaginationComponent } from './features/pagination/pagination.component';
 
 
 
@@ -65,7 +66,8 @@ import { IconbuttonComponent } from './features/iconbutton/iconbutton.component'
     SwitchComponent,
     SliderComponent,
     ButtonGroupComponent,
-    IconbuttonComponent
+    IconbuttonComponent,
+    PaginationComponent
   ],
   imports: [
     CommonModule,
@@ -92,7 +94,8 @@ import { IconbuttonComponent } from './features/iconbutton/iconbutton.component'
     SwitchComponent,
     SliderComponent,
     ButtonGroupComponent,
-    IconbuttonComponent
+    IconbuttonComponent,
+    PaginationComponent
   ]
 })
 export class DocsModule { }

@@ -6,7 +6,6 @@ import {
   error,
   icon,
   label,
-  resizable,
   size,
   success,
   variant,
@@ -19,8 +18,6 @@ import {
 } from '../../utilities/helpers/string-helper';
 import { InputTheme } from '../../theme/components/input/input-theme';
 import { IPropsMapper } from '../../types/generic';
-import inputOutlinedColors from '../../theme/components/input/input-outline-theme/input-outline-colors';
-import inputOutlinedLabelColors from '../../theme/components/input/input-outline-theme/input-outline-labels-colors';
 
 @Component({
   selector: 'dui-input',

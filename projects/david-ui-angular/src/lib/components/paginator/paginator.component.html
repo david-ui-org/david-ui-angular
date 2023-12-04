@@ -1,0 +1,137 @@
+<div class="{{ containerClass }}">
+  <button
+    class="{{ buttonClass }}"
+    [disabled]="page === 1"
+    (click)="selectPage(1)"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      class="h-7 w-7"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M4 4V20M8 12H20M8 12L12 8M8 12L12 16"
+          stroke="#000000"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </svg>
+  </button>
+  <button
+    class="{{ buttonClass }}"
+    [disabled]="page === 1"
+    (click)="selectPage(page - 1)"
+  >
+    <svg
+      viewBox="0 0 24.00 24.00"
+      fill="none"
+      stroke="currentColor"
+      class="h-7 w-7"
+      xmlns="http://www.w3.org/2000/svg"
+      transform="matrix(-1, 0, 0, -1, 0, 0)"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M4 12H20M20 12L16 8M20 12L16 16"
+          stroke="#000000"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </svg>
+  </button>
+  <ng-container *ngIf="false; else Simple">
+    <button
+      *ngFor="let page of visiblePages"
+      [ngClass]="{ selected: page === page }"
+      (click)="selectPage(page)"
+    >
+      {{ page }}
+    </button>
+  </ng-container>
+  <button
+    class="{{ buttonClass }}"
+    [disabled]="page === totalPages"
+    (click)="selectPage(page + 1)"
+  >
+    <svg
+      viewBox="0 0 24.00 24.00"
+      fill="none"
+      stroke="currentColor"
+      class="h-7 w-7"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M4 12H20M20 12L16 8M20 12L16 16"
+          stroke="#000000"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </svg>
+  </button>
+  <button
+    class="{{ buttonClass }}"
+    [disabled]="page === totalPages"
+    (click)="selectPage(totalPages)"
+  >
+    <svg
+      viewBox="0 0 24 24"
+      class="h-7 w-7"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      transform="matrix(-1, 0, 0, -1, 0, 0)"
+    >
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></g>
+      <g id="SVGRepo_iconCarrier">
+        <path
+          d="M4 4V20M8 12H20M8 12L12 8M8 12L12 16"
+          stroke="#000000"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </g>
+    </svg>
+  </button>
+</div>
+
+<ng-template #Simple>
+  <span>
+    <p>Page {{ page }} of {{ totalPages }}</p>
+  </span>
+</ng-template>
+
+<!-- <select [ngModel]="pageSize" (ngModelChange)="selectPageSize($event)">
+    <option *ngFor="let size of pageSizes" [value]="size">{{ size }}</option>
+  </select> -->
