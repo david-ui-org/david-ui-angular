@@ -243,4 +243,169 @@
     </feature-preview>
     <code-previewer [Code]="avatarBorder"> </code-previewer>
   </div>
+
+  <!-- Avatar With Text -->
+
+  <div class="mt-6">
+    <div id="avatar-text" class="group flex items-center">
+      <a
+        href="#avatar-text"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Avatar with Text
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use avatar with other components as well, see example below.
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex flex-col gap-6">
+        <div class="flex items-center gap-4">
+          <dui-avatar
+            src="https://docs.material-tailwind.com/img/face-2.jpg"
+            alt="avatar"
+          />
+          <div>
+            <dui-typography variant="h6">Tania Andrew</dui-typography>
+            <dui-typography
+              variant="small"
+              color="gray"
+              className="font-normal"
+            >
+              Web Developer
+            </dui-typography>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <dui-avatar
+            src="https://docs.material-tailwind.com/img/face-2.jpg"
+            alt="avatar"
+            variant="rounded"
+          />
+          <div>
+            <dui-typography variant="h6">Tania Andrew</dui-typography>
+            <dui-typography
+              variant="small"
+              color="gray"
+              className="font-normal"
+            >
+              Web Developer
+            </dui-typography>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <dui-avatar
+            src="https://docs.material-tailwind.com/img/face-2.jpg"
+            alt="avatar"
+            variant="square"
+          />
+          <div>
+            <dui-typography variant="h6">Tania Andrew</dui-typography>
+            <dui-typography
+              variant="small"
+              color="gray"
+              className="font-normal"
+            >
+              Web Developer
+            </dui-typography>
+          </div>
+        </div>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="avatarText"> </code-previewer>
+  </div>
+
+
+  <!-- Avatar Stack -->
+
+  <div class="mt-6">
+    <div id="avatar-stack" class="group flex items-center">
+      <a
+        href="#avatar-stack"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Avatar Stack
+      </h2>
+    </div>
+
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex items-center -space-x-4">
+        <dui-avatar
+          variant="circle"
+          alt="user 1"
+          className="border-2 border-white hover:z-10 focus:z-10"
+          src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
+        />
+        <dui-avatar
+          variant="circle"
+          alt="user 2"
+          className="border-2 border-white hover:z-10 focus:z-10"
+          src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1061&q=80"
+        />
+        <dui-avatar
+          variant="circle"
+          alt="user 3"
+          className="border-2 border-white hover:z-10 focus:z-10"
+          src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1288&q=80"
+        />
+        <dui-avatar
+          variant="circle"
+          alt="user 4"
+          className="border-2 border-white hover:z-10 focus:z-10"
+          src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80"
+        />
+        <dui-avatar
+          variant="circle"
+          alt="user 5"
+          className="border-2 border-white hover:z-10 focus:z-10"
+          src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80"
+        />
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="avatarStack"> </code-previewer>
+  </div>
 </div>
