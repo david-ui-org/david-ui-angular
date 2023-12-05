@@ -46,5 +46,13 @@ export class TypographyComponent {
   <dui-typography variant="h2" color="red">David UI Angular</dui-typography>
   <dui-typography variant="h3" color="yellow">David UI Angular</dui-typography>
   <dui-typography variant="h4" color="green">David UI Angular</dui-typography>`;
+
+  inputGradientCode = `
+  <div>
+    <dui-typography color="blue" variant="h1" [textGradient]="true">
+    David UI Angular
+    </dui-typography>
+  </div>
+  `;
   textvalue: string = '';
 }
