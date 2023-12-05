@@ -28,6 +28,7 @@ export * from './lib/components/iconbutton/iconbutton.component';
 export * from './lib/components/chip/chip.component';
 export * from './lib/components/switch/switch.component';
 export * from './lib/components/slider/slider.component';
+export * from './lib/components/paginator/paginator.component';
 
 //#endregion
 
@@ -36,6 +37,11 @@ export * from './lib/shared/components/dui-icon/dui-icon.component';
 
 //#endregion
 
+
+//# Models
+export * from './lib/shared/models/paginatedRes';
+
+//#endregion
 
 //# Directives
 
@@ -65,5 +71,6 @@ export * from './lib/components/switch/switch.module';
 export * from './lib/components/slider/slider.module';
 export * from './lib/components/button-group/button-group.module';
 export * from './lib/components/iconbutton/iconbutton.module';
+export * from './lib/components/paginator/paginator.module';
 //#endregion
 
