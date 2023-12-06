@@ -25,6 +25,11 @@ export class PaginationComponent {
 
   `;
 
+  paginationCircularCode = `
+  <dui-paginator variant="Circular" [length]="50"></dui-paginator>
+
+  `;
+
   paginationOptionCode = `
   <div class="flex flex-col w-95">
     <dui-paginator variant="Standard" [showFirstLastOption]="false" [length]="50"></dui-paginator>

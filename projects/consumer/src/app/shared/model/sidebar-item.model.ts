@@ -231,6 +231,7 @@ export const SidebarData: SidebarItem[] = [
           { id: 'pagination-main', label: 'Pagination' },
           { id: 'pagination-simple', label: 'Pagination Simple' },
           { id: 'pagination-standard', label: 'Pagination Standard' },
+          { id: 'pagination-circular', label: 'Pagination Circular' },
           { id: 'pagination-option', label: 'Pagination Options' },
 
         ],

@@ -62,7 +62,7 @@
     <button
       *ngFor="let currentpage of visiblePages"
       [class]="pageClass"
-      [ngClass]="{ 'bg-gray-900 text-white': currentpage === page }"
+      [ngClass]="{ 'bg-gray-900 text-white hover:shadow-lg !hover:bg-gray-900': currentpage === page, 'hover:bg-gray-900/10 ' : currentpage != page}"
       (click)="selectPage(currentpage)"
     >
       {{ currentpage }}

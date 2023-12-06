@@ -114,7 +114,6 @@ export class PaginatorComponent extends DUITheme
   }
 
   private updateVisiblePages(): void {
-    debugger;
     const length = Math.min(this.totalPages, this.visibleRangeLength);
 
     const startIndex = Math.max(
@@ -128,7 +127,6 @@ export class PaginatorComponent extends DUITheme
     );
   }
   private updateTotalPages(): void {
-    debugger;
     this.totalPages = Math.ceil(this.length / this.pageSize);
   }
   selectPage(page: number) {
