@@ -33,6 +33,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PropertiesTableComponent } from './components/properties-table/properties-table.component';
 import { ParagraphComponent } from './components/paragraph/paragraph.component';
 import { CodeComponent } from './components/code/code.component';
+import { H1Component } from './components/h1/h1.component';
+import { H2Component } from './components/h2/h2.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { CodeComponent } from './components/code/code.component';
     NavbarComponent,
     PropertiesTableComponent,
     ParagraphComponent,
-    CodeComponent
+    CodeComponent,
+    H1Component,
+    H2Component
   ],
   imports: [
     CommonModule,
@@ -107,7 +111,9 @@ import { CodeComponent } from './components/code/code.component';
     DUIPaginator,
     PropertiesTableComponent,
     ParagraphComponent,
-    CodeComponent
+    CodeComponent,
+    H1Component,
+    H2Component
   ],
 })
 export class SharedModule {}
