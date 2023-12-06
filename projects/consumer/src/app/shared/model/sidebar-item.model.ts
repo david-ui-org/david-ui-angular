@@ -93,6 +93,7 @@ export const SidebarData: SidebarItem[] = [
           { id: 'accordion-icon', label: 'Accordion With Icon' },
           { id: 'accordion-open', label: 'Accordion Always Opened' },
           { id: 'accordion-disable', label: 'Accordion Disabled' },
+          { id: 'accordion-properties', label: 'Accordion Properties' },
         ],
         isActive: false
       },
