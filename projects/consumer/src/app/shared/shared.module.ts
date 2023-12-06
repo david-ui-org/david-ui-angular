@@ -31,6 +31,8 @@ import { FeaturePreviewComponent } from './components/feature-preview/feature-pr
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PropertiesTableComponent } from './components/properties-table/properties-table.component';
+import { ParagraphComponent } from './components/paragraph/paragraph.component';
+import { CodeComponent } from './components/code/code.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { PropertiesTableComponent } from './components/properties-table/properti
     FooterComponent,
     FeaturePreviewComponent,
     NavbarComponent,
-    PropertiesTableComponent
+    PropertiesTableComponent,
+    ParagraphComponent,
+    CodeComponent
   ],
   imports: [
     CommonModule,
@@ -101,7 +105,9 @@ import { PropertiesTableComponent } from './components/properties-table/properti
     DUIButtonGroup,
     DUIIconButton,
     DUIPaginator,
-    PropertiesTableComponent
+    PropertiesTableComponent,
+    ParagraphComponent,
+    CodeComponent
   ],
 })
 export class SharedModule {}
