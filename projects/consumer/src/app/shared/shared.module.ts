@@ -30,6 +30,7 @@ import { FooterComponent } from '../docs/footer/footer.component';
 import { FeaturePreviewComponent } from './components/feature-preview/feature-preview.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PropertiesTableComponent } from './components/properties-table/properties-table.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     FeaturePreviewComponent,
     NavbarComponent,
+    PropertiesTableComponent
   ],
   imports: [
     CommonModule,
@@ -98,8 +100,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     DUISlider,
     DUIButtonGroup,
     DUIIconButton,
-    DUIPaginator
-
+    DUIPaginator,
+    PropertiesTableComponent
   ],
 })
 export class SharedModule {}

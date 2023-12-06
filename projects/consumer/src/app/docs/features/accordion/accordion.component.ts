@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-accordion',
@@ -199,5 +200,9 @@ accordionAlwaysOpenCode = `  <dui-accordion>
       </dui-accordion-body>
     </dui-accordion-expansion>
   </dui-accordion>`;
+  properties: Property[] = [
+    {attribute : "hideDevider",type:"boolean",description : "show or hide accordion devider",default : "false"},
+    {attribute : "showIcon",type:"boolean",description : "Add or remove the icon",default : "false"},
 
+  ];
 }
