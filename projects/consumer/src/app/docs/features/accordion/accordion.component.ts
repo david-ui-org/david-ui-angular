@@ -203,14 +203,14 @@ accordionAlwaysOpenCode = `  <dui-accordion>
   accordionProperties: Property[] = [
     {attribute : "isDisable",type:"boolean",description : "disable accordion component",default : "false"},
     {attribute : "alwaysOpen",type:"boolean",description : "set default to open accordion component",default : "false"},
-    {attribute : "className",type:"string",description : "custom class can be added with this property",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for accordion expansion",default : ""},
 
   ];
 
   headerProperties: Property[] = [
     {attribute : "hideDivider",type:"boolean",description : "show or hide accordion divider",default : "false"},
     {attribute : "showIcon",type:"boolean",description : "Add or remove the icon",default : "false"},
-    {attribute : "className",type:"string",description : "custom class can be added with this property",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for accordion header",default : ""},
     {attribute : "title",type:"string",description : "required property to add title to accordion header",default : ""},
 
   ];
