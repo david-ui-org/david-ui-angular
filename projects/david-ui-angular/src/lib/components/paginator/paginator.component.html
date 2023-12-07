@@ -2,7 +2,8 @@
   <div class="flex items-center gap-2">
     <button
       *ngIf="showFirstLastOption"
-      class="{{ buttonClass }} relative py-5"
+      class="{{ buttonClass }} relative"
+      [ngClass]="variant != 'Simple' ? 'py-5' : ''"
       [disabled]="page === 1"
       (click)="selectPage(1)"
     >
@@ -107,7 +108,8 @@
     </button>
     <button
       *ngIf="showFirstLastOption"
-      class="{{ buttonClass }} relative py-5"
+      class="{{ buttonClass }} relative "
+      [ngClass]="variant != 'Simple' ? 'py-5' : ''"
       [disabled]="page === totalPages"
       (click)="selectPage(totalPages)"
     >
