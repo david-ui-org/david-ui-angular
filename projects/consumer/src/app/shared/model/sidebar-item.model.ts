@@ -94,6 +94,7 @@ export const SidebarData: SidebarItem[] = [
           { id: 'accordion-open', label: 'Accordion Always Opened' },
           { id: 'accordion-disable', label: 'Accordion Disabled' },
           { id: 'accordion-properties', label: 'Accordion Properties' },
+          { id: 'accordion-header-properties', label: 'Accordion Header Properties' },
         ],
         isActive: false
       },
