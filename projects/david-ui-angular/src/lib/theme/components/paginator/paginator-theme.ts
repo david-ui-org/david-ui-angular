@@ -6,8 +6,7 @@ export const PaginatorTheme: IPropsMapper<object> = {
     display: 'flex',
     alignItems: 'items-center',
     cursor: 'cursor-pointer',
-    p: 'p-3',
-    gap:'gap-2'
+    gap:'gap-8'
   },
 
 };

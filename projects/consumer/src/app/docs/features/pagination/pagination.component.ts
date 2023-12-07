@@ -31,7 +31,7 @@ export class PaginationComponent {
   `;
 
   paginationOptionCode = `
-  <div class="flex flex-col w-95">
+  <div class="flex flex-col w-95 items-center gap-2">
     <dui-paginator variant="Standard" [showFirstLastOption]="false" [length]="50"></dui-paginator>
     <dui-paginator [showFirstLastOption]="false" [length]="50"></dui-paginator>
   </div>
