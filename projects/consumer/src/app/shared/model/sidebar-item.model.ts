@@ -124,6 +124,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'avatar-border', label: 'Avatar with Border' },
           { id: 'avatar-text', label: 'Avatar with Text' },
           { id: 'avatar-stack', label: 'Avatar Stack' },
+          { id: 'avatar-properties', label: 'Avatar Props' },
+          { id: 'avatar-type-variant', label: 'Avatar Type Variant' },
+          { id: 'avatar-type-size', label: 'Avatar Type Size' },
+          { id: 'avatar-type-color', label: 'Avatar Type Color' },
         ],
         isActive: false
       },
