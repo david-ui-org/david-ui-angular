@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-checkbox',
@@ -59,4 +60,41 @@ checkboxColor: string=`  <!-- Use DUI Checkbox in html file -->
   </svg>
   </dui-icon>
   </dui-checkbox>`;
+
+
+
+  checkboxTypeColor: string = 
+  ` type colors =
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
+
+
+  checkboxProperties: Property[] = [
+    {attribute : "label",type:"string",description : "Checkbox label",default : ""},
+    {attribute : "color",type:"Color",description : "change checkbox color",default : "blue"},
+    {attribute : "className",type:"string",description : "Add custom className for checkbox expansion",default : ""},
+    {attribute : "size",type:"boolean",description : "Change checkbox size",default : "md"},
+    {attribute : "disabled",type:"boolean",description : "Disable checkbox",default : "false"},
+    {attribute : "containerClassName",type:"string",description : "Checkbox container class property",default : ""},
+    {attribute : "ripple",type:"boolean",description : "Toggle ripple effect in checkbox",default : "true"},
+    {attribute : "useCustomIcon",type:"boolean",description : "use custome icon in checkbox",default : "false"},
+
+  ];
 }

@@ -179,6 +179,8 @@ export const SidebarData: SidebarItem[] = [
           { id: 'checkbox-disabled', label: 'Checkbox Disabled' },
           { id: 'checkbox-link', label: 'Checkbox With Link' },
           { id: 'checkbox-description', label: 'Checkbox With Description' },
+          { id: 'checkbox-properties', label: 'Checkbox Props' },
+          { id: 'checkbox-type-color', label: 'Checkbox Type Color' },
         ],
         isActive: false
       },
