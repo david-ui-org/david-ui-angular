@@ -108,6 +108,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'alert-color', label: 'Alert Colors' },
           { id: 'alert-dismissible', label: 'Alert Dismissible' },
           { id: 'alert-icon', label: 'Alert Custom Icon' },
+          { id: 'alert-properties', label: 'Alert Props' },
+          { id: 'alert-type-variant', label: 'Alert Type Variant' },
+          { id: 'alert-type-color', label: 'Alert Type Color' },
         ],
         isActive: false
       },

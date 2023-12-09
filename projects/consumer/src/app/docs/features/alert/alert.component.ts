@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-alert',
@@ -19,6 +20,29 @@ export class AlertComponent {
     A simple filled alert for showing message.
   </dui-alert>
   `;
+  alertTypeVariant: string = ` 
+  type variant = "filled" | "gradient" | "outlined" | "ghost";`;
+  alertTypeColor: string = 
+  ` type colors =
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
   dismissAlert: string = ` <dui-alert
     [open]="open"
     [IsDismissible]="true"
@@ -82,6 +106,16 @@ export class AlertComponent {
   <dui-alert color="green" >
     A simple filled alert for showing message.</dui-alert>
   `;
+
+  alertProperties: Property[] = [
+    {attribute : "variant",type:"Variant",description : "change alert variant",default : "filled"},
+    {attribute : "color",type:"Color",description : "change alert color",default : "gray"},
+    {attribute : "className",type:"string",description : "Add custom className for alert expansion",default : ""},
+    {attribute : "open",type:"boolean",description : "Change alert visibility",default : "true"},
+    {attribute : "IsDismissible",type:"boolean",description : "Dismissible alert",default : "false"},
+    {attribute : "onAlertClosed",type:"func",description : "function when alert component is closed",default : ""},
+
+  ];
 
   toggleAlert() {
     this.open = !this.open;
