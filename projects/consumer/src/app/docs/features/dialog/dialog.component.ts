@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-dialog',
@@ -228,7 +229,52 @@ export class DialogComponent {
     </dui-dialog-footer>
   </dui-dialog>`;
 
-  private sizes = ['xs','sm','md','lg','xl','xxl']
+  dialogTypeSize: string = ` 
+  type size = "xs" | "sm" | "md" | "lg" | "xl" | "xxl"`;
+
+  dialogProperties: Property[] = [
+    {
+      attribute: 'className',
+      type: 'string',
+      description: 'Add custom className for dialog',
+      default: "''",
+    },
+    {
+      attribute: 'size',
+      type: 'boolean',
+      description: 'Change dialog size',
+      default: 'md',
+    },
+    {
+      attribute: 'open',
+      type: 'boolean',
+      description: 'Block level dialog',
+      default: 'false',
+    },
+    {
+      attribute: 'closeOnBackground',
+      type: 'boolean',
+      description: 'Rounded dialog',
+      default: 'false',
+    },
+  ];
+
+  dialogBodyProperties: Property[] = [
+    {
+      attribute: 'className',
+      type: 'string',
+      description: 'Add custom className for dialog',
+      default: "''",
+    },
+    {
+      attribute: 'divider',
+      type: 'boolean',
+      description: 'Add Divider between header and body',
+      default: 'md',
+    },
+  ];
+
+  private sizes = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
 
   openDialog: boolean = false;
   openLongDialog: boolean = false;
@@ -242,30 +288,29 @@ export class DialogComponent {
   OpenDialog() {
     this.openDialog = !this.openDialog;
   }
-  OpenLongDialog(){
+  OpenLongDialog() {
     this.openLongDialog = !this.openLongDialog;
   }
-  OpenDialogSize(size : string) {
+  OpenDialogSize(size: string) {
     if (this.sizes.includes(size)) {
       if (size == 'xs') {
-        this.openDialogXS =  !this.openDialogXS
+        this.openDialogXS = !this.openDialogXS;
       }
       if (size == 'sm') {
-        this.openDialogSM =  !this.openDialogSM
+        this.openDialogSM = !this.openDialogSM;
       }
       if (size == 'md') {
-        this.openDialogMD =  !this.openDialogMD
+        this.openDialogMD = !this.openDialogMD;
       }
       if (size == 'lg') {
-        this.openDialogLG =  !this.openDialogLG
+        this.openDialogLG = !this.openDialogLG;
       }
       if (size == 'xl') {
-        this.openDialogXL =  !this.openDialogXL
+        this.openDialogXL = !this.openDialogXL;
       }
       if (size == 'xxl') {
-        this.openDialogXXL =  !this.openDialogXXL
+        this.openDialogXXL = !this.openDialogXXL;
       }
     }
-    
   }
 }

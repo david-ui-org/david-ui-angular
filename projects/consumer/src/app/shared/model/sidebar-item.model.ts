@@ -219,6 +219,11 @@ export const SidebarData: SidebarItem[] = [
           { id: 'dialog-main', label: 'Dialog' },
           { id: 'dialog-size', label: 'Dialog Sizes' },
           { id: 'dialog-long', label: 'Long Dialog' },
+          { id: 'dialog-properties', label: 'Dialog Props' },
+          { id: 'dialog-body-properties', label: 'Dialog Body Props' },
+          { id: 'dialog-type-size', label: 'Dialog Type Size' },
+
+
 
         ],
         isActive: false
