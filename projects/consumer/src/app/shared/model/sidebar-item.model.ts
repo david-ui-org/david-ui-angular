@@ -322,6 +322,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'slider-main', label: 'Slider' },
           { id: 'slider-size', label: 'Slider Size' },
           { id: 'slider-color', label: 'Slider Colors' },
+          { id: 'slider-properties', label: 'Slider Props' },
+          { id: 'slider-type-size', label: 'Slider Type Size' },
+          { id: 'slider-type-color', label: 'Slider Type Color' },
         ],
         isActive: false
       },
@@ -348,6 +351,7 @@ export const SidebarData: SidebarItem[] = [
           { id: 'typography-main', label: 'Typography' },
           { id: 'typography-colors', label: 'Typography Colors' },
           { id: 'typography-gradient', label: 'Typography Gradient' },
+          { id: 'typography-properties', label: 'Typography Props' },
           { id: 'typography-type-variant', label: 'Typography Type Variant' },
           { id: 'typography-type-size', label: 'Typography Type Size' },
           { id: 'typography-type-color', label: 'Typography Type Color' },

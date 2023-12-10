@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-slider',
@@ -38,4 +39,45 @@ export class SliderComponent {
     <dui-slider color="yellow" defaultValue="50"></dui-slider>
   </div>
   `;
+
+  sliderTypeSize: string = ` 
+  type size = 'md' | 'lg';`;
+  sliderTypeColor: string = 
+  ` type colors =
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
+
+
+  sliderProperties: Property[] = [
+    {attribute : "color",type:"Color",description : "change slider color",default : "gray"},
+    {attribute : "className",type:"string",description : "Add custom className for slider",default : "''"},
+    {attribute : "trackClassName",type:"string",description : "Add custom className for slider",default : "''"},
+    {attribute : "thumbClassName",type:"string",description : "Add custom className for slider",default : "''"},
+    {attribute : "barClassName",type:"string",description : "Add custom className for slider",default : "''"},
+    {attribute : "size",type:"boolean",description : "Change slider size",default : "md"},
+    {attribute : "defaultValue",type:"string | number",description : "Default Value for slider",default : "required"},
+    {attribute : "value",type:"string",description : "Value prop for slider",default : "''"},
+    {attribute : "min",type:"string",description : "Min value prop for slider",default : "text"},
+    {attribute : "max",type:"boolean",description : "Max value slider",default : "false"},
+    {attribute : "step",type:"boolean",description : "Steps for slider ",default : "false"},
+
+
+  ];
 }
