@@ -89,7 +89,7 @@ export const SidebarData: SidebarItem[] = [
         name: 'Accordion',
         route: '/docs/accordion',
         scrollSpyElements: [
-          { id: 'accordion-main', label: 'Accordion Declaration' },
+          { id: 'accordion-main', label: 'Accordion' },
           { id: 'accordion-icon', label: 'Accordion With Icon' },
           { id: 'accordion-open', label: 'Accordion Always Opened' },
           { id: 'accordion-disable', label: 'Accordion Disabled' },
