@@ -87,12 +87,12 @@ checkboxColor: string=`  <!-- Use DUI Checkbox in html file -->
 
 
   checkboxProperties: Property[] = [
-    {attribute : "label",type:"string",description : "Checkbox label",default : ""},
+    {attribute : "label",type:"string",description : "Checkbox label",default : "''"},
     {attribute : "color",type:"Color",description : "change checkbox color",default : "blue"},
-    {attribute : "className",type:"string",description : "Add custom className for checkbox",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for checkbox",default : "''"},
     {attribute : "size",type:"boolean",description : "Change checkbox size",default : "md"},
     {attribute : "disabled",type:"boolean",description : "Disable checkbox",default : "false"},
-    {attribute : "containerClassName",type:"string",description : "Checkbox container class property",default : ""},
+    {attribute : "containerClassName",type:"string",description : "Checkbox container class property",default : "''"},
     {attribute : "ripple",type:"boolean",description : "Toggle ripple effect in checkbox",default : "true"},
     {attribute : "useCustomIcon",type:"boolean",description : "use custome icon in checkbox",default : "false"},
 

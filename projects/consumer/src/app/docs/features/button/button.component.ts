@@ -160,7 +160,7 @@ rippleEffectButton: string = ` <dui-button color="gray" [ripple]="true" >
   buttonProperties: Property[] = [
     {attribute : "variant",type:"Variant",description : "change button variant",default : "filled"},
     {attribute : "color",type:"Color",description : "change button color",default : "gray"},
-    {attribute : "className",type:"string",description : "Add custom className for button",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for button",default : "''"},
     {attribute : "size",type:"boolean",description : "Change button size",default : "md"},
     {attribute : "fullWidth",type:"boolean",description : "Block level button",default : "false"},
     {attribute : "rounded",type:"boolean",description : "Rounded button",default : "false"},

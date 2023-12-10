@@ -28,7 +28,7 @@ export class CollapseComponent {
       attribute: 'className',
       type: 'string',
       description: 'Add custom className for collapse',
-      default: '',
+      default: "''",
     },
     {
       attribute: 'open',

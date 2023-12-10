@@ -66,10 +66,10 @@ export class InputComponent {
   inputProperties: Property[] = [
     {attribute : "variant",type:"Variant",description : "change input variant",default : "filled"},
     {attribute : "color",type:"Color",description : "change input color",default : "gray"},
-    {attribute : "className",type:"string",description : "Add custom className for input",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for input",default : "''"},
     {attribute : "size",type:"boolean",description : "Change input size",default : "md"},
     {attribute : "label",type:"string",description : "Label for input",default : "Enter your text"},
-    {attribute : "name",type:"string",description : "Name prop for input",default : ""},
+    {attribute : "name",type:"string",description : "Name prop for input",default : "''"},
     {attribute : "type",type:"string",description : "Type prop for input",default : "text"},
     {attribute : "error",type:"boolean",description : "Change input state to error",default : "false"},
     {attribute : "success",type:"boolean",description : "Change input state to success",default : "false"},
