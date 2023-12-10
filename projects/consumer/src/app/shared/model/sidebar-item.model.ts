@@ -264,6 +264,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'pagination-standard', label: 'Pagination Standard' },
           { id: 'pagination-circular', label: 'Pagination Circular' },
           { id: 'pagination-option', label: 'Pagination Options' },
+          { id: 'pagination-properties', label: 'Pagination Props' },
+          { id: 'pagination-type-variant', label: 'Pagination Type Variant' },
+          { id: 'pagination-type-color', label: 'Pagination Type Color' },
 
         ],
         isActive: false
@@ -312,6 +315,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'switch-label', label: 'Switch Label' },
           { id: 'switch-ripple', label: 'Switch Ripple Effect' },
           { id: 'switch-disabled', label: 'Switch Disabled' },
+          { id: 'switch-description', label: 'Switch with Description' },
+          { id: 'switch-properties', label: 'Switch Props' },
+          { id: 'switch-type-color', label: 'Switch Type Color' },
         ],
         isActive: false
       },

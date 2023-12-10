@@ -1,50 +1,36 @@
-<div class="{{rootClass}}"  >
-
+<div class="{{ rootClass }}">
   <div class="{{ containerClass }}" (click)="ToggleSwitch()">
     <ng-container [ngTemplateOutlet]="switchContent"></ng-container>
   </div>
-  <label *ngIf="label !== ''" class="{{ labelClass }}">{{ label }}</label>
-    
-  </div>
-  
-  <ng-template #withRipple>
-    <label [class]="circleClass"  >
-      <div class="{{rippleClass}}" dui-ripple ></div>
-      </label>
-  </ng-template>
-  
-  <ng-template #withoutRipple>
-    <label [class]="circleClass"  >
-      </label>
-  </ng-template>
-  
-  <ng-template #switchContent>
-    <input
-      type="checkbox"
-      disabled="{{ disabled }}"
-      [(ngModel)]="isChecked"
-      (ngModelChange)="OnModelChange($event)"
-      class="{{ switchClass }}"
-    />
-    <ng-container *ngIf="ripple; then withRipple; else withoutRipple">
-    </ng-container>
+  <ng-container [ngTemplateOutlet]="switchlabelContent"></ng-container>
+</div>
 
-  </ng-template>
-  
-  <ng-template #iconTemplate>
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-3.5 w-3.5"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-      stroke="currentColor"
-      strokeWidth="1"
-    >
-      <path
-        fillRule="evenodd"
-        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-        clipRule="evenodd"
-      />
-    </svg>
-  </ng-template>
-  
+<ng-template #withRipple>
+  <label [class]="circleClass">
+    <div class="{{ rippleClass }}" dui-ripple></div>
+  </label>
+</ng-template>
+
+<ng-template #withoutRipple>
+  <label [class]="circleClass"> </label>
+</ng-template>
+
+<ng-template #switchContent>
+  <input
+    type="checkbox"
+    disabled="{{ disabled }}"
+    [(ngModel)]="isChecked"
+    (ngModelChange)="OnModelChange($event)"
+    class="{{ switchClass }}"
+  />
+  <ng-container *ngIf="ripple; then withRipple; else withoutRipple">
+  </ng-container>
+</ng-template>
+
+<ng-template #switchlabelContent>
+  <div [class]="labelClass">
+    {{ label }}
+    <ng-content></ng-content>
+  </div>
+</ng-template>
+

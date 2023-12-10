@@ -40,7 +40,6 @@ export class DUISwitchComponent
   @Input() circleProps!: circleProps;
   @Input() disabled!: boolean;
   @Input() ripple!: boolean;
-  @Input() useCustomIcon!: boolean;
   @Input() label?: label;
   @Input() isChecked: boolean = false;
 
@@ -62,7 +61,6 @@ export class DUISwitchComponent
     this.disabled = this.disabled ?? DefaultCheckBox.disabled;
     this.label = this.label ?? DefaultCheckBox.label;
     this.ripple = this.ripple ?? DefaultCheckBox.ripple;
-    this.useCustomIcon = this.useCustomIcon ?? DefaultCheckBox.useCustomIcon;
   }
   writeValue(obj: any): void {
     this.isChecked = obj;

@@ -132,11 +132,11 @@
       <code-previewer [Code]="switchLabel"> </code-previewer>
     </div>
   
-    <!-- Ripple Effect Checkbox -->
-    <!-- <div class="mt-6">
-      <div id="checkbox-ripple" class="group flex items-center">
+    <!-- Ripple Effect Switch -->
+    <div class="mt-6">
+      <div id="switch-ripple" class="group flex items-center">
         <a
-          href="#checkbox-ripple"
+          href="#switch-ripple"
           class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -157,29 +157,29 @@
         <h2
           class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
         >
-        Checkbox Ripple Effect
+        Swicth Ripple Effect
         </h2>
       </div>
       <p
       class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
         >
-        You can turn on/off the ripple effect for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Checkbox</code> Component using <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">ripple</code> attribute.
+        You can turn on/off the ripple effect for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">switch</code> Component using <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">ripple</code> attribute.
       </p>
     </div>
     <div class="code-snippet-area mt-10">
       <feature-preview >
-        <dui-checkbox color="gray" label="Ripple Effect On" [isChecked]="true" [ripple]="true"></dui-checkbox>
-        <dui-checkbox color="gray" label="Ripple Effect Off" [isChecked]="true" [ripple]="false"></dui-checkbox>
+        <dui-switch color="gray" label="Ripple Effect On" [isChecked]="true" [ripple]="true"></dui-switch>
+        <dui-switch color="gray" label="Ripple Effect Off" [isChecked]="true" [ripple]="false"></dui-switch>
       </feature-preview>
-      <code-previewer [Code]="rippleCheckbox"> </code-previewer>
-    </div> -->
+      <code-previewer [Code]="rippleSwitch"> </code-previewer>
+    </div>
   
 
 
-    <!-- <div class="mt-6">
-      <div id="checkbox-disabled" class="group flex items-center">
+    <div class="mt-6">
+      <div id="switch-disabled" class="group flex items-center">
         <a
-          href="#checkbox-disabled"
+          href="#switch-disabled"
           class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
@@ -200,21 +200,138 @@
         <h2
           class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
         >
-        Disabled Checkbox
+        Disabled Switch
         </h2>
       </div>
       <p
       class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
         >
-        You can disable the Checkbox component by passing the disabled prop to the Checkbox component.
+        You can disable the Switch component by passing the disabled prop to the Checkbox component.
       </p>
     </div>
     <div class="code-snippet-area mt-10">
       <feature-preview >
-        <dui-checkbox color="gray" label="Remember Me" [isChecked]="true" [disabled]="true"></dui-checkbox>
-        <dui-checkbox color="gray" label="Remember Me" [disabled]="true"></dui-checkbox>
+        <dui-switch color="gray" label="Remember Me" [isChecked]="true" [disabled]="true"></dui-switch>
+        <dui-switch color="gray" label="Remember Me" [disabled]="true"></dui-switch>
       </feature-preview>
-      <code-previewer [Code]="disabledCheckbox"> </code-previewer>
-    </div> -->
+      <code-previewer [Code]="disabledSwitch"> </code-previewer>
+    </div>
+
+
+  <!-- Switch with Description -->
+  <div class="mt-6">
+    <div id="switch-description" class="group flex items-center">
+      <a
+        href="#switch-description"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Switch with Description
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+    Use the example below for a more complex usage of switch with label that contains some description.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-switch color="gray" label="Remember me">
+        <div>
+          <dui-typography color="gray" variant="small" className="font-normal">
+            You&apos;ll be able to login without password for 24 hours.
+          </dui-typography>
+
+        </div>
+      </dui-switch>
+    </feature-preview>
+    <code-previewer [Code]="switchDescription"> </code-previewer>
+  </div>
+
+   <!-- Switch Properties -->
+   <div class="mt-6">
+    <div id="switch-properties" class="group flex items-center">
+      <a
+        href="#switch-properties"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Switch Properties </app-h2>
+    </div>
+    <app-paragraph>
+      The following properties are available for
+      <app-code> dui-switch</app-code> component. These are the
+      custom properties that we've added for the switch component and you can
+      use all the other native properties as well.</app-paragraph
+    >
+    <div class="!overflow-scroll-hidden">
+      <app-properties-table
+        [properties]="switchProperties"
+      ></app-properties-table>
+    </div>
+  </div>
+
+
+
+  <div class="mt-6">
+    <div id="switch-type-color" class="group flex items-center">
+      <a
+        href="#switch-type-color"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Type - Color </app-h2>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <code-previewer [Code]="switchTypeColor"> </code-previewer>
+    </div>
+  </div>
+
   </div>
     
