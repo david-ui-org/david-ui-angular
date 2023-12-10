@@ -276,6 +276,13 @@ export const SidebarData: SidebarItem[] = [
           { id: 'radio-disabled', label: 'Radio Button Disabled' },
           { id: 'radio-label', label: 'Radio Button Label' },
           { id: 'radio-colors', label: 'Radio Button Colors' },
+          { id: 'radio-ripple', label: 'Radio Ripple Effect' },
+          { id: 'radio-icon', label: 'Radio Custom Icon' },
+          { id: 'radio-disabled', label: 'Radio Disabled' },
+          { id: 'radio-link', label: 'Radio With Link' },
+          { id: 'radio-description', label: 'Radio With Description' },
+          { id: 'radio-properties', label: 'Radio Props' },
+          { id: 'radio-type-color', label: 'Radio Type Color' },
         ],
         isActive: false
       },
@@ -288,6 +295,11 @@ export const SidebarData: SidebarItem[] = [
           { id: 'select-size', label: 'Select Size' },
           { id: 'select-colors', label: 'Select Color' },
           { id: 'select-disabled', label: 'Select Disabled' },
+          { id: 'select-properties', label: 'Select Props' },
+          { id: 'option-properties', label: 'Options Props' },
+          { id: 'select-type-variant', label: 'Select Type Variant' },
+          { id: 'select-type-size', label: 'Select Type Size' },
+          { id: 'select-type-color', label: 'Select Type Color' },
         ],
         isActive: false
       },
@@ -322,6 +334,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'textarea-variants', label: 'Textarea Variants' },
           { id: 'textarea-sizes', label: 'Textarea Sizes' },
           { id: 'textarea-colors', label: 'Textarea Colors' },
+          { id: 'textarea-properties', label: 'Textarea Props' },
+          { id: 'textarea-type-variant', label: 'Textarea Type Variant' },
+          { id: 'textarea-type-size', label: 'Textarea Type Size' },
+          { id: 'textarea-type-color', label: 'Textarea Type Color' },
         ],
         isActive: false
       },
@@ -331,6 +347,10 @@ export const SidebarData: SidebarItem[] = [
         scrollSpyElements: [
           { id: 'typography-main', label: 'Typography' },
           { id: 'typography-colors', label: 'Typography Colors' },
+          { id: 'typography-gradient', label: 'Typography Gradient' },
+          { id: 'typography-type-variant', label: 'Typography Type Variant' },
+          { id: 'typography-type-size', label: 'Typography Type Size' },
+          { id: 'typography-type-color', label: 'Typography Type Color' },
         ],
         isActive: false
       }

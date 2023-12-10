@@ -94,7 +94,7 @@ checkboxColor: string=`  <!-- Use DUI Checkbox in html file -->
     {attribute : "disabled",type:"boolean",description : "Disable checkbox",default : "false"},
     {attribute : "containerClassName",type:"string",description : "Checkbox container class property",default : "''"},
     {attribute : "ripple",type:"boolean",description : "Toggle ripple effect in checkbox",default : "true"},
-    {attribute : "useCustomIcon",type:"boolean",description : "use custome icon in checkbox",default : "false"},
+    {attribute : "useCustomIcon",type:"boolean",description : "use custom icon in checkbox",default : "false"},
 
   ];
 }
