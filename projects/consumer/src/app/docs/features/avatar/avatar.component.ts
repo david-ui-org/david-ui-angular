@@ -156,7 +156,7 @@ export class AvatarComponent {
   avatarProperties: Property[] = [
     {attribute : "variant",type:"Variant",description : "change avatar variant",default : "filled"},
     {attribute : "color",type:"Color",description : "change avatar color",default : "gray"},
-    {attribute : "className",type:"string",description : "Add custom className for avatar expansion",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for avatar",default : ""},
     {attribute : "size",type:"boolean",description : "Change avatar size",default : "md"},
     {attribute : "addBorder",type:"boolean",description : "add 2px border",default : "false"},
 

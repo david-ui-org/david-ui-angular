@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-collapse',
@@ -21,6 +22,21 @@ export class CollapseComponent {
         Hi there collapse component
       </p>
     </dui-collapse>`;
+
+  collapseProperties: Property[] = [
+    {
+      attribute: 'className',
+      type: 'string',
+      description: 'Add custom className for collapse',
+      default: '',
+    },
+    {
+      attribute: 'open',
+      type: 'boolean',
+      description: 'Change collapse visibility',
+      default: 'false',
+    },
+  ];
 
   open: boolean = false;
   toggleCollapse() {

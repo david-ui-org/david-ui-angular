@@ -89,7 +89,7 @@ checkboxColor: string=`  <!-- Use DUI Checkbox in html file -->
   checkboxProperties: Property[] = [
     {attribute : "label",type:"string",description : "Checkbox label",default : ""},
     {attribute : "color",type:"Color",description : "change checkbox color",default : "blue"},
-    {attribute : "className",type:"string",description : "Add custom className for checkbox expansion",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for checkbox",default : ""},
     {attribute : "size",type:"boolean",description : "Change checkbox size",default : "md"},
     {attribute : "disabled",type:"boolean",description : "Disable checkbox",default : "false"},
     {attribute : "containerClassName",type:"string",description : "Checkbox container class property",default : ""},

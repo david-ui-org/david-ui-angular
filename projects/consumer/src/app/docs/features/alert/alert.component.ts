@@ -110,7 +110,7 @@ export class AlertComponent {
   alertProperties: Property[] = [
     {attribute : "variant",type:"Variant",description : "change alert variant",default : "filled"},
     {attribute : "color",type:"Color",description : "change alert color",default : "gray"},
-    {attribute : "className",type:"string",description : "Add custom className for alert expansion",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for alert",default : ""},
     {attribute : "open",type:"boolean",description : "Change alert visibility",default : "true"},
     {attribute : "IsDismissible",type:"boolean",description : "Dismissible alert",default : "false"},
     {attribute : "onAlertClosed",type:"func",description : "function when alert component is closed",default : ""},

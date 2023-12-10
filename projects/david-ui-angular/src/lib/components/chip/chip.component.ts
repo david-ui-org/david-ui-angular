@@ -28,7 +28,6 @@ export class DUIChipComponent extends DUITheme implements OnInit {
   @Input() isDismissible!: boolean;
   @Input() hasIcon!: boolean;
   @Input() className!: className;
-  @Input() open!: boolean;
 
   chipClass: string = '';
   contentClass: string = '';
@@ -42,7 +41,6 @@ export class DUIChipComponent extends DUITheme implements OnInit {
     this.size = this.size ?? DefaultChip.size;
     this.color = this.color ?? DefaultChip.color;
     this.className = this.className ?? DefaultChip.className;
-    this.open = this.open ?? DefaultChip.open;
     this.isDismissible = this.isDismissible ?? DefaultChip.isDismissible;
     this.hasIcon = this.hasIcon ?? DefaultChip.hasIcon;
   }

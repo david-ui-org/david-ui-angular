@@ -133,7 +133,7 @@ export class ButtonGroupComponent {
   buttongroupProperties: Property[] = [
     {attribute : "variant",type:"Variant",description : "change button group variant",default : "filled"},
     {attribute : "color",type:"Color",description : "change button group color",default : "gray"},
-    {attribute : "className",type:"string",description : "Add custom className for button group expansion",default : ""},
+    {attribute : "className",type:"string",description : "Add custom className for button group",default : ""},
     {attribute : "size",type:"boolean",description : "Change button group size",default : "md"},
     {attribute : "fullWidth",type:"boolean",description : "Block level button group",default : "false"},
     {attribute : "rounded",type:"boolean",description : "Rounded button group",default : "false"},

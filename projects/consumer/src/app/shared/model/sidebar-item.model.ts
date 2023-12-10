@@ -194,6 +194,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'chip-colors', label: 'Chip Colors' },
           { id: 'chip-pills', label: 'Chip Pills' },
           { id: 'chip-icon', label: 'Chip Icon' },
+          { id: 'chip-properties', label: 'Chip Props' },
+          { id: 'chip-type-variant', label: 'Chip Type Variant' },
+          { id: 'chip-type-size', label: 'Chip Type Size' },
+          { id: 'chip-type-color', label: 'Chip Type Color' },
         ],
         isActive: false
       },
@@ -201,7 +205,9 @@ export const SidebarData: SidebarItem[] = [
         name: 'Collapse',
         route: '/docs/collapse',
         scrollSpyElements: [
-          { id: 'checkbox-main', label: 'Checkbox' },
+          { id: 'collapse-main', label: 'Collapse' },
+          { id: 'collapse-properties', label: 'Collapse Props' },
+
         ],
         isActive:false
         },
@@ -221,12 +227,16 @@ export const SidebarData: SidebarItem[] = [
         name: 'Icon Button',
         route: '/docs/icon-button',
         scrollSpyElements: [
-          { id: 'icon-button-main', label: 'Button' },
+          { id: 'icon-button-main', label: 'Icon Button' },
           { id: 'icon-button-variant', label: 'Icon Button Variant' },
           { id: 'icon-button-size', label: 'Icon Button Sizes' },
           { id: 'icon-button-colors', label: 'Icon Button Colors' },
           { id: 'icon-button-rounded', label: 'Icon Rounded Button' },
           { id: 'icon-button-ripple', label: 'Icon Buttons Ripple Effect' },
+          { id: 'icon-button-properties', label: 'Icon Button Props' },
+          { id: 'icon-button-type-variant', label: 'Icon Button Type Variant' },
+          { id: 'icon-button-type-size', label: 'Icon Button Type Size' },
+          { id: 'icon-button-type-color', label: 'Icon Button Type Color' },
         ],
         isActive: true
       },
@@ -238,6 +248,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'input-variants', label: 'Input Variants' },
           { id: 'input-sizes', label: 'Input Sizes' },
           { id: 'input-colors', label: 'Input Colors' },
+          { id: 'input-properties', label: 'Input Props' },
+          { id: 'input-type-variant', label: 'Input Type Variant' },
+          { id: 'input-type-size', label: 'Input Type Size' },
+          { id: 'input-type-color', label: 'Input Type Color' },
         ],
         isActive: false
       },
