@@ -465,7 +465,7 @@ export const routes: Routes = [
             {
               name: 'description',
               content:
-                'Material Tailwind is a components library that features multiple Angular components, all written with Tailwind CSS classes and Material Design guidelines.',
+                'David UI is a components library that features multiple Angular components, all written with Tailwind CSS classes and David UI guidelines.',
             },
             {
               name: 'title',
