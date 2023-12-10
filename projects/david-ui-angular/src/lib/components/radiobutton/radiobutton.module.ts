@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RadiobuttonComponent } from './radiobutton.component';
 import { FormsModule } from '@angular/forms';
+import { DuiRipple } from '../../shared/directive/dui-ripple.directive';
 
 
 
@@ -11,7 +12,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    DuiRipple
   ],
   exports: [
     RadiobuttonComponent

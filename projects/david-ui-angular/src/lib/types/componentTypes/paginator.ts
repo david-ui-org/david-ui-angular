@@ -20,6 +20,8 @@ export interface IPaginator {
   visibleRangeLength: visibleRangeLength;
   length: length;
   showFirstLastOption: boolean;
+  previousButtonLabel: string;
+  nextButtonLabel: string
 }
 
 export const DefaultPaginationProps: IPaginator = {
@@ -31,4 +33,6 @@ export const DefaultPaginationProps: IPaginator = {
   visibleRangeLength: 5,
   length: 10,
   showFirstLastOption: true,
+  previousButtonLabel: 'PREVIOUS',
+  nextButtonLabel: 'NEXT'
 };

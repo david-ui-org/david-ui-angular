@@ -35,7 +35,6 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
   @Input() className!: className;
   @Input() size!: size;
   @Input() closeOnBackground!: boolean;
-  @Input() animate!: animate;
 
 
   @Output() onClose: EventEmitter<boolean> = new EventEmitter<boolean>();
@@ -51,7 +50,6 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
     this.className = this.className ?? DefaultDialogProps.className;
     this.size = this.size ?? DefaultDialogProps.size;
     this.closeOnBackground = this.closeOnBackground ?? DefaultDialogProps.closeOnBackground;
-    this.animate = this.animate ?? DefaultDialogProps.animate;
   }
 
   ngOnChanges() {

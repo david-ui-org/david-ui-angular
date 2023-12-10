@@ -36,6 +36,8 @@ export class PaginatorComponent extends DUITheme
   @Input() color!: color;
   @Input() page!: number;
   @Input() pageSize!: number;
+  @Input() previousButtonLabel!: string;
+  @Input() nextButtonLabel!: string;
   @Input() length!: length;
   @Input() showFirstLastOption!: boolean;
   @Input() visibleRangeLength! : visibleRangeLength;
@@ -62,6 +64,8 @@ export class PaginatorComponent extends DUITheme
     this.color = this.color ?? DefaultPaginationProps.color;
     this.page = this.page ?? DefaultPaginationProps.page;
     this.pageSize = this.pageSize ?? DefaultPaginationProps.pageSize;
+    this.previousButtonLabel = this.previousButtonLabel ?? DefaultPaginationProps.previousButtonLabel;
+    this.nextButtonLabel = this.nextButtonLabel ?? DefaultPaginationProps.nextButtonLabel;
     this.length = this.length ?? DefaultPaginationProps.length;
     this.showFirstLastOption = this.showFirstLastOption ?? DefaultPaginationProps.showFirstLastOption;
     this.visibleRangeLength = this.visibleRangeLength ?? DefaultPaginationProps.visibleRangeLength;

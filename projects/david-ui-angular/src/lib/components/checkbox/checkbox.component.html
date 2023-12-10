@@ -1,4 +1,4 @@
-<div class="inline-flex items-center">
+<div class="inline-flex items-center" [ngClass]="{'opacity-50 pointer-events-none' : disabled}">
   <ng-container *ngIf="ripple; then withRipple; else withoutRipple">
   </ng-container>
 </div>

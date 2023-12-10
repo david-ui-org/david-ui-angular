@@ -94,6 +94,7 @@ export const SidebarData: SidebarItem[] = [
           { id: 'accordion-open', label: 'Accordion Always Opened' },
           { id: 'accordion-disable', label: 'Accordion Disabled' },
           { id: 'accordion-properties', label: 'Accordion Properties' },
+          { id: 'accordion-header-properties', label: 'Accordion Header Properties' },
         ],
         isActive: false
       },
@@ -107,6 +108,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'alert-color', label: 'Alert Colors' },
           { id: 'alert-dismissible', label: 'Alert Dismissible' },
           { id: 'alert-icon', label: 'Alert Custom Icon' },
+          { id: 'alert-properties', label: 'Alert Props' },
+          { id: 'alert-type-variant', label: 'Alert Type Variant' },
+          { id: 'alert-type-color', label: 'Alert Type Color' },
         ],
         isActive: false
       },
@@ -120,6 +124,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'avatar-border', label: 'Avatar with Border' },
           { id: 'avatar-text', label: 'Avatar with Text' },
           { id: 'avatar-stack', label: 'Avatar Stack' },
+          { id: 'avatar-properties', label: 'Avatar Props' },
+          { id: 'avatar-type-variant', label: 'Avatar Type Variant' },
+          { id: 'avatar-type-size', label: 'Avatar Type Size' },
+          { id: 'avatar-type-color', label: 'Avatar Type Color' },
         ],
         isActive: false
       },
@@ -135,6 +143,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'button-block', label: 'Block Level Button' },
           { id: 'button-rounded', label: 'Rounded Button' },
           { id: 'button-ripple', label: 'Buttons Ripple Effect' },
+          { id: 'button-properties', label: 'Button Props' },
+          { id: 'button-type-variant', label: 'Button Type Variant' },
+          { id: 'button-type-size', label: 'Button Type Size' },
+          { id: 'button-type-color', label: 'Button Type Color' },
         ],
         isActive: true
       },
@@ -142,14 +154,16 @@ export const SidebarData: SidebarItem[] = [
         name: 'Button Group',
         route: '/docs/button-group',
         scrollSpyElements: [
-          { id: 'button-main', label: 'Button' },
-          { id: 'button-variant', label: 'Button Variant' },
-          { id: 'button-size', label: 'Button Sizes' },
-          { id: 'button-colors', label: 'Button Colors' },
-          { id: 'button-icon', label: 'Button with Icons' },
-          { id: 'button-block', label: 'Block Level Button' },
-          { id: 'button-rounded', label: 'Rounded Button' },
-          { id: 'button-ripple', label: 'Buttons Ripple Effect' },
+          { id: 'button-group-main', label: 'Button Group' },
+          { id: 'button-group-variant', label: 'Button Group Variant' },
+          { id: 'button-group-size', label: 'Button Group Sizes' },
+          { id: 'button-group-colors', label: 'Button Group Colors' },
+          { id: 'button-group-level-block', label: 'Block Level Button Group' },
+          { id: 'button-group-ripple', label: 'Button Group Ripple Effect' },
+          { id: 'button-group-properties', label: 'Button Group Props' },
+          { id: 'button-group-type-variant', label: 'Button Group Type Variant' },
+          { id: 'button-group-type-size', label: 'Button Group Type Size' },
+          { id: 'button-group-type-color', label: 'Button Group Type Color' },
         ],
         isActive: true
       },
@@ -165,6 +179,8 @@ export const SidebarData: SidebarItem[] = [
           { id: 'checkbox-disabled', label: 'Checkbox Disabled' },
           { id: 'checkbox-link', label: 'Checkbox With Link' },
           { id: 'checkbox-description', label: 'Checkbox With Description' },
+          { id: 'checkbox-properties', label: 'Checkbox Props' },
+          { id: 'checkbox-type-color', label: 'Checkbox Type Color' },
         ],
         isActive: false
       },
@@ -178,6 +194,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'chip-colors', label: 'Chip Colors' },
           { id: 'chip-pills', label: 'Chip Pills' },
           { id: 'chip-icon', label: 'Chip Icon' },
+          { id: 'chip-properties', label: 'Chip Props' },
+          { id: 'chip-type-variant', label: 'Chip Type Variant' },
+          { id: 'chip-type-size', label: 'Chip Type Size' },
+          { id: 'chip-type-color', label: 'Chip Type Color' },
         ],
         isActive: false
       },
@@ -185,7 +205,9 @@ export const SidebarData: SidebarItem[] = [
         name: 'Collapse',
         route: '/docs/collapse',
         scrollSpyElements: [
-          { id: 'checkbox-main', label: 'Checkbox' },
+          { id: 'collapse-main', label: 'Collapse' },
+          { id: 'collapse-properties', label: 'Collapse Props' },
+
         ],
         isActive:false
         },
@@ -197,6 +219,11 @@ export const SidebarData: SidebarItem[] = [
           { id: 'dialog-main', label: 'Dialog' },
           { id: 'dialog-size', label: 'Dialog Sizes' },
           { id: 'dialog-long', label: 'Long Dialog' },
+          { id: 'dialog-properties', label: 'Dialog Props' },
+          { id: 'dialog-body-properties', label: 'Dialog Body Props' },
+          { id: 'dialog-type-size', label: 'Dialog Type Size' },
+
+
 
         ],
         isActive: false
@@ -205,12 +232,16 @@ export const SidebarData: SidebarItem[] = [
         name: 'Icon Button',
         route: '/docs/icon-button',
         scrollSpyElements: [
-          { id: 'icon-button-main', label: 'Button' },
+          { id: 'icon-button-main', label: 'Icon Button' },
           { id: 'icon-button-variant', label: 'Icon Button Variant' },
           { id: 'icon-button-size', label: 'Icon Button Sizes' },
           { id: 'icon-button-colors', label: 'Icon Button Colors' },
           { id: 'icon-button-rounded', label: 'Icon Rounded Button' },
           { id: 'icon-button-ripple', label: 'Icon Buttons Ripple Effect' },
+          { id: 'icon-button-properties', label: 'Icon Button Props' },
+          { id: 'icon-button-type-variant', label: 'Icon Button Type Variant' },
+          { id: 'icon-button-type-size', label: 'Icon Button Type Size' },
+          { id: 'icon-button-type-color', label: 'Icon Button Type Color' },
         ],
         isActive: true
       },
@@ -222,6 +253,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'input-variants', label: 'Input Variants' },
           { id: 'input-sizes', label: 'Input Sizes' },
           { id: 'input-colors', label: 'Input Colors' },
+          { id: 'input-properties', label: 'Input Props' },
+          { id: 'input-type-variant', label: 'Input Type Variant' },
+          { id: 'input-type-size', label: 'Input Type Size' },
+          { id: 'input-type-color', label: 'Input Type Color' },
         ],
         isActive: false
       },
@@ -234,6 +269,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'pagination-standard', label: 'Pagination Standard' },
           { id: 'pagination-circular', label: 'Pagination Circular' },
           { id: 'pagination-option', label: 'Pagination Options' },
+          { id: 'pagination-properties', label: 'Pagination Props' },
+          { id: 'pagination-type-variant', label: 'Pagination Type Variant' },
+          { id: 'pagination-type-color', label: 'Pagination Type Color' },
 
         ],
         isActive: false
@@ -246,6 +284,13 @@ export const SidebarData: SidebarItem[] = [
           { id: 'radio-disabled', label: 'Radio Button Disabled' },
           { id: 'radio-label', label: 'Radio Button Label' },
           { id: 'radio-colors', label: 'Radio Button Colors' },
+          { id: 'radio-ripple', label: 'Radio Ripple Effect' },
+          { id: 'radio-icon', label: 'Radio Custom Icon' },
+          { id: 'radio-disabled', label: 'Radio Disabled' },
+          { id: 'radio-link', label: 'Radio With Link' },
+          { id: 'radio-description', label: 'Radio With Description' },
+          { id: 'radio-properties', label: 'Radio Props' },
+          { id: 'radio-type-color', label: 'Radio Type Color' },
         ],
         isActive: false
       },
@@ -258,6 +303,11 @@ export const SidebarData: SidebarItem[] = [
           { id: 'select-size', label: 'Select Size' },
           { id: 'select-colors', label: 'Select Color' },
           { id: 'select-disabled', label: 'Select Disabled' },
+          { id: 'select-properties', label: 'Select Props' },
+          { id: 'option-properties', label: 'Options Props' },
+          { id: 'select-type-variant', label: 'Select Type Variant' },
+          { id: 'select-type-size', label: 'Select Type Size' },
+          { id: 'select-type-color', label: 'Select Type Color' },
         ],
         isActive: false
       },
@@ -270,6 +320,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'switch-label', label: 'Switch Label' },
           { id: 'switch-ripple', label: 'Switch Ripple Effect' },
           { id: 'switch-disabled', label: 'Switch Disabled' },
+          { id: 'switch-description', label: 'Switch with Description' },
+          { id: 'switch-properties', label: 'Switch Props' },
+          { id: 'switch-type-color', label: 'Switch Type Color' },
         ],
         isActive: false
       },
@@ -280,6 +333,9 @@ export const SidebarData: SidebarItem[] = [
           { id: 'slider-main', label: 'Slider' },
           { id: 'slider-size', label: 'Slider Size' },
           { id: 'slider-color', label: 'Slider Colors' },
+          { id: 'slider-properties', label: 'Slider Props' },
+          { id: 'slider-type-size', label: 'Slider Type Size' },
+          { id: 'slider-type-color', label: 'Slider Type Color' },
         ],
         isActive: false
       },
@@ -292,6 +348,10 @@ export const SidebarData: SidebarItem[] = [
           { id: 'textarea-variants', label: 'Textarea Variants' },
           { id: 'textarea-sizes', label: 'Textarea Sizes' },
           { id: 'textarea-colors', label: 'Textarea Colors' },
+          { id: 'textarea-properties', label: 'Textarea Props' },
+          { id: 'textarea-type-variant', label: 'Textarea Type Variant' },
+          { id: 'textarea-type-size', label: 'Textarea Type Size' },
+          { id: 'textarea-type-color', label: 'Textarea Type Color' },
         ],
         isActive: false
       },
@@ -301,6 +361,11 @@ export const SidebarData: SidebarItem[] = [
         scrollSpyElements: [
           { id: 'typography-main', label: 'Typography' },
           { id: 'typography-colors', label: 'Typography Colors' },
+          { id: 'typography-gradient', label: 'Typography Gradient' },
+          { id: 'typography-properties', label: 'Typography Props' },
+          { id: 'typography-type-variant', label: 'Typography Type Variant' },
+          { id: 'typography-type-size', label: 'Typography Type Size' },
+          { id: 'typography-type-color', label: 'Typography Type Color' },
         ],
         isActive: false
       }

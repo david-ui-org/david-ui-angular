@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-chip',
   templateUrl: './chip.component.html',
-  styleUrls: ['./chip.component.scss']
+  styleUrls: ['./chip.component.scss'],
 })
 export class ChipComponent {
   importCode: string = ` import { DUIChip } from "david-ui-angular";
@@ -16,28 +17,24 @@ export class ChipComponent {
   })
   export class AppModule {}`;
 
-  chipCode : string =
-  `
+  chipCode: string = `
   <dui-chip>Chip</dui-chip>
   `;
 
-  chipVariantCode : string =
-  `
+  chipVariantCode: string = `
   <dui-chip variant="filled" >Chip Filled</dui-chip>
   <dui-chip variant="outlined" >Chip Outlined</dui-chip>
   <dui-chip variant="gradient" >Chip Gradient</dui-chip>
   <dui-chip variant="ghost" >Chip Ghost</dui-chip>
   `;
 
-  chipSizeCode : string =
-  `
+  chipSizeCode: string = `
   <dui-chip size="sm" >Chip Filled</dui-chip>
   <dui-chip size="md" >Chip Filled</dui-chip>
   <dui-chip size="lg" >Chip Filled</dui-chip>
   `;
 
-  chipColorCode : string =
-  `
+  chipColorCode: string = `
   <dui-chip color="red">Chip</dui-chip>
   <dui-chip color="yellow">Chip</dui-chip>
   <dui-chip color="green">Chip</dui-chip>
@@ -45,16 +42,14 @@ export class ChipComponent {
   <dui-chip color="purple">Chip</dui-chip>
   `;
 
-  chipPillCode : string =
-  `
+  chipPillCode: string = `
   <dui-chip variant="filled" className="rounded-full">Chip Filled</dui-chip>
   <dui-chip variant="outlined" className="rounded-full" >Chip Outlined</dui-chip>
   <dui-chip variant="gradient" className="rounded-full" >Chip Gradient</dui-chip>
   <dui-chip variant="ghost" className="rounded-full" >Chip Ghost</dui-chip>
   `;
 
-  chipIconCode : string =
-  `
+  chipIconCode: string = `
     <dui-chip color="gray" variant="filled" [hasIcon]="true" >
       <dui-icon>
         <svg
@@ -125,6 +120,73 @@ export class ChipComponent {
     </dui-chip>
   `;
 
+  chipTypeVariant: string = ` 
+  type variant = "filled" | "gradient" | "outlined" | "ghost"`;
+  chipTypeSize: string = ` 
+  type size = 'sm' | 'md' | 'lg';`;
+  chipTypeColor: string = ` type colors =
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
 
-
+  chipProperties: Property[] = [
+    {
+      attribute: 'variant',
+      type: 'Variant',
+      description: 'change chip variant',
+      default: 'filled',
+    },
+    {
+      attribute: 'color',
+      type: 'Color',
+      description: 'change chip color',
+      default: 'gray',
+    },
+    {
+      attribute: 'className',
+      type: 'string',
+      description: 'Add custom className for chip',
+      default: "''",
+    },
+    {
+      attribute: 'size',
+      type: 'boolean',
+      description: 'Change chip size',
+      default: 'md',
+    },
+    {
+      attribute: 'isDismissible',
+      type: 'boolean',
+      description: 'Dismissible flag for chip',
+      default: 'false',
+    },
+    {
+      attribute: 'hasIcon',
+      type: 'boolean',
+      description: 'Icon flag for chip',
+      default: 'false',
+    },
+    {
+      attribute: '<dui-icon>',
+      type: 'content',
+      description: 'Add Icon content inside dui-icon tag to use icon in chip',
+      default: 'false',
+    },
+  ];
 }

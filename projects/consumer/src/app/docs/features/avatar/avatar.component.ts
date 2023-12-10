@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-avatar',
@@ -125,4 +126,39 @@ export class AvatarComponent {
     </div>
   </div>
   `;
+
+  avatarTypeVariant: string = ` 
+  type variant = 'rounded' | 'circle' | 'square';`;
+  avatarTypeSize: string = ` 
+  type size = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';`;
+  avatarTypeColor: string = 
+  ` type colors =
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
+
+  avatarProperties: Property[] = [
+    {attribute : "variant",type:"Variant",description : "change avatar variant",default : "filled"},
+    {attribute : "color",type:"Color",description : "change avatar color",default : "gray"},
+    {attribute : "className",type:"string",description : "Add custom className for avatar",default : "''"},
+    {attribute : "size",type:"boolean",description : "Change avatar size",default : "md"},
+    {attribute : "addBorder",type:"boolean",description : "add 2px border",default : "false"},
+
+  ];
 }

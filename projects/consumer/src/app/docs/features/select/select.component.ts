@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-select',
@@ -158,6 +159,60 @@ export class SelectComponent {
   ];
 
   optionsStandard: string[] = ['HTML', 'REACT', 'ANGULAR', 'VUE', 'NEXT'];
+
+  selectTypeVariant: string = ` 
+  type variant = "standard" | "outlined" | "static"`;
+  selectTypeSize: string = ` 
+  type size = 'md' | 'lg';`;
+  selectTypeColor: string = 
+  ` type colors =
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
+
+
+  selectProperties: Property[] = [
+    {attribute : "variant",type:"Variant",description : "change select variant",default : "filled"},
+    {attribute : "color",type:"Color",description : "change select color",default : "gray"},
+    {attribute : "className",type:"string",description : "Add custom className for select",default : "''"},
+    {attribute : "size",type:"boolean",description : "Change select size",default : "md"},
+    {attribute : "label",type:"string",description : "Label for select",default : "Enter your text"},
+    {attribute : "name",type:"string",description : "Name prop for select",default : "''"},
+    {attribute : "type",type:"string",description : "Type prop for select",default : "text"},
+    {attribute : "error",type:"boolean",description : "Change select state to error",default : "false"},
+    {attribute : "success",type:"boolean",description : "Change select state to success",default : "false"},
+    {attribute : "disabled",type:"boolean",description : "Disable select",default : "false"},
+    {attribute : "required",type:"boolean",description : "Make select as required",default : "false"},
+    {attribute : "readonly",type:"boolean",description : "Make select readonly",default : "false"},
+    {attribute : "autoHeight",type:"boolean",description : "Make select readonly",default : "undefined"},
+    {attribute : "lockScroll",type:"boolean",description : "Make select readonly",default : "undefined"},
+
+  ];
+
+  optionProperties: Property[] = [
+
+    {attribute : "value",type:"string",description : "Value for select",default : "undefined"},
+    {attribute : "key",type:"string",description : "Key prop for select",default : "undefined"},
+    {attribute : "disabled",type:"boolean",description : "Disable select",default : "false"},
+
+
+  ];
 
   // inputColorCode =`
   // <dui-input color="purple" label="Username"></dui-input>

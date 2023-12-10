@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-iconbutton',
@@ -105,4 +106,43 @@ export class IconbuttonComponent {
     <fa-icon [icon]="heartIcon"></fa-icon>
   </dui-icon-button>
   `;
+
+
+  iconbuttonTypeVariant: string = ` 
+  type variant = 'filled' | 'outlined' | 'gradient' | 'text';`;
+  iconbuttonTypeSize: string = ` 
+  type size = 'sm' | 'md' | 'lg';`;
+  iconbuttonTypeColor: string = 
+  ` type colors =
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
+
+
+  iconbuttonProperties: Property[] = [
+    {attribute : "variant",type:"Variant",description : "change button variant",default : "filled"},
+    {attribute : "color",type:"Color",description : "change button color",default : "gray"},
+    {attribute : "className",type:"string",description : "Add custom className for button",default : "''"},
+    {attribute : "size",type:"boolean",description : "Change button size",default : "md"},
+    {attribute : "fullWidth",type:"boolean",description : "Block level button",default : "false"},
+    {attribute : "rounded",type:"boolean",description : "Rounded button",default : "false"},
+    {attribute : "ripple",type:"boolean",description : "Toggle ripple effect in button",default : "true"},
+
+  ];
 }
