@@ -25,6 +25,7 @@ import { SliderComponent } from './features/slider/slider.component';
 import { ButtonGroupComponent } from './features/button-group/button-group.component';
 import { IconbuttonComponent } from './features/iconbutton/iconbutton.component';
 import { PaginationComponent } from './features/pagination/pagination.component';
+import { BreadcrumbComponent } from './features/breadcrumb/breadcrumb.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -165,6 +166,24 @@ export const routes: Routes = [
             {
               name: 'title',
               content: 'David-UI Angular Fonts',
+            },
+          ],
+        },
+      },
+      {
+        path: 'breadcrumb',
+        component: BreadcrumbComponent,
+        data: {
+          title: 'Tailwind CSS Breadcrumb with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Breadcrumb example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Breadcrumb with Angular - David UI',
             },
           ],
         },

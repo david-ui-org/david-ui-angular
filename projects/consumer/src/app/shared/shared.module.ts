@@ -23,7 +23,8 @@ import {
   DUISlider,
   DUIButtonGroup,
   DUIIconButton,
-  DUIPaginator
+  DUIPaginator,
+  DUIBreadCrumb
 } from 'projects/david-ui-angular/src/public-api';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from '../docs/footer/footer.component';
@@ -75,7 +76,9 @@ import { H2Component } from './components/h2/h2.component';
     DUISlider,
     DUIButtonGroup,
     DUIIconButton,
-    DUIPaginator
+    DUIPaginator,
+    DUIBreadCrumb,
+
   ],
   exports: [
     CodePreviewerComponent,
@@ -109,6 +112,8 @@ import { H2Component } from './components/h2/h2.component';
     DUIButtonGroup,
     DUIIconButton,
     DUIPaginator,
+    DUIBreadCrumb,
+
     PropertiesTableComponent,
     ParagraphComponent,
     CodeComponent,

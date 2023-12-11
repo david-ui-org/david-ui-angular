@@ -33,6 +33,7 @@ import { SliderComponent } from './features/slider/slider.component';
 import { ButtonGroupComponent } from './features/button-group/button-group.component';
 import { IconbuttonComponent } from './features/iconbutton/iconbutton.component';
 import { PaginationComponent } from './features/pagination/pagination.component';
+import { BreadcrumbComponent } from './features/breadcrumb/breadcrumb.component';
 
 
 
@@ -67,7 +68,8 @@ import { PaginationComponent } from './features/pagination/pagination.component'
     SliderComponent,
     ButtonGroupComponent,
     IconbuttonComponent,
-    PaginationComponent
+    PaginationComponent,
+    BreadcrumbComponent
   ],
   imports: [
     CommonModule,
@@ -95,7 +97,8 @@ import { PaginationComponent } from './features/pagination/pagination.component'
     SliderComponent,
     ButtonGroupComponent,
     IconbuttonComponent,
-    PaginationComponent
+    PaginationComponent,
+    BreadcrumbComponent
   ]
 })
 export class DocsModule { }

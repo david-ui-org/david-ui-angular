@@ -132,6 +132,15 @@ export const SidebarData: SidebarItem[] = [
         isActive: false
       },
       {
+        name: 'Breadcrumb',
+        route: '/docs/breadcrumb',
+        scrollSpyElements: [
+          { id: 'breadcrumb-main', label: 'Breadcrumb' },
+
+        ],
+        isActive: true
+      },
+      {
         name: 'Button',
         route: '/docs/button',
         scrollSpyElements: [

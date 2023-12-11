@@ -29,6 +29,7 @@ export * from './lib/components/chip/chip.component';
 export * from './lib/components/switch/switch.component';
 export * from './lib/components/slider/slider.component';
 export * from './lib/components/paginator/paginator.component';
+export * from './lib/components/breadcrumb/breadcrumb.component';
 
 //#endregion
 
@@ -44,6 +45,7 @@ export * from './lib/shared/models/paginatedRes';
 //#endregion
 
 //# Directives
+export * from './lib/components/breadcrumb/breadcrumb-item-directive/breadcrumb-item.directive';
 
 //#endregion
 
@@ -72,5 +74,6 @@ export * from './lib/components/slider/slider.module';
 export * from './lib/components/button-group/button-group.module';
 export * from './lib/components/iconbutton/iconbutton.module';
 export * from './lib/components/paginator/paginator.module';
+export * from './lib/components/breadcrumb/breadcrumb.module';
 //#endregion
 
