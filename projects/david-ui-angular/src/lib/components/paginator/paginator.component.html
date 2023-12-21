@@ -1,0 +1,195 @@
+<div class="{{ containerClass }}">
+  <div class="flex items-center gap-2">
+    <button
+      *ngIf="showFirstLastOption"
+      class="{{ buttonClass }} relative"
+      [ngClass]="variant != 'Simple' ? 'py-5' : ''"
+      [disabled]="page === 1"
+      (click)="selectPage(1)"
+    >
+      <span
+        class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          class="h-7 w-7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M4 4V20M8 12H20M8 12L12 8M8 12L12 16"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </button>
+    <button
+    
+      class="{{ buttonClass }} flex items-center gap-2"
+      [disabled]="page === 1"
+      (click)="selectPage(page - 1)"
+    >
+    <ng-container *ngIf="variant == 'Simple'; else previousArrowWithLabel">
+
+      <span
+        class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="h-4 w-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+          ></path>
+        </svg>
+      </span>
+      
+    </ng-container>
+    </button>
+  </div>
+  <div class="flex items-center gap-2" *ngIf="variant != 'Simple'; else Simple">
+    <button
+      *ngFor="let currentpage of visiblePages"
+      [class]="pageClass"
+      [ngClass]="
+        currentpage === page
+          ? 'bg-gray-900 text-white hover:shadow-lg !hover:bg-gray-900'
+          : 'hover:bg-gray-900/10 '
+      "
+      (click)="selectPage(currentpage)"
+    >
+      {{ currentpage }}
+    </button>
+  </div>
+  <div class="flex items-center gap-2">
+    <button
+      class="{{ buttonClass }} flex items-center gap-2"
+      [disabled]="page === totalPages"
+      (click)="selectPage(page + 1)"
+    >
+    <ng-container *ngIf="variant == 'Simple'; else nextArrowWithLabel">
+
+      <span
+        class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="h-4 w-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+          ></path>
+        </svg>
+      </span>
+    </ng-container>
+    </button>
+    <button
+      *ngIf="showFirstLastOption"
+      class="{{ buttonClass }} relative "
+      [ngClass]="variant != 'Simple' ? 'py-5' : ''"
+      [disabled]="page === totalPages"
+      (click)="selectPage(totalPages)"
+    >
+      <span
+        class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          class="h-7 w-7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          transform="matrix(-1, 0, 0, -1, 0, 0)"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M4 4V20M8 12H20M8 12L12 8M8 12L12 16"
+              stroke="#000000"
+              stroke-width="1"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </span>
+    </button>
+  </div>
+</div>
+
+<ng-template #Simple>
+  <span>
+    <p class="antialiased font-normal text-gray-800">
+      Page <strong>{{ page }} </strong> of <strong>{{ totalPages }} </strong>
+    </p>
+  </span>
+</ng-template>
+
+<!-- <select [ngModel]="pageSize" (ngModelChange)="selectPageSize($event)">
+    <option *ngFor="let size of pageSizes" [value]="size">{{ size }}</option>
+  </select> -->
+
+<ng-template #previousArrowWithLabel>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    aria-hidden="true"
+    class="h-4 w-4"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+    ></path>
+  </svg>
+  {{ previousButtonLabel }}
+</ng-template>
+
+<ng-template #nextArrowWithLabel>
+  {{ nextButtonLabel }}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="2"
+    stroke="currentColor"
+    aria-hidden="true"
+    class="h-4 w-4"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+    ></path>
+  </svg>
+</ng-template>

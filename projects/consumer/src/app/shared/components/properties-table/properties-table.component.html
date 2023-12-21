@@ -1,0 +1,26 @@
+<table class="!w-full !min-w-[700px] lg:!min-w-full">
+    <thead>
+      <tr>
+        <th class="min-w-[120px] border-b border-blue-gray-100 py-3 text-left font-medium text-blue-gray-900">
+          Attribute</th>
+        <th class="min-w-[120px] border-b border-blue-gray-100 py-3 text-left font-medium text-blue-gray-900">Type
+        </th>
+        <th class="min-w-[120px] border-b border-blue-gray-100 py-3 text-left font-medium text-blue-gray-900">
+          Description</th>
+        <th class="min-w-[120px] border-b border-blue-gray-100 py-3 text-left font-medium text-blue-gray-900">
+          Default</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let property of properties">
+        <td class="min-w-[120px] border-b border-blue-gray-50 py-3 text-left text-sm text-blue-gray-500 font font-semibold">
+          <code>{{property.attribute}}</code></td>
+        <td class="min-w-[120px] border-b border-blue-gray-50 py-3 text-left text-sm text-blue-gray-500"><code
+            class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">{{property.type}}</code>
+        </td>
+        <td class="min-w-[120px] border-b border-blue-gray-50 py-3 text-left text-sm text-blue-gray-500">{{property.description}}</td>
+        <td class="min-w-[120px] border-b border-blue-gray-50 py-3 text-left text-sm text-blue-gray-500 font font-semibold">
+          <code>{{property.default}}</code></td>
+      </tr>
+    </tbody>
+  </table>

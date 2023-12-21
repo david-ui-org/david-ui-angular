@@ -6,6 +6,7 @@ import {
   Input,
   OnInit,
   QueryList,
+  Self,
   ViewChild,
   forwardRef,
 } from '@angular/core';
@@ -27,11 +28,10 @@ import {
 import { SelectTheme } from '../../theme/components/select/select-theme';
 import { CdkDropdownComponent } from '../../shared/components/cdk-dropdown/cdk-dropdown.component';
 import { IPropsMapper } from '../../types/generic';
-import selectOutlinedColors from '../../theme/components/select/select-outline-theme/select-outline-colors';
-import selectOutlinedLabelColors from '../../theme/components/select/select-outline-theme/select-outline-label-colors';
 import { OptionsComponent } from './options/options.component';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { DuiSelectService } from '../../services/select/dui-select.service';
+import { twMerge } from 'tailwind-merge';
 
 @Component({
   selector: 'dui-select',
@@ -43,6 +43,8 @@ import { DuiSelectService } from '../../services/select/dui-select.service';
       useExisting: forwardRef(() => SelectComponent),
       multi: true,
     },
+    DuiSelectService,
+    
   ],
 })
 export class SelectComponent
@@ -94,7 +96,7 @@ export class SelectComponent
 
   public onTouchedFn = () => {};
 
-  constructor(private dropdownService: DuiSelectService) {
+  constructor(@Self() private dropdownService: DuiSelectService) {
     super();
     this.dropdownService.registerSelectInstance(this);
     this.variant = this.variant ?? DefaultSelectProps.variant;
@@ -141,14 +143,17 @@ export class SelectComponent
 
     classes += ConvertToClassName(ObjectToStr(sizeSelectStyle));
     // Select color
-    let coloredStyles = selectOutlinedColors[this.color] as IPropsMapper<any>;
+    var variantColorClass = variantStyles[
+      'variantColor'
+    ] as IPropsMapper<object>;
+    let coloredStyles = variantColorClass[this.color] as IPropsMapper<any>;
     classes += ConvertToClassName(ObjectToStr(coloredStyles[state]));
 
     // State Class
     let stateClass = variantStyles[state]['select'] as object;
     classes += ConvertToClassName(ObjectToStr(stateClass));
 
-    return ConvertToClassName(classes);
+    return twMerge(ConvertToClassName(classes).split(' '));
   }
 
   getlabelCompiledClassName(): string {
@@ -162,7 +167,10 @@ export class SelectComponent
     classes += ConvertToClassName(ObjectToStr(variantStyles['label']));
 
     // label color
-    let coloredStyles = selectOutlinedLabelColors[
+    var labelColorClass = variantStyles[
+      'labelColor'
+    ] as IPropsMapper<object>;
+    let coloredStyles = labelColorClass[
       this.color
     ] as IPropsMapper<any>;
     classes += ConvertToClassName(ObjectToStr(coloredStyles[state]));
@@ -176,7 +184,7 @@ export class SelectComponent
     ] as object;
 
     classes += ConvertToClassName(ObjectToStr(sizelabelStyle));
-    return ConvertToClassName(classes);
+    return twMerge(ConvertToClassName(classes).split(' '));
   }
 
   /**
@@ -201,8 +209,9 @@ export class SelectComponent
     this.optionContainer = ConvertToClassName(
       ObjectToStr(SelectTheme['option-container'])
     );
-    var optionBase = SelectTheme['option'] as IPropsMapper<any>;
-    this.optionsClass = ConvertToClassName(ObjectToStr(optionBase['initial']));
+    this.asteriskClasses = ConvertToClassName(
+      ObjectToStr(SelectTheme['asterik-class'])
+    );
     this.arrowClass = this.getBaseArrowClass();
     this.selectClass = this.getCompiledClassName();
     this.labelClass = this.getlabelCompiledClassName();

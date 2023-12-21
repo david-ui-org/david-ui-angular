@@ -18,6 +18,14 @@ import { AboutAngularComponent } from './pages/about-angular/about-angular.compo
 import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
+import { CollapseComponent } from './features/collapse/collapse.component';
+import { ChipComponent } from './features/chip/chip.component';
+import { SwitchComponent } from './features/switch/switch.component';
+import { SliderComponent } from './features/slider/slider.component';
+import { ButtonGroupComponent } from './features/button-group/button-group.component';
+import { IconbuttonComponent } from './features/iconbutton/iconbutton.component';
+import { PaginationComponent } from './features/pagination/pagination.component';
+import { BreadcrumbComponent } from './features/breadcrumb/breadcrumb.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/docs/installation', pathMatch: 'full' },
@@ -31,15 +39,15 @@ export const routes: Routes = [
           title: 'Installation - David UI Angular',
           meta: [
             {
-              name: "description",
-              content: 'Learn how to install David-UI in your Angular project.'
+              name: 'description',
+              content: 'Learn how to install David-UI in your Angular project.',
             },
             {
-              name: "title",
-              content: 'Installation - David UI Angular'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Installation - David UI Angular',
+            },
+          ],
+        },
       },
       {
         path: 'license',
@@ -48,15 +56,15 @@ export const routes: Routes = [
           title: 'David-UI License',
           meta: [
             {
-              name: "description",
-              content: 'View the licensing information for David-UI.'
+              name: 'description',
+              content: 'View the licensing information for David-UI.',
             },
             {
-              name: "title",
-              content: 'David-UI License'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'David-UI License',
+            },
+          ],
+        },
       },
       {
         path: 'what-is-tailwind-css',
@@ -65,32 +73,33 @@ export const routes: Routes = [
           title: 'David-UI and Tailwind CSS',
           meta: [
             {
-              name: "description",
-              content: 'Learn about the integration of David-UI with Tailwind CSS.'
+              name: 'description',
+              content:
+                'Learn about the integration of David-UI with Tailwind CSS.',
             },
             {
-              name: "title",
-              content: 'David-UI and Tailwind CSS'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'David-UI and Tailwind CSS',
+            },
+          ],
+        },
       },
       {
         path: 'what-is-angular',
         component: AboutAngularComponent,
         data: {
-          title: "David-UI and Angular",
+          title: 'David-UI and Angular',
           meta: [
             {
-              name: "description",
-              content: 'Learn about the integration of David-UI with Angular.'
+              name: 'description',
+              content: 'Learn about the integration of David-UI with Angular.',
             },
             {
-              name: "title",
-              content: 'David-UI and Angular'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'David-UI and Angular',
+            },
+          ],
+        },
       },
       {
         path: 'release-notes',
@@ -99,15 +108,15 @@ export const routes: Routes = [
           title: 'David-UI Release Notes',
           meta: [
             {
-              name: "description",
-              content: 'Check out the release notes for David-UI.'
+              name: 'description',
+              content: 'Check out the release notes for David-UI.',
             },
             {
-              name: "title",
-              content: 'David-UI Release Notes'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'David-UI Release Notes',
+            },
+          ],
+        },
       },
       {
         path: 'theming',
@@ -116,15 +125,16 @@ export const routes: Routes = [
           title: 'David-UI Angular Theming',
           meta: [
             {
-              name: "description",
-              content: 'Learn how to customize the look and feel of David-UI Angular.'
+              name: 'description',
+              content:
+                'Learn how to customize the look and feel of David-UI Angular.',
             },
             {
-              name: "title",
-              content: 'David-UI Angular Theming'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'David-UI Angular Theming',
+            },
+          ],
+        },
       },
       {
         path: 'colors',
@@ -133,15 +143,15 @@ export const routes: Routes = [
           title: 'David-UI Angular Colors',
           meta: [
             {
-              name: "description",
-              content: 'Learn how to customize the colors of David-UI Angular.'
+              name: 'description',
+              content: 'Learn how to customize the colors of David-UI Angular.',
             },
             {
-              name: "title",
-              content: 'David-UI Angular Colors'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'David-UI Angular Colors',
+            },
+          ],
+        },
       },
       {
         path: 'fonts',
@@ -150,16 +160,33 @@ export const routes: Routes = [
           title: 'David-UI Angular Fonts',
           meta: [
             {
-              name: "description",
-              content: 'Learn how to customize the fonts of David-UI Angular.'
+              name: 'description',
+              content: 'Learn how to customize the fonts of David-UI Angular.',
             },
             {
-              name: "title",
-              content: 'David-UI Angular Fonts'
-            }
-          ]
-        }
-
+              name: 'title',
+              content: 'David-UI Angular Fonts',
+            },
+          ],
+        },
+      },
+      {
+        path: 'breadcrumb',
+        component: BreadcrumbComponent,
+        data: {
+          title: 'Tailwind CSS Breadcrumb with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Breadcrumb example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Breadcrumb with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'button',
@@ -168,15 +195,34 @@ export const routes: Routes = [
           title: 'Tailwind CSS Button with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Button example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Button example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Button with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Button with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'button-group',
+        component: ButtonGroupComponent,
+        data: {
+          title: 'Tailwind CSS Button Group with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Button Group example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Button Group with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'accordion',
@@ -185,15 +231,16 @@ export const routes: Routes = [
           title: 'Tailwind CSS Accordion with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Accordion example built for Angular to organize large amounts of content. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Accordion example built for Angular to organize large amounts of content. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Accordion with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Accordion with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'alert',
@@ -202,15 +249,16 @@ export const routes: Routes = [
           title: 'Tailwind CSS Alert with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Alert example built for Angular to notify users about important information. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Alert example built for Angular to notify users about important information. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Alert with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Alert with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'avatar',
@@ -219,15 +267,16 @@ export const routes: Routes = [
           title: 'Tailwind CSS Avatar with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Avatar example built for Angular to represent users or entities on your website. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Avatar example built for Angular to represent users or entities on your website. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Avatar with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Avatar with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'checkbox',
@@ -236,15 +285,16 @@ export const routes: Routes = [
           title: 'Tailwind CSS Checkbox with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Learn how to create checkboxes using Tailwind CSS in David-UI.'
+              name: 'description',
+              content:
+                'Learn how to create checkboxes using Tailwind CSS in David-UI.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Checkbox with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Checkbox with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'dialog',
@@ -253,15 +303,34 @@ export const routes: Routes = [
           title: 'Tailwind CSS Dialog with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Dialog example built for Angular to show important information. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Dialog example built for Angular to show important information. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Dialog with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Dialog with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'icon-button',
+        component: IconbuttonComponent,
+        data: {
+          title: 'Tailwind CSS Icon Button with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Icon Button example built for Angular to enable user actions on your website. Customize the component or add it directly to your project.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Icon Button with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'select',
@@ -270,15 +339,51 @@ export const routes: Routes = [
           title: 'Tailwind CSS Select with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Select example built for Angular to provide a dropdown menu of options. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Select example built for Angular to provide a dropdown menu of options. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Select with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Select with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'switch',
+        component: SwitchComponent,
+        data: {
+          title: 'Tailwind CSS Switch with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Switch example built for Angular to provide a toggle.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Switch with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'slider',
+        component: SliderComponent,
+        data: {
+          title: 'Tailwind CSS Slider with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content: 'Use our Tailwind CSS Slider example built for Angular',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Slider with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'input',
@@ -287,15 +392,34 @@ export const routes: Routes = [
         data: {
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Input example built for Angular to collect and process user data. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Input example built for Angular to collect and process user data. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Input with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Input with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'pagination',
+        component: PaginationComponent,
+        title: 'Tailwind CSS Pagination with Angular - David UI',
+        data: {
+          meta: [
+            {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Pagination.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Pagination with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'radiobutton',
@@ -304,15 +428,16 @@ export const routes: Routes = [
         data: {
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Radio Button example built for Angular to ensure single-option selections on your website. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Radio Button example built for Angular to ensure single-option selections on your website. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Radio Button with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Radio Button with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'textarea',
@@ -321,15 +446,16 @@ export const routes: Routes = [
           title: 'Tailwind CSS Textarea with Angular - David UI',
           meta: [
             {
-              name: "description",
-              content: 'Use our Tailwind CSS Textarea example built for Angular to capture extensive user input on your website. Customize the component or add it directly to your project.'
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Textarea example built for Angular to capture extensive user input on your website. Customize the component or add it directly to your project.',
             },
             {
-              name: "title",
-              content: 'Tailwind CSS Textarea with Angular - David UI'
-            }
-          ]
-        }
+              name: 'title',
+              content: 'Tailwind CSS Textarea with Angular - David UI',
+            },
+          ],
+        },
       },
       {
         path: 'typography',
@@ -338,12 +464,48 @@ export const routes: Routes = [
           title: 'Tailwind CSS Typography with Angular - David UI',
           meta: [
             {
+              name: 'description',
+              content:
+                'Use our Tailwind CSS Typography example built for Angular to maintain consistency in the display and styling of text. Customize the component or add it directly to your project.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Typography with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'chip',
+        component: ChipComponent,
+        data: {
+          title: 'Tailwind CSS Chip with Angular - David UI',
+          meta: [
+            {
+              name: 'description',
+              content:
+                'David UI is a components library that features multiple Angular components, all written with Tailwind CSS classes and David UI guidelines.',
+            },
+            {
+              name: 'title',
+              content: 'Tailwind CSS Typography with Angular - David UI',
+            },
+          ],
+        },
+      },
+      {
+        path: 'collapse',
+        component: CollapseComponent,
+        data: {
+          title: 'Tailwind CSS Collapse with Angular - David UI',
+          meta: [
+            {
               name: "description",
-              content: 'Use our Tailwind CSS Typography example built for Angular to maintain consistency in the display and styling of text. Customize the component or add it directly to your project.'
+              content: 'Use our Tailwind CSS Collapse example built for Angular to maintain consistency in the project.'
             },
             {
               name: "title",
-              content: 'Tailwind CSS Typography with Angular - David UI'
+              content: 'Tailwind CSS Collapse with Angular - David UI'
             }
           ]
         }

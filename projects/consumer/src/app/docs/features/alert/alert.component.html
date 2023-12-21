@@ -29,25 +29,32 @@
   <p
     class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
   >
-    Use our Tailwind CSS Alert built with Angular to notify users about important information or warnings in the website/application. 
+    Use our Tailwind CSS Alert built with Angular to notify users about
+    important information or warnings in the website/application.
   </p>
 
   <p
     class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
   >
-    The Alert is a UI component used by web designers to provide feedback to the user. The feedback can be in the form of a warning, an error message, a success notification, or only informational. In terms of duration, some alerts disappear after a short set amount of time, while others remain until the user clicks to dismiss them.
+    The Alert is a UI component used by web designers to provide feedback to the
+    user. The feedback can be in the form of a warning, an error message, a
+    success notification, or only informational. In terms of duration, some
+    alerts disappear after a short set amount of time, while others remain until
+    the user clicks to dismiss them.
   </p>
   <p
     class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
   >
-  Below we present you our Angular Alert example crafted with Tailwind CSS that will help you build enterprise-level applications with ease. Customize the component or add it directly to your project!
+    Below we present you our Angular Alert example crafted with Tailwind CSS
+    that will help you build enterprise-level applications with ease. Customize
+    the component or add it directly to your project!
   </p>
 
   <p
-  class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
   >
     You first need to import the DUIAlert Module into your application module
-</p>
+  </p>
   <code-previewer [Code]="importCode"> </code-previewer>
   <div class="mt-6">
     <div id="alert-primary" class="group flex items-center">
@@ -80,10 +87,136 @@
 
   <div class="code-snippet-area mt-10">
     <feature-preview [centered]="false">
-      <dui-alert [open]="true" className="w-full">A simple filled alert for showing message.</dui-alert>
+      <dui-alert [open]="true" className="w-full"
+        >A simple filled alert for showing message.</dui-alert
+      >
     </feature-preview>
     <code-previewer [Code]="alert"> </code-previewer>
   </div>
+
+  <!-- Alert Variants -->
+  <div class="mt-6">
+    <div id="alert-variants" class="group flex items-center">
+      <a
+        href="#alert-variants"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Alert Variants
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      Alert component has different which you use by configuring  <code
+      class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+      >variant</code> property.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview [centered]="!open">
+      <div class="w-full flex flex-col gap-3">
+        <dui-alert
+        [open]="true"
+        variant="outlined"
+        
+      > A simple outlined alert for showing message.
+      </dui-alert>
+      <dui-alert
+        [open]="true"
+        variant="filled"
+        
+      > A simple filled alert for showing message.
+      </dui-alert>
+      <dui-alert
+        [open]="true"
+        variant="ghost"
+        
+      > A simple ghost alert for showing message.
+      </dui-alert>
+      <dui-alert
+        [open]="true"
+        variant="gradient"
+        
+      > A simple gradient alert for showing message.
+      </dui-alert>
+      </div>
+      
+    </feature-preview>
+    <code-previewer [Code]="alertVariants"> </code-previewer>
+  </div>
+
+  <!-- Alert Colors -->
+  <div class="mt-6">
+    <div id="alert-color" class="group flex items-center">
+      <a
+        href="#alert-color"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+       Alert Colors
+      </h2>
+    </div>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview [centered]="false">
+      <div class="w-full flex flex-col gap-2">
+        <dui-alert color="blue"
+        >A simple filled alert for showing message.</dui-alert
+      >
+        <dui-alert color="red"
+        >A simple filled alert for showing message.</dui-alert
+      >
+        <dui-alert color="yellow"
+          >A simple filled alert for showing message.</dui-alert
+        >
+
+       
+      <dui-alert color="green"
+      >A simple filled alert for showing message.</dui-alert
+    >
+
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="alertColors"> </code-previewer>
+  </div>
+
+<!-- Alert Dismissible -->
   <div class="mt-6">
     <div id="alert-dismissible" class="group flex items-center">
       <a
@@ -130,4 +263,157 @@
     </feature-preview>
     <code-previewer [Code]="dismissAlert"> </code-previewer>
   </div>
+
+  <div class="mt-6">
+    <div id="alert-icon" class="group flex items-center">
+      <a
+        href="#alert-icon"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Alert Icon
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use custom Icon for showing alert component.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview [centered]="!open">
+      <dui-button *ngIf="!open" (click)="toggleAlert()">Show Alert</dui-button>
+      <dui-alert
+        [open]="open"
+        [IsDismissible]="true"
+        (onAlertClosed)="alertClosed($event)"
+      >
+        <dui-icon>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="{2}"
+            stroke="currentColor"
+            class="h-6 w-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+            /></svg></dui-icon> A simple filled alert for showing message.
+      </dui-alert>
+    </feature-preview>
+    <code-previewer [Code]="alertWithIcon"> </code-previewer>
+  </div>
+  <div class="mt-6">
+    <div id="alert-properties" class="group flex items-center">
+      <a
+        href="#alert-properties"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Alert Properties </app-h2>
+    </div>
+    <app-paragraph>
+      The following properties are available for
+      <app-code> dui-alert</app-code> component. These are the
+      custom properties that we've added for the alert component and you can
+      use all the other native properties as well.</app-paragraph
+    >
+    <div class="!overflow-scroll-hidden">
+      <app-properties-table
+        [properties]="alertProperties"
+      ></app-properties-table>
+    </div>
+  </div>
+
+  <!-- Types variant -->
+  <div class="mt-6">
+    <div id="alert-type-variant" class="group flex items-center">
+      <a
+        href="#alert-type-variant"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Type - Variant </app-h2>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <code-previewer [Code]="alertTypeVariant"> </code-previewer>
+    </div>
+  </div>
+
+  <div class="mt-6">
+    <div id="alert-type-color" class="group flex items-center">
+      <a
+        href="#alert-type-color"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Type - Color </app-h2>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <code-previewer [Code]="alertTypeColor"> </code-previewer>
+    </div>
+  </div>
+ 
 </div>

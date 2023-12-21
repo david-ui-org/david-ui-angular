@@ -1,4 +1,6 @@
 import { IPropsMapper } from '../../../../types/generic';
+import selectOutlinedColors from './select-outline-colors';
+import selectOutlinedLabelColors from './select-outline-label-colors';
 
 export const SelectOutlinedTheme: IPropsMapper<object> = {
   select: {},
@@ -32,6 +34,8 @@ export const SelectOutlinedTheme: IPropsMapper<object> = {
       disabled: 'peer-disabled:after:border-transparent',
     },
   },
+  variantColor: selectOutlinedColors,
+  labelColor : selectOutlinedLabelColors,
   md: {
     container: {
       height: 'h-10',

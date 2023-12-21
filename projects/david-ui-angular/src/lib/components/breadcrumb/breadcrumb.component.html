@@ -1,0 +1,9 @@
+<nav aria-label="breadcrumb" [class]="rootClass">
+  <ol [class]="listClass">
+    <li [class]="listItemClass" *ngFor="let item of breadCrumbItems; let i=index">
+        <ng-container *ngIf="!item.hidden" 
+         [ngTemplateOutlet]="item.templateRef"></ng-container>
+      <span *ngIf="i !== breadCrumbItems.length -1" [class]="separatorClass">/</span>
+    </li>
+  </ol>
+</nav>

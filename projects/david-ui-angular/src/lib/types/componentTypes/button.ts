@@ -19,6 +19,7 @@ export interface Button {
   color: color;
   fullWidth: fullWidth;
   ripple: ripple;
+  rounded: boolean;
   className: className;
 }
 
@@ -27,10 +28,11 @@ export interface Button {
 export const DefaultButton: Button = {
   variant: 'filled',
   size: 'md',
-  color: 'blue',
+  color: 'gray',
   fullWidth: false,
-  ripple: false,
+  ripple: true,
   className: '',
+  rounded: false
 };
 
 export const DefaultButtonPropsMapper: IPropsMapper<string> = {

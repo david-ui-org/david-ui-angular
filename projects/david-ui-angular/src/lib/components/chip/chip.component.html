@@ -1,0 +1,9 @@
+<div [class]="chipClass">
+    <div *ngIf="hasIcon" [class]="iconClass">
+    <ng-content select="dui-icon"></ng-content>
+    </div>
+    <span [class]="contentClass">
+
+        <ng-content></ng-content>
+    </span>
+</div>

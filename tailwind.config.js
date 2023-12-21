@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+// const withMT = require("@material-tailwind/html/utils/withMT");
+
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -12,6 +14,7 @@ module.exports = {
     "./projects/consumer/src/**/*.{html,ts,scss}",
     "./dist/david-ui-angular/**/*.{html,ts,js,mjs}",
     "./node_modules/david-ui-angular/**/*.{html,ts,js,mjs}",
+    "./index.html"
   ],
   theme: {
     extend: {

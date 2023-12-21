@@ -1,0 +1,105 @@
+<div class="mb-12">
+  <div id="collapse-main" class="group flex items-center">
+    <a
+      href="#collapse-main"
+      class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+        ></path>
+      </svg>
+    </a>
+    <h1
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Collapse with Angular
+    </h1>
+  </div>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Use our Tailwind CSS collapse for your website. You can use it for
+    accordion, collapsible items and much more.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    See below our simple
+    <code
+      class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+      >Collapse</code
+    >
+    example that you can use in your Tailwind CSS and Angular project.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    You first need to import the DUICollapse Module into your application
+    module.
+  </p>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="w-80">
+        <dui-button (click)="toggleCollapse()">Toggle Collapse</dui-button>
+
+        <dui-collapse [open]="open" className="pt-1">
+          <p class="shadow-md hover:shadow-lg hover:shadow-gray-900 shadow-gray-500 h-auto w-auto mt-4">
+            Hi there collapse component
+          </p>
+        </dui-collapse>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="collapseCode"> </code-previewer>
+  </div>
+
+
+  <!-- collapse Properties -->
+  <div class="mt-6">
+    <div id="collapse-properties" class="group flex items-center">
+      <a
+        href="#collapse-properties"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> collapse Properties </app-h2>
+    </div>
+    <app-paragraph>
+      The following properties are available for
+      <app-code> dui-collapse</app-code> component. These are the
+      custom properties that we've added for the collapse component and you can
+      use all the other native properties as well.</app-paragraph
+    >
+    <div class="!overflow-scroll-hidden">
+      <app-properties-table
+        [properties]="collapseProperties"
+      ></app-properties-table>
+    </div>
+  </div>
+</div>

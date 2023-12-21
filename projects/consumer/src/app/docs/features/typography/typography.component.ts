@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-typography',
@@ -46,5 +47,50 @@ export class TypographyComponent {
   <dui-typography variant="h2" color="red">David UI Angular</dui-typography>
   <dui-typography variant="h3" color="yellow">David UI Angular</dui-typography>
   <dui-typography variant="h4" color="green">David UI Angular</dui-typography>`;
+
+  inputGradientCode = `
+  <div>
+    <dui-typography color="blue" variant="h1" [textGradient]="true">
+    David UI Angular
+    </dui-typography>
+  </div>
+  `;
   textvalue: string = '';
+
+
+
+  typographyTypeVariant: string = ` 
+  type variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'lead' | 'paragraph' | 'small'`;
+
+  typographyTypeColor: string = 
+  ` type colors = 'inherit' | 'current' | 'black' | 'white'
+  | "blue-gray"
+  | "gray"
+  | "brown"
+  | "deep-orange"
+  | "orange"
+  | "amber"
+  | "yellow"
+  | "lime"
+  | "light-green"
+  | "green"
+  | "teal"
+  | "cyan"
+  | "light-blue"
+  | "blue"
+  | "indigo"
+  | "deep-purple"
+  | "purple"
+  | "pink"
+  | "red";`;
+
+
+  typographyProperties: Property[] = [
+    {attribute : "variant",type:"Variant",description : "change typography variant",default : "paragraph"},
+    {attribute : "color",type:"Color",description : "change typography color",default : "inherit"},
+    {attribute : "className",type:"string",description : "Add custom className for typography",default : "''"},
+    {attribute : "textGradient",type:"boolean",description : "Change typography size",default : "false"},
+ 
+
+  ];
 }

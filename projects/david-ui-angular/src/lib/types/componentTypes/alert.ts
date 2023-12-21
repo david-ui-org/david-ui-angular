@@ -19,8 +19,8 @@ export interface Alert {
 
 export const DefaultAlert: Alert = {
     variant: 'filled',
-    color: 'blue',
+    color: 'gray',
     className: '',
-    open: false,
+    open: true,
     isDismissible: false
 };

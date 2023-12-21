@@ -1,0 +1,36 @@
+<div class="{{ rootClass }}">
+  <div class="{{ containerClass }}" (click)="ToggleSwitch()">
+    <ng-container [ngTemplateOutlet]="switchContent"></ng-container>
+  </div>
+  <ng-container [ngTemplateOutlet]="switchlabelContent"></ng-container>
+</div>
+
+<ng-template #withRipple>
+  <label [class]="circleClass">
+    <div class="{{ rippleClass }}" dui-ripple></div>
+  </label>
+</ng-template>
+
+<ng-template #withoutRipple>
+  <label [class]="circleClass"> </label>
+</ng-template>
+
+<ng-template #switchContent>
+  <input
+    type="checkbox"
+    disabled="{{ disabled }}"
+    [(ngModel)]="isChecked"
+    (ngModelChange)="OnModelChange($event)"
+    class="{{ switchClass }}"
+  />
+  <ng-container *ngIf="ripple; then withRipple; else withoutRipple">
+  </ng-container>
+</ng-template>
+
+<ng-template #switchlabelContent>
+  <div [class]="labelClass">
+    {{ label }}
+    <ng-content></ng-content>
+  </div>
+</ng-template>
+

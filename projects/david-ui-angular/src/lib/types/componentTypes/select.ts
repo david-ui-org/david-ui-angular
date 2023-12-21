@@ -1,4 +1,6 @@
 import { SelectOutlinedTheme } from '../../theme/components/select/select-outline-theme/select-outline-theme';
+import { SelectStandardTheme } from '../../theme/components/select/select-standard/select-standard-theme';
+import { SelectStaticTheme } from '../../theme/components/select/select-static/select-static-theme';
 import { IPropsMapper, colors } from '../generic';
 
 // typescript types
@@ -35,4 +37,6 @@ export const DefaultSelectProps: ISelectProps = {
 
 export const SelectVariantMapper: IPropsMapper<IPropsMapper<object>> = {
   outlined: SelectOutlinedTheme,
+  standard : SelectStandardTheme,
+  static : SelectStaticTheme
 };

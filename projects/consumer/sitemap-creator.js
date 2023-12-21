@@ -23,7 +23,14 @@ const routes = [
   '/docs/radiobutton',
   '/docs/select',
   '/docs/textarea',
-  '/docs/typography'
+  '/docs/button-group',
+  '/docs/icon-button',
+  '/docs/switch',
+  '/docs/slider',
+  '/docs/switch',
+  '/docs/pagination',
+  '/docs/chip',
+  '/docs/collapse'
   // Add more routes as needed
 ];
 

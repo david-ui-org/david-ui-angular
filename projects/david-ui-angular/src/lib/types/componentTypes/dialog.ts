@@ -13,7 +13,8 @@ export interface IDialog {
     size: size;
     animate: any;
     divider: divider;
-    className: className
+    className: className;
+    closeOnBackground: boolean
 }
 
 export const DefaultDialogProps : IDialog ={
@@ -21,5 +22,6 @@ export const DefaultDialogProps : IDialog ={
     size: "md",
     animate: "",
     divider: true,
-    className: ""
+    className: "",
+    closeOnBackground: false
 }
