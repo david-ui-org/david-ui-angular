@@ -3,7 +3,7 @@
     <button
       *ngIf="showFirstLastOption"
       class="{{ buttonClass }} relative"
-      [ngClass]="variant != 'Simple' ? 'py-5' : ''"
+      [ngClass]="variant != 'simple' ? 'py-5' : ''"
       [disabled]="page === 1"
       (click)="selectPage(1)"
     >
@@ -40,7 +40,7 @@
       [disabled]="page === 1"
       (click)="selectPage(page - 1)"
     >
-    <ng-container *ngIf="variant == 'Simple'; else previousArrowWithLabel">
+    <ng-container *ngIf="variant == 'simple'; else previousArrowWithLabel">
 
       <span
         class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
@@ -64,7 +64,7 @@
     </ng-container>
     </button>
   </div>
-  <div class="flex items-center gap-2" *ngIf="variant != 'Simple'; else Simple">
+  <div class="flex items-center gap-2" *ngIf="variant != 'simple'; else Simple">
     <button
       *ngFor="let currentpage of visiblePages"
       [class]="pageClass"
@@ -84,7 +84,7 @@
       [disabled]="page === totalPages"
       (click)="selectPage(page + 1)"
     >
-    <ng-container *ngIf="variant == 'Simple'; else nextArrowWithLabel">
+    <ng-container *ngIf="variant == 'simple'; else nextArrowWithLabel">
 
       <span
         class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"
@@ -109,7 +109,7 @@
     <button
       *ngIf="showFirstLastOption"
       class="{{ buttonClass }} relative "
-      [ngClass]="variant != 'Simple' ? 'py-5' : ''"
+      [ngClass]="variant != 'simple' ? 'py-5' : ''"
       [disabled]="page === totalPages"
       (click)="selectPage(totalPages)"
     >

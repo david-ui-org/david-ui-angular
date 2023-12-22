@@ -7,8 +7,8 @@ import { IconButtonTheme } from '../../theme/components/iconbutton/iconbutton-th
 
 @Component({
   selector: 'dui-icon-button',
-  templateUrl: './iconbutton.component.html',
-  styleUrls: ['./iconbutton.component.scss']
+  templateUrl: './icon-button.component.html',
+  styleUrls: ['./icon-button.component.scss']
 })
 export class IconbuttonComponent extends DUITheme implements OnInit {
   @Input() variant!: variant;

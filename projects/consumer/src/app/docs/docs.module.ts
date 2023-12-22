@@ -31,7 +31,7 @@ import { ChipComponent } from './features/chip/chip.component';
 import { SwitchComponent } from './features/switch/switch.component';
 import { SliderComponent } from './features/slider/slider.component';
 import { ButtonGroupComponent } from './features/button-group/button-group.component';
-import { IconbuttonComponent } from './features/iconbutton/iconbutton.component';
+import { IconbuttonComponent } from './features/iconbutton/icon-button.component';
 import { PaginationComponent } from './features/pagination/pagination.component';
 import { BreadcrumbComponent } from './features/breadcrumb/breadcrumb.component';
 

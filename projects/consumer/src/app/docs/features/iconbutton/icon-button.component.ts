@@ -4,8 +4,8 @@ import { Property } from '../../../shared/model/property.model';
 
 @Component({
   selector: 'app-iconbutton',
-  templateUrl: './iconbutton.component.html',
-  styleUrls: ['./iconbutton.component.scss'],
+  templateUrl: './icon-button.component.html',
+  styleUrls: ['./icon-button.component.scss'],
 })
 export class IconbuttonComponent {
   heartIcon = faHeart;

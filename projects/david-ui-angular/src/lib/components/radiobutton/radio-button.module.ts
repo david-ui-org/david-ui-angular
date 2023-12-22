@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IconbuttonComponent } from './iconbutton.component';
+import { RadiobuttonComponent } from './radio-button.component';
 import { FormsModule } from '@angular/forms';
 import { DuiRipple } from '../../shared/directive/dui-ripple.directive';
 
@@ -8,7 +8,7 @@ import { DuiRipple } from '../../shared/directive/dui-ripple.directive';
 
 @NgModule({
   declarations: [
-    IconbuttonComponent
+    RadiobuttonComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +16,7 @@ import { DuiRipple } from '../../shared/directive/dui-ripple.directive';
     DuiRipple
   ],
   exports: [
-    IconbuttonComponent
+    RadiobuttonComponent
   ]
 })
-export class DUIIconButton { }
+export class DUIRadio { }

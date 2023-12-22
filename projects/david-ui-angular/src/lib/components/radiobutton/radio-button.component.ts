@@ -10,8 +10,8 @@ import radioColors from '../../theme/components/radio/radio-colors';
 
 @Component({
   selector: 'dui-radio',
-  templateUrl: './radiobutton.component.html',
-  styleUrls: ['./radiobutton.component.scss'],
+  templateUrl: './radio-button.component.html',
+  styleUrls: ['./radio-button.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,

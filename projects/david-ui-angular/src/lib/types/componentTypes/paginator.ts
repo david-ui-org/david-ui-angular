@@ -1,7 +1,7 @@
 import { colors } from '../generic';
 
 // typescript types
-export type variant = 'Simple' | 'Standard' | 'Circular' | 'Grouped';
+export type variant = 'simple' | 'standard' | 'circular' | 'grouped';
 export type color = colors;
 export type page = number;
 export type pageSize = number;
@@ -25,7 +25,7 @@ export interface IPaginator {
 }
 
 export const DefaultPaginationProps: IPaginator = {
-  variant: 'Simple',
+  variant: 'simple',
   color: 'blue-gray',
   className: '',
   page: 1,
