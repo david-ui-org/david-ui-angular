@@ -79,7 +79,8 @@
       </button>
     </div>
   </div>
-  <pre><code  class="h-[240px] overflow-x-scroll w-full lg:overflow-visible bg-[#1e293b] no-scrollbar" [highlight]="Code" [lineNumbers]="true" [languages]="['typescript','html','bash']" ></code></pre>
+  <pre>
+    <code  class="{{isExpanded? 'h-[650px]' :'h-[240px]'}} overflow-x-scroll w-full lg:overflow-visible bg-[#1e293b] no-scrollbar" [highlight]="Code" [lineNumbers]="true" [languages]="['typescript','html','bash']" ></code></pre>
 
   <div
     class="flex items-center justify-between border-t border-blue-gray-50 p-1 border-opacity-10"
@@ -92,6 +93,7 @@
         class="align-middle select-none font-sans font-bold text-center transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 rounded-lg hover:bg-white/10 active:bg-white/30 flex items-center gap-2 px-3 text-white/30 hover:text-white"
         type="button"
         style="position: relative; overflow: hidden"
+        (click)="toggleCodeExpanssion()"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +102,7 @@
           stroke-width="4"
           stroke="currentColor"
           aria-hidden="true"
-          class="h-2.5 w-2.5 transform transition-transform rotate-0"
+          class="h-2.5 w-2.5 transform transition-transform {{isExpanded ? 'rotate-180' : 'rotate-0' }}"
         >
           <path
             stroke-linecap="round"
@@ -108,7 +110,7 @@
             d="M19.5 8.25l-7.5 7.5-7.5-7.5"
           ></path>
         </svg>
-        Expand Code
+        {{isExpanded ? 'Less': 'Expand'}} Code
       </button>
     </div>
   </div>

@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class CodePreviewerComponent {
   @Input({required: true}) Code! : string;
+
+  isExpanded: boolean = false;
+
+  toggleCodeExpanssion(){
+    this.isExpanded = !this.isExpanded
+  }
 }
