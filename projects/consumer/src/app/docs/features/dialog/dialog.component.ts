@@ -17,24 +17,22 @@ export class DialogComponent {
   })
   export class AppModule {}`;
   dialogCode: string = ` 
-  <dui-dialog [open]="openDialog" [closeOnBackground]="true" (onClose)="this.openDialog = !this.openDialog" >
-  <dui-dialog-header>
-    <dui-typography variant="h2">What is David UI Angular?</dui-typography>
-  </dui-dialog-header>
-  <dui-dialog-body>
-    <dui-typography variant="paragraph"
-      >David UI Angular is an easy to use components library for Tailwind CSS
-      and Angular. It provides a simple way to customize your
-      components, you can change the colors, fonts, breakpoints and everything
-      you need.
-      </dui-typography>
-    </dui-dialog-body>
-
-  <dui-dialog-footer>
-    <dui-button [rounded]="true" variant="text"  color="gray" (click)="OpenDialog()"
-      >Close</dui-button>
-  </dui-dialog-footer>
-  </dui-dialog>`;
+  <dui-dialog [open]="openDialog" [closeOnBackground]="true" (onClose)="this.openDialog = !this.openDialog">
+        <dui-dialog-header>
+          Its a simple dialog.
+        </dui-dialog-header>
+        <dui-dialog-body>
+          The key to more
+          success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty
+          five years of blood sweat and tears, and I'm never giving up, I'm just getting started. I'm up to something.
+          Fan
+          luv.
+        </dui-dialog-body>
+        <dui-dialog-footer>
+          <dui-button class="mr-2" size="md" variant="text" color="red" [rounded]="false" (click)="OpenDialog()">CANCEL</dui-button>
+          <dui-button size="md" color="green" (click)="OpenDialog()">CONFIRM</dui-button>
+        </dui-dialog-footer>
+      </dui-dialog>`;
 
   dialogSizeCode: string = ` 
   <div class="grid grid-cols-3  gap-2 justify-items-center">
@@ -61,117 +59,105 @@ export class DialogComponent {
 
 
   <dui-dialog [open]="openDialogXS" size="xs">
-      <dui-dialog-header>
-        <dui-typography variant="h2">What is David UI Angular?</dui-typography>
-      </dui-dialog-header>
-      <dui-dialog-body>
-        <dui-typography variant="paragraph">
-          David UI Angular is an easy to use components library for Tailwind CSS
-          and Angular. It provides a simple way to customize your
-          components, you can change the colors, fonts, breakpoints and everything
-          you need.
-        </dui-typography>
-      </dui-dialog-body>
-      <dui-dialog-footer>
-        <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('xs')">
-          Close
-        </dui-button>
-      </dui-dialog-footer>
-    </dui-dialog>
+    <dui-dialog-header>
+      Its a simple dialog.
+    </dui-dialog-header>
+    <dui-dialog-body>
+      The key to more
+      success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty
+      five years of blood sweat and tears, and I'm never giving up, I'm just getting started. I'm up to something.
+      Fan
+      luv.
+    </dui-dialog-body>
+    <dui-dialog-footer>
+      <dui-button class="mr-2" size="md" variant="text" color="red" [rounded]="false" (click)="OpenDialogSize('xs')">CANCEL</dui-button>
+      <dui-button size="md" color="green" (click)="OpenDialogSize('xs')">CONFIRM</dui-button>
+    </dui-dialog-footer>
+  </dui-dialog>
 
-    <dui-dialog [open]="openDialogSM" size="sm">
-      <dui-dialog-header>
-        <dui-typography variant="h2">What is David UI Angular?</dui-typography>
-      </dui-dialog-header>
-      <dui-dialog-body>
-        <dui-typography variant="paragraph">
-          David UI Angular is an easy to use components library for Tailwind CSS
-          and Angular. It provides a simple way to customize your
-          components, you can change the colors, fonts, breakpoints and everything
-          you need.
-        </dui-typography>
-      </dui-dialog-body>
-      <dui-dialog-footer>
-        <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('sm')">
-          Close
-        </dui-button>
-      </dui-dialog-footer>
-    </dui-dialog>
+  <dui-dialog [open]="openDialogSM" size="sm">
+    <dui-dialog-header>
+      Its a simple dialog.
+    </dui-dialog-header>
+    <dui-dialog-body>
+      The key to more
+      success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty
+      five years of blood sweat and tears, and I'm never giving up, I'm just getting started. I'm up to something.
+      Fan
+      luv.
+    </dui-dialog-body>
+    <dui-dialog-footer>
+      <dui-button class="mr-2" size="md" variant="text" color="red" [rounded]="false" (click)="OpenDialogSize('sm')">CANCEL</dui-button>
+      <dui-button size="md" color="green" (click)="OpenDialogSize('sm')">CONFIRM</dui-button>
+    </dui-dialog-footer>
+  </dui-dialog>
 
-    <dui-dialog [open]="openDialogMD" size="md">
-      <dui-dialog-header>
-        <dui-typography variant="h2">What is David UI Angular?</dui-typography>
-      </dui-dialog-header>
-      <dui-dialog-body>
-        <dui-typography variant="paragraph">
-          David UI Angular is an easy to use components library for Tailwind CSS
-          and Angular. It provides a simple way to customize your
-          components, you can change the colors, fonts, breakpoints and everything
-          you need.
-        </dui-typography>
-      </dui-dialog-body>
-      <dui-dialog-footer>
-        <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('md')">
-          Close
-        </dui-button>
-      </dui-dialog-footer>
-    </dui-dialog>
+  <dui-dialog [open]="openDialogMD" size="md">
+    <dui-dialog-header>
+      Its a simple dialog.
+    </dui-dialog-header>
+    <dui-dialog-body>
+      The key to more
+      success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty
+      five years of blood sweat and tears, and I'm never giving up, I'm just getting started. I'm up to something.
+      Fan
+      luv.
+    </dui-dialog-body>
+    <dui-dialog-footer>
+      <dui-button class="mr-2" size="md" variant="text" color="red" [rounded]="false" (click)="OpenDialogSize('md')">CANCEL</dui-button>
+      <dui-button size="md" color="green" (click)="OpenDialogSize('md')">CONFIRM</dui-button>
+    </dui-dialog-footer>
+  </dui-dialog>
 
-    <dui-dialog [open]="openDialogLG" size="lg" >
-      <dui-dialog-header>
-        <dui-typography variant="h2">What is David UI Angular?</dui-typography>
-      </dui-dialog-header>
-      <dui-dialog-body>
-        <dui-typography variant="paragraph">
-          David UI Angular is an easy to use components library for Tailwind CSS
-          and Angular. It provides a simple way to customize your
-          components, you can change the colors, fonts, breakpoints and everything
-          you need.
-        </dui-typography>
-      </dui-dialog-body>
-      <dui-dialog-footer>
-        <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('lg')">
-          Close
-        </dui-button>
-      </dui-dialog-footer>
-    </dui-dialog>
+  <dui-dialog [open]="openDialogLG" size="lg">
+    <dui-dialog-header>
+      Its a simple dialog.
+    </dui-dialog-header>
+    <dui-dialog-body>
+      The key to more
+      success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty
+      five years of blood sweat and tears, and I'm never giving up, I'm just getting started. I'm up to something.
+      Fan
+      luv.
+    </dui-dialog-body>
+    <dui-dialog-footer>
+      <dui-button class="mr-2" size="md" variant="text" color="red" [rounded]="false" (click)="OpenDialogSize('lg')">CANCEL</dui-button>
+      <dui-button size="md" color="green" (click)="OpenDialogSize('lg')">CONFIRM</dui-button>
+    </dui-dialog-footer>
+  </dui-dialog>
 
-    <dui-dialog [open]="openDialogXL" size="xl">
+  <dui-dialog [open]="openDialogXL" size="xl">
       <dui-dialog-header>
-        <dui-typography variant="h2">What is David UI Angular?</dui-typography>
+        Its a simple dialog.
       </dui-dialog-header>
       <dui-dialog-body>
-        <dui-typography variant="paragraph">
-          David UI Angular is an easy to use components library for Tailwind CSS
-          and Angular. It provides a simple way to customize your
-          components, you can change the colors, fonts, breakpoints and everything
-          you need.
-        </dui-typography>
+        The key to more
+        success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty
+        five years of blood sweat and tears, and I'm never giving up, I'm just getting started. I'm up to something.
+        Fan
+        luv.
       </dui-dialog-body>
       <dui-dialog-footer>
-        <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('xl')">
-          Close
-        </dui-button>
-      </dui-dialog-footer>
-    </dui-dialog>
+        <dui-button class="mr-2" size="md" variant="text" color="red" [rounded]="false" (click)="OpenDialogSize('xl')">CANCEL</dui-button>
+        <dui-button size="md" color="green" (click)="OpenDialogSize('xl')">CONFIRM</dui-button>
+        </dui-dialog-footer>
+  </dui-dialog>
 
-    <dui-dialog [open]="openDialogXXL" size="xxl">
-      <dui-dialog-header>
-        <dui-typography variant="h2">What is David UI Angular?</dui-typography>
-      </dui-dialog-header>
-      <dui-dialog-body>
-        <dui-typography variant="paragraph">
-          David UI Angular is an easy to use components library for Tailwind CSS
-          and Angular. It provides a simple way to customize your
-          components, you can change the colors, fonts, breakpoints and everything
-          you need.
-        </dui-typography>
-      </dui-dialog-body>
-      <dui-dialog-footer>
-        <dui-button [rounded]="true" variant="text" color="gray" (click)="OpenDialogSize('xxl')">
-          Close
-        </dui-button>
-      </dui-dialog-footer>
+  <dui-dialog [open]="openDialogXXl" size="xxl">
+    <dui-dialog-header>
+      Its a simple dialog.
+    </dui-dialog-header>
+    <dui-dialog-body>
+      The key to more
+      success is to have a lot of pillows. Put it this way, it took me twenty five years to get these plants, twenty
+      five years of blood sweat and tears, and I'm never giving up, I'm just getting started. I'm up to something.
+      Fan
+      luv.
+    </dui-dialog-body>
+    <dui-dialog-footer>
+      <dui-button class="mr-2" size="md" variant="text" color="red" [rounded]="false" (click)="OpenDialogSize('xxl')">CANCEL</dui-button>
+      <dui-button size="md" color="green" (click)="OpenDialogSize('xxl')">CONFIRM</dui-button>
+    </dui-dialog-footer>
   </dui-dialog>`;
 
   dialogLongcode: string = ` 
