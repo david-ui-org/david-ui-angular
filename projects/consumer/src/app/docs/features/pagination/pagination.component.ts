@@ -39,7 +39,7 @@ export class PaginationComponent {
   `;
 
   paginationTypeVariant: string = ` 
-  type variant = 'Simple' | 'Standard' | 'Circular' | 'Grouped';`;
+  type variant = 'simple' | 'standard' | 'circular' | 'grouped';`;
 
   paginationTypeColor: string = 
   ` type colors =
