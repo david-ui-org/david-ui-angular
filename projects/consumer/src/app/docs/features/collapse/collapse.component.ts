@@ -17,11 +17,13 @@ export class CollapseComponent {
   })
   export class AppModule {}`;
   collapseCode: string = `  <!-- Use DUI Collapse in html file -->
-    <dui-collapse [open]="open" className="pt-1">
-      <p class="shadow-md hover:shadow-lg hover:shadow-gray-900 shadow-gray-500 h-auto w-auto mt-4">
-        Hi there collapse component
-      </p>
-    </dui-collapse>`;
+  <dui-button (click)="toggleCollapse()">Toggle Collapse</dui-button>
+  <dui-collapse [open]="open" className="my-4 mx-auto w-8/12">
+    <dui-typography>
+      Use our Tailwind CSS collapse for your website. You can use if for
+      accordion, collapsible items and much more.
+    </dui-typography>
+  </dui-collapse>`;
 
   collapseProperties: Property[] = [
     {

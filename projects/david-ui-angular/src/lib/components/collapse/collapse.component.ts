@@ -20,15 +20,17 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
         'closed',
         style({
           height: '0',
+          width: '0',
         })
       ),
       state(
         'open',
         style({
-          height: 'auto'
+          height: 'auto',
+          width: 'auto'
         })
       ),
-      transition('open <=> closed', animate('200ms')),
+      transition('open <=> closed', animate('400ms')),
     ]),
   ],
 })

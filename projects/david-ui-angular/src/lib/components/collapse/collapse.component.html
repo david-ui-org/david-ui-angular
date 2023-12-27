@@ -1,3 +1,7 @@
-<div [class]="collapseClass" [@Collapse]="!open? 'closed' : 'open'">
-    <ng-content></ng-content>
+<div [class]="collapseClass" class="block w-full basis-full overflow-hidden" [@Collapse]="!open? 'closed' : 'open'">
+    <div [ngClass]="className" class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md">
+        <div class="p-6">
+            <ng-content></ng-content>
+        </div>
+    </div>
 </div>
