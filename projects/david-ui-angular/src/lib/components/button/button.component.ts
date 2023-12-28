@@ -13,6 +13,7 @@ import {
 } from '../../types/componentTypes/button';
 import { ConvertToClassName, ObjectToStr } from '../../utilities/helpers/string-helper';
 import { DUITheme } from '../../theme/theme-base';
+import { buttonTheme } from '../../theme/components/button/button-theme';
 //#endregion
 
 @Component({
@@ -49,6 +50,10 @@ export class ButtonComponent extends DUITheme implements OnInit {
 
   override getCompiledClassName(): string {
     var className = '';
+
+    // set initial class
+    className += ConvertToClassName(ObjectToStr(buttonTheme['initial']));
+
     // get size class
     className += ConvertToClassName(DefaultButtonPropsMapper[this.size]);
     //get variant class
