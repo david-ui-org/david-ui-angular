@@ -1,8 +1,6 @@
 import { Overlay, OverlayConfig, OverlayRef } from '@angular/cdk/overlay';
-import { CdkPortal, TemplatePortal } from '@angular/cdk/portal';
-import { Component, ContentChild, HostListener, Input, ViewChild } from '@angular/core';
-import { OptionsComponent } from '../../../components/select/options/options.component';
-import { DuiSelectService } from '../../../services/select/dui-select.service';
+import { TemplatePortal } from '@angular/cdk/portal';
+import { Component, HostListener, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'dui-dropdown',
@@ -20,13 +18,13 @@ export class CdkDropdownComponent {
   @ViewChild('testTemplate')
   public contentTemplate!: TemplatePortal<any>;
 
-  @ContentChild('#content') public content! : OptionsComponent;
+  //@ContentChild('#content') public content! : OptionsComponent;
 
   protected overlayRef!: OverlayRef;
 
   public showing = false;
 
-  constructor(protected overlay: Overlay,private dropdownService: DuiSelectService) {
+  constructor(protected overlay: Overlay) {
   }
 
   public show() : boolean{
@@ -42,7 +40,7 @@ export class CdkDropdownComponent {
   public hide() {
     this.overlayRef.detach();
     this.showing = false;
-    this.dropdownService.shouldClosed(this.showing);
+    //this.dropdownService.shouldClosed(this.showing);
   }
 
   @HostListener('window:resize')
