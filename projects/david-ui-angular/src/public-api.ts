@@ -24,6 +24,7 @@ export * from './lib/components/select/select.component';
 export * from './lib/components/select/options/options.component';
 export * from './lib/components/collapse/collapse.component';
 export * from './lib/components/button/button.component';
+export * from './lib/components/button-group/button-group.component';
 export * from './lib/components/iconbutton/icon-button.component';
 export * from './lib/components/chip/chip.component';
 export * from './lib/components/switch/switch.component';
