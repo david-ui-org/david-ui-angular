@@ -4,7 +4,7 @@ const disableClass =
   'disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none ';
 
 export const PaginatorVariantTheme: IPropsMapper<object> = {
-  Simple: {
+  simple: {
     page: {},
     button: {
       position: 'relative',
@@ -19,7 +19,7 @@ export const PaginatorVariantTheme: IPropsMapper<object> = {
       transition: 'transition-all ',
     },
   },
-  Standard: {
+  standard: {
     page: {
       position: 'relative',
       alignItems: 'align-middle',
@@ -43,7 +43,7 @@ export const PaginatorVariantTheme: IPropsMapper<object> = {
       transition: 'transition-all ',
     },
   },
-  Circular: {
+  circular: {
     page: {
       position: 'relative',
       alignItems: 'align-middle',

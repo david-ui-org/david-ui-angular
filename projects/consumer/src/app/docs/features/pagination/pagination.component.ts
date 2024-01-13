@@ -65,8 +65,8 @@ export class PaginationComponent {
 
 
   paginationProperties: Property[] = [
-    {attribute : "variant",type:"Variant",description : "change pagination variant",default : "Simple"},
-    {attribute : "color",type:"Color",description : "change pagination color",default : "gray"},
+    {attribute : "variant",type:"variant",description : "change pagination variant",default : "simple"},
+    {attribute : "color",type:"color",description : "change pagination color",default : "gray"},
     {attribute : "className",type:"string",description : "Add custom className for pagination",default : "''"},
     {attribute : "page",type:"boolean",description : "Current page ",default : "md"},
     {attribute : "pageSize",type:"number",description : "Shown length of data on single page pagination",default : "false"},
