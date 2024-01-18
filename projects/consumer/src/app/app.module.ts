@@ -17,7 +17,6 @@ import { HeaderComponent } from './home/header/header.component';
     AppRoutingModule,
     SharedModule,
     DocsModule,
-    FontAwesomeModule,
   ],
   bootstrap: [AppComponent],
   providers: [

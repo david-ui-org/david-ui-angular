@@ -1,0 +1,472 @@
+<div class="mb-12">
+  <div id="chip-main" class="group flex items-center">
+    <a
+      href="#chip-main"
+      class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+        ></path>
+      </svg>
+    </a>
+    <h2
+      class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Chip with Angular
+    </h2>
+  </div>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+  Get started on your web projects with our Tailwind CSS Chip which is a compact elements that represent an input, attribute, or action. This element appears dynamically as a group of multiple interactive elements and allows users to enter information, make selections, filter content, or trigger actions
+  </p>
+
+  <p
+  class="block antialiased font-sans text-base  leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+>
+See below our simple Chip component example that you can use for your Tailwind CSS and Angular project. The example also comes in different styles and colors, so you can adapt it easily to your needs.
+</p>
+
+
+ 
+
+
+  <h4
+    class="block antialiased font-sans text-lg font-bold leading-relaxed !mb-4 !text-black"
+  >
+    You first need to import the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">DUIChip</code> Module into your application module
+  </h4>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-chip>Chip</dui-chip>
+    </feature-preview>
+    <code-previewer [Code]="chipCode"></code-previewer>
+  </div>
+
+  <!-- Chip Variants -->
+  <div class="mt-6">
+    <div id="chip-variants" class="group flex items-center">
+      <a
+        href="#chip-variants"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Chip Variants
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+    The <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Chip</code> component comes with 4 different variants that you can change it using the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">variant</code> prop.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-chip variant="filled"  >Chip Filled</dui-chip>
+      <dui-chip variant="outlined" >Chip Outlined</dui-chip>
+      <dui-chip variant="gradient" >Chip Gradient</dui-chip>
+      <dui-chip variant="ghost" >Chip Ghost</dui-chip>
+    </feature-preview>
+    <code-previewer [Code]="chipVariantCode"> </code-previewer>
+  </div>
+
+  <!-- Chip Size -->
+  <div class="mt-6">
+    <div id="chip-sizes" class="group flex items-center">
+      <a
+        href="#chip-sizes"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Chip Sizes
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+    The <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Chip</code> component comes with 3 different sizes that you can change it using the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">size</code> prop.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-chip size="sm" >Chip Filled</dui-chip>
+      <dui-chip size="md" >Chip Filled</dui-chip>
+      <dui-chip size="lg" >Chip Filled</dui-chip>
+
+    </feature-preview>
+    <code-previewer [Code]="chipSizeCode"> </code-previewer>
+  </div>
+
+
+  <!-- Chip Colors  -->
+
+  <div class="mt-6">
+    <div id="chip-colors" class="group flex items-center">
+      <a
+        href="#chip-colors"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Chip Colors
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use different colors of the chip component by manipulating the
+      color attribute of the component
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-chip color="red">Chip</dui-chip>
+      <dui-chip color="yellow">Chip</dui-chip>
+      <dui-chip color="green">Chip</dui-chip>
+      <dui-chip color="pink">Chip</dui-chip>
+      <dui-chip color="purple">Chip</dui-chip>
+    </feature-preview>
+    <code-previewer [Code]="chipColorCode"> </code-previewer>
+  </div>
+
+  <!-- Chip Pills -->
+  <div class="mt-6">
+    <div id="chip-pills" class="group flex items-center">
+      <a
+        href="#chip-pills"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Chip Pills
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+    You can pass tailwind css classes for the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">Chip</code> component using the <code class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm">className</code> prop this helps to do any sort of customization for the chip.
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-chip variant="filled" className="rounded-full">Chip Filled</dui-chip>
+      <dui-chip variant="outlined" className="rounded-full" >Chip Outlined</dui-chip>
+      <dui-chip variant="gradient" className="rounded-full" >Chip Gradient</dui-chip>
+      <dui-chip variant="ghost" className="rounded-full" >Chip Ghost</dui-chip>
+    </feature-preview>
+    <code-previewer [Code]="chipPillCode"> </code-previewer>
+  </div>
+
+
+   <!-- Chip Icon  -->
+
+   <div class="mt-6">
+    <div id="chip-icon" class="group flex items-center">
+      <a
+        href="#chip-icon"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !my-2 text-black"
+      >
+        Chip Icon
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      You can use different colors of the chip component by manipulating the
+      color attribute of the component
+    </p>
+  </div>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <dui-chip color="gray" variant="filled" [hasIcon]="true" >
+        <dui-icon>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-5 w-5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+        </dui-icon>
+        Account
+      </dui-chip>
+      <dui-chip color="gray" variant="gradient" [hasIcon]="true"  >
+        <dui-icon>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-5 w-5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+        </dui-icon>
+        Account
+      </dui-chip>
+      <dui-chip color="gray" variant="outlined" [hasIcon]="true"  >
+        <dui-icon>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-5 w-5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+        </dui-icon>
+        Account
+      </dui-chip>
+      <dui-chip color="gray" variant="ghost" [hasIcon]="true"  >
+        <dui-icon>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="h-5 w-5"
+        >
+          <path
+            fillRule="evenodd"
+            d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+        </dui-icon>
+        Account
+      </dui-chip>
+    </feature-preview>
+    <code-previewer [Code]="chipIconCode"> </code-previewer>
+  </div>
+
+
+
+  <!-- chip Properties -->
+  <div class="mt-6">
+    <div id="chip-properties" class="group flex items-center">
+      <a
+        href="#chip-properties"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Chip Properties </app-h2>
+    </div>
+    <app-paragraph>
+      The following properties are available for
+      <app-code> dui-chip</app-code> component. These are the
+      custom properties that we've added for the chip component and you can
+      use all the other native properties as well.</app-paragraph
+    >
+    <div class="!overflow-scroll-hidden">
+      <app-properties-table
+        [properties]="chipProperties"
+      ></app-properties-table>
+    </div>
+  </div>
+
+  <!-- Types variant -->
+  <div class="mt-6">
+    <div id="chip-type-variant" class="group flex items-center">
+      <a
+        href="#chip-type-variant"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Type - Variant </app-h2>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <code-previewer [Code]="chipTypeVariant"> </code-previewer>
+    </div>
+  </div>
+
+  <div class="mt-6">
+    <div id="chip-type-size" class="group flex items-center">
+      <a
+        href="#chip-type-size"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Type - Size </app-h2>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <code-previewer [Code]="chipTypeSize"> </code-previewer>
+    </div>
+  </div>
+
+  <div class="mt-6">
+    <div id="chip-type-color" class="group flex items-center">
+      <a
+        href="#chip-type-color"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <app-h2> Type - Color </app-h2>
+    </div>
+    <div class="code-snippet-area mt-10">
+      <code-previewer [Code]="chipTypeColor"> </code-previewer>
+    </div>
+  </div>
+</div>

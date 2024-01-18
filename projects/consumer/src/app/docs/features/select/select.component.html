@@ -1,7 +1,80 @@
 <div class="mb-12">
-    <div id="select-main" class="group flex items-center">
+  <div id="select-main" class="group flex items-center">
+    <a
+      href="#select-main"
+      class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2.5"
+        stroke="currentColor"
+        aria-hidden="true"
+        class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+        ></path>
+      </svg>
+    </a>
+    <h1
+      class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+    >
+      Tailwind CSS Select with Angular
+    </h1>
+  </div>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Use our Tailwind CSS Select built with Angular to provide a dropdown menu of
+    options for your users on your website or applications.
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Select menus are essential for giving users a list of choices without
+    overwhelming the display space. They streamline form filling by providing
+    multiple options in a compact dropdown. For a great user experience, selects
+    should offer clear options and reflect the current choice effectively.
+  </p>
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    Below we present you our Angular Select component crafted with Tailwind CSS,
+    to integrate into applications that demand quality and efficiency. Check it
+    out!
+  </p>
+
+  <p
+    class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+  >
+    You first need to import the DUISelect Module into your application module.
+    <br />
+    *Also make sure you have <b>angular-cdk</b> installed with it's styles
+    imported in your css file.
+  </p>
+  <code-previewer [Code]="importCode"> </code-previewer>
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="w-80">
+        <dui-select [optionsList]="options">
+          <dui-options *ngFor="let option of options" [value]="option">{{
+            option
+          }}</dui-options>
+        </dui-select>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="selectCode"> </code-previewer>
+  </div>
+
+  <!-- Select Variant -->
+  <div class="mt-6">
+    <div id="select-variant" class="group flex items-center">
       <a
-        href="#select-main"
+        href="#select-variant"
         class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,49 +92,457 @@
           ></path>
         </svg>
       </a>
-      <h1
-        class="block antialiased tracking-normal font-sans text-3xl font-bold leading-snug !mb-2 text-black"
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
       >
-        Tailwind CSS Select with Angular
-      </h1>
+        Select Variants
+      </h2>
     </div>
     <p
       class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
     >
-      Use our Tailwind CSS Select built with Angular to provide a dropdown menu of options for your users on your website or applications.
+      The
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Select</code
+      >
+      component comes with 3 different variants that you can change it using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >variant</code
+      >
+      prop.
     </p>
-  
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Select menus are essential for giving users a list of choices without overwhelming the display space. They streamline form filling by providing multiple options in a compact dropdown. For a great user experience, selects should offer clear options and reflect the current choice effectively.
-    </p>
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      Below we present you our Angular Select component crafted with Tailwind CSS, to integrate into applications that demand quality and efficiency. Check it out!
-    </p>
-  
-    <p
-      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
-    >
-      You first need to import the DUISelect Module into your application module. 
-      <br> *Also make sure you have <b>angular-cdk</b> installed with it's styles imported in your css file.
-    </p>
-    <code-previewer [Code]="importCode"> </code-previewer>
-    <div class="code-snippet-area mt-10">
-      <feature-preview>
-        <div class="w-80">
-
-            <dui-select  [optionsList]="options">
-                <dui-options *ngFor="let option of options" [value]="option">{{
-                  option
-                }}</dui-options>
-              </dui-select>
-        </div>
-      </feature-preview>
-      <code-previewer [Code]="selectCode"> </code-previewer>
-    </div>
-
   </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex w-80 flex-col gap-8">
+        <dui-select
+          label="Select a Version"
+          variant="standard"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+
+        <dui-select
+          variant="outlined"
+          label="Select a Version"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+        <dui-select
+          label="Select a Version"
+          variant="static"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="selectVariantCode"> </code-previewer>
+  </div>
+
+  <!-- Select Size -->
+
+  <div class="mt-6">
+    <div id="select-size" class="group flex items-center">
+      <a
+        href="#select-size"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Select Sizes
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      The
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Select</code
+      >
+      component comes with 2 different size that you can change it using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >size</code
+      >
+      prop.
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex w-80 flex-col gap-8">
+        <dui-select
+          label="Select a Version"
+          size="md"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+
+        <dui-select
+          label="Select a Version"
+          size="lg"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="selectSizeCode"> </code-previewer>
+  </div>
+
+  <!-- Select Colors -->
+
+  <div class="mt-6">
+    <div id="select-colors" class="group flex items-center">
+      <a
+        href="#select-colors"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Select Colors
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      The
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Select</code
+      >
+      component comes with 19 different colors that you can change it using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >color</code
+      >
+      prop.
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex w-80 flex-col gap-8">
+        <dui-select
+          label="Select a Version"
+          color="blue"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+
+        <dui-select
+          label="Select a Version"
+          color="purple"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+        <dui-select
+          label="Select a Version"
+          color="green"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="selectColorCode"> </code-previewer>
+  </div>
+
+  <!-- Select Disabled -->
+  <div class="mt-6">
+    <div id="select-disabled" class="group flex items-center">
+      <a
+        href="#select-disabled"
+        class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2.5"
+          stroke="currentColor"
+          aria-hidden="true"
+          class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+          ></path>
+        </svg>
+      </a>
+      <h2
+        class="block antialiased tracking-normal font-sans text-2xl font-bold leading-snug !mb-2 text-black"
+      >
+        Select Disabled
+      </h2>
+    </div>
+    <p
+      class="block antialiased font-sans text-base leading-relaxed text-inherit !mb-4 !font-normal !text-gray-600"
+    >
+      The
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >Select</code
+      >
+      component can be disabled using the
+      <code
+        class="rounded-md px-1 font-sans font-semibold bg-gray-900/[0.1] text-gray-900 text-sm"
+        >disabled</code
+      >
+      prop.
+    </p>
+  </div>
+
+  <div class="code-snippet-area mt-10">
+    <feature-preview>
+      <div class="flex w-80 flex-col gap-8">
+        <dui-select
+          label="Select a Version"
+          color="blue"
+          [disabled]="true"
+          [optionsList]="optionsStandard"
+        >
+          <dui-options
+            *ngFor="let option of optionsStandard"
+            [value]="option"
+            >{{ option }}</dui-options
+          >
+        </dui-select>
+
+      
+      </div>
+    </feature-preview>
+    <code-previewer [Code]="selectDisabledCode"> </code-previewer>
+  </div>
+
+     <!-- Select Properties -->
+     <div class="mt-6">
+      <div id="select-properties" class="group flex items-center">
+        <a
+          href="#select-properties"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <app-h2> Select Properties </app-h2>
+      </div>
+      <app-paragraph>
+        The following properties are available for
+        <app-code> dui-select</app-code> component. These are the
+        custom properties that we've added for the select component and you can
+        use all the other native properties as well.</app-paragraph
+      >
+      <div class="!overflow-scroll-hidden">
+        <app-properties-table
+          [properties]="selectProperties"
+        ></app-properties-table>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <div id="option-properties" class="group flex items-center">
+        <a
+          href="#option-properties"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <app-h2> Option Properties </app-h2>
+      </div>
+      <app-paragraph>
+        The following properties are available for
+        <app-code> dui-options</app-code> component. These are the
+        custom properties that we've added for the option component and you can
+        use all the other native properties as well.</app-paragraph>
+      <div class="!overflow-scroll-hidden">
+        <app-properties-table
+          [properties]="optionProperties"
+        ></app-properties-table>
+      </div>
+    </div>
   
+    <!-- Types variant -->
+    <div class="mt-6">
+      <div id="select-type-variant" class="group flex items-center">
+        <a
+          href="#select-type-variant"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <app-h2> Type - Variant </app-h2>
+      </div>
+      <div class="code-snippet-area mt-10">
+        <code-previewer [Code]="selectTypeVariant"> </code-previewer>
+      </div>
+    </div>
+  
+    <div class="mt-6">
+      <div id="select-type-size" class="group flex items-center">
+        <a
+          href="#select-type-size"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <app-h2> Type - Size </app-h2>
+      </div>
+      <div class="code-snippet-area mt-10">
+        <code-previewer [Code]="selectTypeSize"> </code-previewer>
+      </div>
+    </div>
+  
+    <div class="mt-6">
+      <div id="select-type-color" class="group flex items-center">
+        <a
+          href="#select-type-color"
+          class="absolute z-50 -ml-10 mb-2.5 rounded-md border border-blue-gray-50 bg-blue-gray-50/50 p-1 opacity-0 hover:opacity-100 group-hover:opacity-100"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2.5"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="pointer-events-none h-3.5 w-3.5 rounded-lg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+            ></path>
+          </svg>
+        </a>
+        <app-h2> Type - Color </app-h2>
+      </div>
+      <div class="code-snippet-area mt-10">
+        <code-previewer [Code]="selectTypeColor"> </code-previewer>
+      </div>
+    </div>
+</div>

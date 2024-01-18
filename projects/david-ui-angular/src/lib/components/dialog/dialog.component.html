@@ -1,13 +1,17 @@
-<div [class]="size !== 'xxl' ? overlayClass : ''" *ngIf="open">
-  <div [class]="containerClass">
-    <div [class]="headerClass">
-      <ng-content select="dui-dialog-header"></ng-content>
-    </div>
-    <div [class]="bodyClass">
-      <ng-content select="dui-dialog-body"></ng-content>
-    </div>
-    <div [class]="footerClass">
-      <ng-content select="dui-dialog-footer"></ng-content>
+<div class="fixed inset-0 overflow-auto z-[999]" *ngIf="open">
+
+  <div [class]="size !== 'xxl' ? overlayClass : ''"  (click)="closeOnBackgroundClick()" class="overflow-y-auto" >
+    <div [class]="containerClass">
+      <div [class]="headerClass">
+        <ng-content select="dui-dialog-header"></ng-content>
+      </div>
+      <ng-container>
+
+        <ng-content select="dui-dialog-body"></ng-content>
+      </ng-container>
+      <div [class]="footerClass">
+        <ng-content select="dui-dialog-footer"></ng-content>
+      </div>
     </div>
   </div>
 </div>

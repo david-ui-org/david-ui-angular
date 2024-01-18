@@ -1,0 +1,53 @@
+<div class="inline-flex items-center" [ngClass]="{'opacity-50 pointer-events-none' : disabled}">
+  <ng-container *ngIf="ripple; then withRipple; else withoutRipple">
+  </ng-container>
+
+  <ng-container [ngTemplateOutlet]="radiolabelContent"></ng-container>
+</div>
+
+<ng-template #withRipple>
+  <label class="{{ containerClass }}" dui-ripple>
+    <ng-container [ngTemplateOutlet]="radioContent"></ng-container>
+  </label>
+</ng-template>
+
+<ng-template #withoutRipple>
+  <label class="{{ containerClass }}">
+    <ng-container [ngTemplateOutlet]="radioContent"></ng-container>
+  </label>
+</ng-template>
+
+<ng-template #radioContent>
+  <input
+    type="radio"
+    name="{{ name }}"
+    disabled="{{ disabled }}"
+    [(ngModel)]="selectedValue"
+    (ngModelChange)="OnModelChange($event)"
+    value="{{ value }}"
+    class="{{ radioButtonClass }}"
+  />
+  <span class="{{ iconClass }}">
+    <div *ngIf="useCustomIcon; else iconTemplate">
+      <ng-content select="dui-icon"></ng-content>
+    </div>
+  </span>
+</ng-template>
+
+<ng-template #radiolabelContent>
+  <div [class]="labelClass">
+    {{ label }}
+    <ng-content></ng-content>
+  </div>
+</ng-template>
+
+<ng-template #iconTemplate>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="h-3.5 w-3.5"
+    viewBox="0 0 16 16"
+    fill="currentColor"
+  >
+    <circle data-name="ellipse" cx="8" cy="8" r="8" />
+  </svg>
+</ng-template>

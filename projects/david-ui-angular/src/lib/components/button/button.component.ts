@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectorRef, Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 import { twMerge } from 'tailwind-merge'
 //#region Custom Imports
 import {
@@ -13,6 +13,7 @@ import {
 } from '../../types/componentTypes/button';
 import { ConvertToClassName, ObjectToStr } from '../../utilities/helpers/string-helper';
 import { DUITheme } from '../../theme/theme-base';
+import { buttonTheme } from '../../theme/components/button/button-theme';
 //#endregion
 
 @Component({
@@ -27,22 +28,32 @@ export class ButtonComponent extends DUITheme implements OnInit {
   @Input() fullWidth!: fullWidth;
   @Input() className!: className;
   @Input() rounded!: boolean;
+  @Input() ripple!: boolean;
 
-  public buttonClass!: string;
+  protected buttonClass!: string;
 
-  constructor() {
+  constructor(public cd :ChangeDetectorRef) {
     super();
     this.variant = this.variant ?? DefaultButton.variant;
     this.size = this.size ?? DefaultButton.size;
     this.color = this.color ?? DefaultButton.color;
+    this.ripple = this.ripple ?? DefaultButton.ripple
   }
 
   ngOnInit(): void {
     this.buttonClass = this.getCompiledClassName();
   }
 
+  public DetectChangedConfigurations(){
+    this.buttonClass = this.getCompiledClassName();
+  }
+
   override getCompiledClassName(): string {
     var className = '';
+
+    // set initial class
+    className += ConvertToClassName(ObjectToStr(buttonTheme['initial']));
+
     // get size class
     className += ConvertToClassName(DefaultButtonPropsMapper[this.size]);
     //get variant class
@@ -55,7 +66,7 @@ export class ButtonComponent extends DUITheme implements OnInit {
       className += ConvertToClassName("rounded-full");
     }
     if (this.fullWidth) {
-      className += ConvertToClassName("w-full");
+      className += ConvertToClassName("!w-full");
       
     }
     var addedClasses = twMerge(ConvertToClassName(className).split(" "));

@@ -50,6 +50,7 @@
     "@angular-devkit/build-angular": "^16.2.2",
     "@angular/cli": "~16.2.2",
     "@angular/compiler-cli": "^16.2.0",
+    "@material-tailwind/html": "^2.1.0",
     "@types/jasmine": "~4.3.0",
     "autoprefixer": "^10.4.15",
     "jasmine-core": "~4.6.0",

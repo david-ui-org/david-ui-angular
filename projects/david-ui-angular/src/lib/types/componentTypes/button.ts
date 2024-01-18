@@ -19,6 +19,7 @@ export interface Button {
   color: color;
   fullWidth: fullWidth;
   ripple: ripple;
+  rounded: boolean;
   className: className;
 }
 
@@ -27,16 +28,17 @@ export interface Button {
 export const DefaultButton: Button = {
   variant: 'filled',
   size: 'md',
-  color: 'blue',
+  color: 'gray',
   fullWidth: false,
-  ripple: false,
+  ripple: true,
   className: '',
+  rounded: false
 };
 
 export const DefaultButtonPropsMapper: IPropsMapper<string> = {
-  sm: "py-2 px-3 text-xs rounded-lg",
-  md: "py-2.5 px-5 text-sm rounded-lg",
-  lg: "py-3 px-6 text-md rounded-lg",
+  sm: "py-2 px-4 text-xs rounded-lg",
+  md: "py-3 px-6 text-xs rounded-lg",
+  lg: "py-3.5 px-7 text-sm rounded-lg",
 };
 
 /**

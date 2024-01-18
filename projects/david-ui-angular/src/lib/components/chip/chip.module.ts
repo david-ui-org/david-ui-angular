@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RadiobuttonComponent } from './radiobutton.component';
+import { DUIChipComponent } from './chip.component';
 import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
-    RadiobuttonComponent
+    DUIChipComponent
   ],
   imports: [
     CommonModule,
     FormsModule
   ],
   exports: [
-    RadiobuttonComponent
+    DUIChipComponent
   ]
 })
-export class DUIRadio { }
+export class DUIChip { }

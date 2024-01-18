@@ -6,7 +6,6 @@ import {
   error,
   icon,
   label,
-  resizable,
   size,
   success,
   variant,
@@ -19,8 +18,6 @@ import {
 } from '../../utilities/helpers/string-helper';
 import { InputTheme } from '../../theme/components/input/input-theme';
 import { IPropsMapper } from '../../types/generic';
-import inputOutlinedColors from '../../theme/components/input/input-outline-theme/input-outline-colors';
-import inputOutlinedLabelColors from '../../theme/components/input/input-outline-theme/input-outline-labels-colors';
 
 @Component({
   selector: 'dui-input',
@@ -45,17 +42,17 @@ export class InputComponent
   @Input() error!: error;
   @Input() success!: success;
   @Input() icon!: icon | undefined;
-  @Input() placeholder!: string;
   @Input() disabled!: boolean;
   @Input() readonly!: boolean;
   @Input() required!: boolean;
-  @Input() maxlength: number = 10;
-  @Input() minlength!: number;
   @Input() name!: string;
-
+  @Input() className!: string;
+  @Input() type!: string;
+  
   onChange: any = () => {};
   onTouch: any = () => {};
-
+  
+  placeholder!: string;
   asteriskClasses: string = '';
   containerClass: string = '';
   inputClass: string = '';
@@ -71,6 +68,8 @@ export class InputComponent
     this.icon = this.icon ?? DefaultInputProps.icon;
     this.error = this.error ?? DefaultInputProps.error;
     this.success = this.success ?? DefaultInputProps.success;
+    this.className = this.className ?? DefaultInputProps.className;
+    this.type = this.type ?? DefaultInputProps.type;
     this.placeholder = this.placeholder ?? '';
   }
 
@@ -94,6 +93,10 @@ export class InputComponent
     classes += ConvertToClassName(
       ObjectToStr(variantColorClass[this.color])
     );
+    if (this.className) {
+      classes += ConvertToClassName(this.className);
+      
+    }
 
     return ConvertToClassName(classes);
   }

@@ -10,8 +10,8 @@ import radioColors from '../../theme/components/radio/radio-colors';
 
 @Component({
   selector: 'dui-radio',
-  templateUrl: './radiobutton.component.html',
-  styleUrls: ['./radiobutton.component.scss'],
+  templateUrl: './radio-button.component.html',
+  styleUrls: ['./radio-button.component.scss'],
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -23,9 +23,10 @@ import radioColors from '../../theme/components/radio/radio-colors';
 export class RadiobuttonComponent extends DUITheme implements ControlValueAccessor,OnInit {
   @Input() color!: color;
   @Input() className!: className;
+  @Input() containerClassName!: className;
   @Input() disabled!: boolean;
   @Input() ripple!: boolean;
-  @Input() icon!: icon;
+  @Input() useCustomIcon!: icon;
   @Input() label?: label;
   @Input({required: true}) value?: string;
   @Input({required: true}) name?: string;
@@ -49,7 +50,7 @@ export class RadiobuttonComponent extends DUITheme implements ControlValueAccess
     this.name = this.name ?? DefaultRadioButton.name;
     this.label = this.label ?? DefaultRadioButton.label;
     this.ripple = this.ripple ?? DefaultRadioButton.ripple;
-    this.icon = this.icon ?? DefaultRadioButton.icon;
+    this.useCustomIcon = this.useCustomIcon ?? DefaultRadioButton.useCustomIcon;
   }
   writeValue(value: string): void {
     this.selectedValue = value;
@@ -87,10 +88,22 @@ export class RadiobuttonComponent extends DUITheme implements ControlValueAccess
 
     return twMerge(ConvertToClassName(classes).split(' '));
   }
+
+  getContainerCompiledClass(): string{
+    var containerClass : string = '';
+    containerClass += ConvertToClassName(
+      ObjectToStr(RadioTheme['container'])
+    );
+    if (this.containerClassName) {
+      containerClass += ConvertToClassName(this.containerClassName);
+    }
+    return twMerge(ConvertToClassName(containerClass).split(' '));
+
+  }
   ngOnInit(): void {
     this.radioButtonClass = this.getCompiledClassName();
     this.iconClass = ConvertToClassName(ObjectToStr(RadioTheme['icon'])) + ConvertToClassName(ObjectToStr(radioColors[this.color]));;
-    this.containerClass = ConvertToClassName(ObjectToStr(RadioTheme['container']));
+    this.containerClass = this.getContainerCompiledClass();
     this.labelClass = ConvertToClassName(ObjectToStr(RadioTheme['label']));
   }
 }

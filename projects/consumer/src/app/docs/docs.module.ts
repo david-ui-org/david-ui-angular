@@ -26,6 +26,14 @@ import { TypographyComponent } from './features/typography/typography.component'
 import { ThemingComponent } from './pages/theming/theming.component';
 import { ColorsComponent } from './pages/colors/colors.component';
 import { FontsComponent } from './pages/fonts/fonts.component';
+import { CollapseComponent } from './features/collapse/collapse.component';
+import { ChipComponent } from './features/chip/chip.component';
+import { SwitchComponent } from './features/switch/switch.component';
+import { SliderComponent } from './features/slider/slider.component';
+import { ButtonGroupComponent } from './features/button-group/button-group.component';
+import { IconbuttonComponent } from './features/iconbutton/icon-button.component';
+import { PaginationComponent } from './features/pagination/pagination.component';
+import { BreadcrumbComponent } from './features/breadcrumb/breadcrumb.component';
 
 
 
@@ -51,9 +59,17 @@ import { FontsComponent } from './pages/fonts/fonts.component';
     SelectComponent,
     TextareaComponent,
     TypographyComponent,
+    ChipComponent,
     ThemingComponent,
     ColorsComponent,
-    FontsComponent
+    FontsComponent,
+    CollapseComponent,
+    SwitchComponent,
+    SliderComponent,
+    ButtonGroupComponent,
+    IconbuttonComponent,
+    PaginationComponent,
+    BreadcrumbComponent
   ],
   imports: [
     CommonModule,
@@ -74,7 +90,15 @@ import { FontsComponent } from './pages/fonts/fonts.component';
     RadioComponent,
     SelectComponent,
     TextareaComponent,
-    TypographyComponent
+    TypographyComponent,
+    CollapseComponent,
+    ChipComponent,
+    SwitchComponent,
+    SliderComponent,
+    ButtonGroupComponent,
+    IconbuttonComponent,
+    PaginationComponent,
+    BreadcrumbComponent
   ]
 })
 export class DocsModule { }

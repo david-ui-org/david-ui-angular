@@ -1,9 +1,11 @@
 import {
   AfterViewInit,
   Component,
+  EventEmitter,
   Input,
   OnChanges,
   OnInit,
+  Output,
 } from '@angular/core';
 import { DUITheme } from '../../theme/theme-base';
 import {
@@ -32,13 +34,14 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
   @Input() open!: open;
   @Input() className!: className;
   @Input() size!: size;
-  @Input() divider!: boolean;
-  @Input() animate!: animate;
+  @Input() closeOnBackground!: boolean;
+
+
+  @Output() onClose: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   overlayClass: string = '';
   containerClass: string = '';
   headerClass: string = '';
-  bodyClass: string = '';
   footerClass: string = '';
 
   constructor() {
@@ -46,17 +49,23 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
     this.open = this.open ?? DefaultDialogProps.open;
     this.className = this.className ?? DefaultDialogProps.className;
     this.size = this.size ?? DefaultDialogProps.size;
-    this.divider = this.divider ?? DefaultDialogProps.divider;
-    this.animate = this.animate ?? DefaultDialogProps.animate;
+    this.closeOnBackground = this.closeOnBackground ?? DefaultDialogProps.closeOnBackground;
   }
 
   ngOnChanges() {
-    if (this.open) {
+    if (this.open && this.size !== 'xxl') {
       // Lock body scroll when the overlay is active
       document.body.style.overflow = 'hidden';
     } else {
       // Restore body scroll when the overlay is removed
       document.body.style.overflow = 'scroll';
+    }
+  }
+
+  closeOnBackgroundClick(){
+    if (this.closeOnBackground) {
+      this.open =!this.open;
+      this.onClose.emit(this.open);
     }
   }
 
@@ -77,14 +86,6 @@ export class DialogComponent extends DUITheme implements OnInit, OnChanges {
     this.containerClass = this.getCompiledClassName();
     this.headerClass = ConvertToClassName(
       ObjectToStr(dialogHeaderTheme['container'])
-    );
-    var dividerClass = this.divider
-      ? ConvertToClassName(ObjectToStr(dialogBodyTheme['divider']))
-      : '';
-
-    this.bodyClass = twMerge(
-      ConvertToClassName(ObjectToStr(dialogBodyTheme['container'])) +
-        dividerClass
     );
     this.footerClass = ConvertToClassName(
       ObjectToStr(dialogFooterTheme['container'])

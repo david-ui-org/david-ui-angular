@@ -58,6 +58,7 @@ export class RightSidebarComponent implements OnInit, AfterContentInit {
     const targetElement = document.getElementById(target);
     if (targetElement) {
       this.scrollIntoViewIfNeeded(targetElement);
+      //this.router.navigate([this.router.url],{fragment : target})
       this.location.replaceState(this.location.path() + `#` + target);
     }
   }

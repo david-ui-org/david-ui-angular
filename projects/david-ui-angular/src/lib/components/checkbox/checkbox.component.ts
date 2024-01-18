@@ -6,7 +6,6 @@ import {
   DefaultCheckBox,
   className,
   color,
-  icon,
   label,
 } from '../../types/componentTypes/checkbox';
 import { DUITheme } from '../../theme/theme-base';
@@ -35,9 +34,10 @@ export class CheckboxComponent
 {
   @Input() color!: color;
   @Input() className!: className;
+  @Input() containerClassName!: className;
   @Input() disabled!: boolean;
   @Input() ripple!: boolean;
-  @Input() icon!: icon;
+  @Input() useCustomIcon!: boolean;
   @Input() label?: label;
   @Input() isChecked: boolean = false;
 
@@ -56,7 +56,7 @@ export class CheckboxComponent
     this.disabled = this.disabled ?? DefaultCheckBox.disabled;
     this.label = this.label ?? DefaultCheckBox.label;
     this.ripple = this.ripple ?? DefaultCheckBox.ripple;
-    this.icon = this.icon ?? DefaultCheckBox.icon;
+    this.useCustomIcon = this.useCustomIcon ?? DefaultCheckBox.useCustomIcon;
   }
   writeValue(obj: any): void {
     this.isChecked = obj;
@@ -96,12 +96,21 @@ export class CheckboxComponent
 
     return twMerge(ConvertToClassName(classes).split(' '));
   }
+  getContainerCompiledClass(): string{
+    var containerClass : string = '';
+    containerClass += ConvertToClassName(
+      ObjectToStr(CheckBoxTheme['container'])
+    );
+    if (this.containerClassName) {
+      containerClass += ConvertToClassName(this.containerClassName);
+    }
+    return twMerge(ConvertToClassName(containerClass).split(' '));
+
+  }
   ngOnInit(): void {
     this.checkboxClass = this.getCompiledClassName();
     this.iconClass = ConvertToClassName(ObjectToStr(CheckBoxTheme['icon']));
-    this.containerClass = ConvertToClassName(
-      ObjectToStr(CheckBoxTheme['container'])
-    );
+    this.containerClass = this.getContainerCompiledClass();    
     this.labelClass = ConvertToClassName(ObjectToStr(CheckBoxTheme['label']));
   }
 }

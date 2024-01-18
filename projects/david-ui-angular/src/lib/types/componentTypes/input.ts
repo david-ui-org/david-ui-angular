@@ -24,19 +24,23 @@ export interface IInputProps{
     error : error;
     success : success;
     icon :  icon | undefined;
-    resizable : resizable
+    resizable : resizable;
+    className: string;
+    type: string;
 
 }
 
  export const DefaultInputProps :  IInputProps ={
-     variant: "outlined",
-     size: "md",
-     color: "gray",
-     label: "Enter your text",
-     error: false,
-     success: false,
-     icon: undefined,
-     resizable: false
+   variant: "outlined",
+   size: "md",
+   color: "gray",
+   label: "Enter your text",
+   error: false,
+   success: false,
+   icon: undefined,
+   resizable: false,
+   className: "",
+   type: "text"
  }
 
  export const TextAreaVarientMapper : IPropsMapper<IPropsMapper<object>> = {
