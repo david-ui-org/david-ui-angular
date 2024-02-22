@@ -1,4 +1,4 @@
-# David UI Angular - 1.0.0
+# David UI Angular - 1.1.0
 
 ### _The right choice for fast and easy UI development using tailwind css_
 
