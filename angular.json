@@ -103,10 +103,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "consumer:build:production"
+              "buildTarget": "consumer:build:production"
             },
             "development": {
-              "browserTarget": "consumer:build:development"
+              "buildTarget": "consumer:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -114,7 +114,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "consumer:build"
+            "buildTarget": "consumer:build"
           }
         },
         "test": {
